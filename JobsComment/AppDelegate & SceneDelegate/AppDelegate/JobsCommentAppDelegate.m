@@ -16,18 +16,18 @@
 
 @implementation JobsCommentAppDelegate
 
-static JobsCommentAppDelegate *static_appDelegate = nil;
+static JobsCommentAppDelegate *static_jobsCommentAppDelegate = nil;
 +(instancetype)sharedInstance{
     @synchronized(self){
-        if (!static_appDelegate) {
-            static_appDelegate = JobsCommentAppDelegate.new;
+        if (!static_jobsCommentAppDelegate) {
+            static_jobsCommentAppDelegate = JobsCommentAppDelegate.new;
         }
-    }return static_appDelegate;
+    }return static_jobsCommentAppDelegate;
 }
 
 -(instancetype)init{
     if (self = [super init]) {
-        static_appDelegate = self;
+        static_jobsCommentAppDelegate = self;
     }return self;
 }
 //#pragma clang diagnostic push

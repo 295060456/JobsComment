@@ -607,7 +607,6 @@
 				C52E0B6E25610F5300B245CF /* JobsComment */,
 				C52E0B8D25610F5400B245CF /* JobsCommentTests */,
 				C52E0B9825610F5400B245CF /* JobsCommentUITests */,
-				C52E0B6D25610F5300B245CF /* Products */,
 				EB47A1B9BA8F5B8CDDB6674F /* Pods */,
 				FD3DBBF019B39AF72F3C5A7B /* Frameworks */,
 			);
@@ -621,6 +620,7 @@
 				C52E0B9525610F5400B245CF /* JobsCommentUITests.xctest */,
 			);
 			name = Products;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C52E0B6E25610F5300B245CF /* JobsComment */ = {
@@ -693,6 +693,7 @@
 		C52E0C5A2561109C00B245CF /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				C52E0B6D25610F5300B245CF /* Products */,
 				C52E0B7825610F5300B245CF /* Main.storyboard */,
 				C52E0B8025610F5400B245CF /* LaunchScreen.storyboard */,
 				C52E0B8425610F5400B245CF /* main.m */,

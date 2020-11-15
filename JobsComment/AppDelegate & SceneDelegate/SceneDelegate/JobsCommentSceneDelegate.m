@@ -15,18 +15,18 @@
 
 @implementation JobsCommentSceneDelegate
 
-static JobsCommentSceneDelegate *static_JobsIMSceneDelegate = nil;
+static JobsCommentSceneDelegate *static_JobsCommentSceneDelegate = nil;
 +(instancetype)sharedInstance{
     @synchronized(self){
-        if (!static_JobsIMSceneDelegate) {
-            static_JobsIMSceneDelegate = JobsCommentSceneDelegate.new;
+        if (!static_JobsCommentSceneDelegate) {
+            static_JobsCommentSceneDelegate = JobsCommentSceneDelegate.new;
         }
-    }return static_JobsIMSceneDelegate;
+    }return static_JobsCommentSceneDelegate;
 }
 
 -(instancetype)init{
     if (self = [super init]) {
-        static_JobsIMSceneDelegate = self;
+        static_JobsCommentSceneDelegate = self;
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(noti1:)
                                                      name:UISceneWillConnectNotification
