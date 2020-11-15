@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057DA700000370 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057DA700000360 /* Foundation.framework */; };
+		057DA700000380 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA7000000D0 /* NSBundle+TZImagePicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000390 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA7000000F0 /* TZAssetCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA7000003A0 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000110 /* TZAssetModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA7000003B0 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000130 /* TZGifPhotoPreviewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA7000003C0 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000150 /* TZImageCropManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA7000003D0 /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000170 /* TZImageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA7000003E0 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000190 /* TZImagePickerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA7000003F0 /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA7000001B0 /* TZImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000400 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA7000001D0 /* TZLocationManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000410 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA7000001F0 /* TZPhotoPickerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000420 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000210 /* TZPhotoPreviewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000430 /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000230 /* TZPhotoPreviewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000440 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000250 /* TZProgressView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000450 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000270 /* TZVideoPlayerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000460 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA700000290 /* UIView+Layout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		057DA700000470 /* NSBundle+TZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA7000000C0 /* NSBundle+TZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000480 /* TZAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA7000000E0 /* TZAssetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000490 /* TZAssetModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000100 /* TZAssetModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA7000004A0 /* TZGifPhotoPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000120 /* TZGifPhotoPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA7000004B0 /* TZImageCropManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000140 /* TZImageCropManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA7000004C0 /* TZImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000160 /* TZImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA7000004D0 /* TZImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000180 /* TZImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA7000004E0 /* TZImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA7000001A0 /* TZImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA7000004F0 /* TZLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA7000001C0 /* TZLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000500 /* TZPhotoPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA7000001E0 /* TZPhotoPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000510 /* TZPhotoPreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000200 /* TZPhotoPreviewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000520 /* TZPhotoPreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000220 /* TZPhotoPreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000530 /* TZProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000240 /* TZProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000540 /* TZVideoPlayerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000260 /* TZVideoPlayerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000550 /* UIView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA700000280 /* UIView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000560 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 057DA7000002B0 /* TZImagePickerController.bundle */; };
+		057DA7000005C0 /* TZImagePickerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA7000005B0 /* TZImagePickerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057DA700000600 /* TZImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA7000005F0 /* TZImagePickerController-dummy.m */; };
+		057DA700000620 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057DA700000610 /* Photos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		057DA7000000C0 /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+TZImagePicker.h"; path = "TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		057DA7000000D0 /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+TZImagePicker.m"; path = "TZImagePickerController/TZImagePickerController/NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		057DA7000000E0 /* TZAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZAssetCell.h; path = TZImagePickerController/TZImagePickerController/TZAssetCell.h; sourceTree = "<group>"; };
+		057DA7000000F0 /* TZAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZAssetCell.m; path = TZImagePickerController/TZImagePickerController/TZAssetCell.m; sourceTree = "<group>"; };
+		057DA700000100 /* TZAssetModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZAssetModel.h; path = TZImagePickerController/TZImagePickerController/TZAssetModel.h; sourceTree = "<group>"; };
+		057DA700000110 /* TZAssetModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZAssetModel.m; path = TZImagePickerController/TZImagePickerController/TZAssetModel.m; sourceTree = "<group>"; };
+		057DA700000120 /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZGifPhotoPreviewController.h; path = TZImagePickerController/TZImagePickerController/TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		057DA700000130 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZGifPhotoPreviewController.m; path = TZImagePickerController/TZImagePickerController/TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
+		057DA700000140 /* TZImageCropManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageCropManager.h; path = TZImagePickerController/TZImagePickerController/TZImageCropManager.h; sourceTree = "<group>"; };
+		057DA700000150 /* TZImageCropManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImageCropManager.m; path = TZImagePickerController/TZImagePickerController/TZImageCropManager.m; sourceTree = "<group>"; };
+		057DA700000160 /* TZImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageManager.h; path = TZImagePickerController/TZImagePickerController/TZImageManager.h; sourceTree = "<group>"; };
+		057DA700000170 /* TZImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImageManager.m; path = TZImagePickerController/TZImagePickerController/TZImageManager.m; sourceTree = "<group>"; };
+		057DA700000180 /* TZImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImagePickerController.h; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.h; sourceTree = "<group>"; };
+		057DA700000190 /* TZImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImagePickerController.m; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.m; sourceTree = "<group>"; };
+		057DA7000001A0 /* TZImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZImageRequestOperation.h; path = TZImagePickerController/TZImagePickerController/TZImageRequestOperation.h; sourceTree = "<group>"; };
+		057DA7000001B0 /* TZImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZImageRequestOperation.m; path = TZImagePickerController/TZImagePickerController/TZImageRequestOperation.m; sourceTree = "<group>"; };
+		057DA7000001C0 /* TZLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZLocationManager.h; path = TZImagePickerController/TZImagePickerController/TZLocationManager.h; sourceTree = "<group>"; };
+		057DA7000001D0 /* TZLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZLocationManager.m; path = TZImagePickerController/TZImagePickerController/TZLocationManager.m; sourceTree = "<group>"; };
+		057DA7000001E0 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPickerController.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPickerController.h; sourceTree = "<group>"; };
+		057DA7000001F0 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPickerController.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPickerController.m; sourceTree = "<group>"; };
+		057DA700000200 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPreviewCell.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		057DA700000210 /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPreviewCell.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		057DA700000220 /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZPhotoPreviewController.h; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		057DA700000230 /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZPhotoPreviewController.m; path = TZImagePickerController/TZImagePickerController/TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		057DA700000240 /* TZProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZProgressView.h; path = TZImagePickerController/TZImagePickerController/TZProgressView.h; sourceTree = "<group>"; };
+		057DA700000250 /* TZProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZProgressView.m; path = TZImagePickerController/TZImagePickerController/TZProgressView.m; sourceTree = "<group>"; };
+		057DA700000260 /* TZVideoPlayerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TZVideoPlayerController.h; path = TZImagePickerController/TZImagePickerController/TZVideoPlayerController.h; sourceTree = "<group>"; };
+		057DA700000270 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TZVideoPlayerController.m; path = TZImagePickerController/TZImagePickerController/TZVideoPlayerController.m; sourceTree = "<group>"; };
+		057DA700000280 /* UIView+Layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Layout.h"; path = "TZImagePickerController/TZImagePickerController/UIView+Layout.h"; sourceTree = "<group>"; };
+		057DA700000290 /* UIView+Layout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Layout.m"; path = "TZImagePickerController/TZImagePickerController/UIView+Layout.m"; sourceTree = "<group>"; };
+		057DA7000002B0 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TZImagePickerController.bundle; path = TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle; sourceTree = "<group>"; };
+		057DA700000360 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		057DA700000580 /* TZImagePickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZImagePickerController.debug.xcconfig; sourceTree = "<group>"; };
+		057DA700000590 /* TZImagePickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZImagePickerController.release.xcconfig; sourceTree = "<group>"; };
+		057DA7000005A0 /* TZImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TZImagePickerController.modulemap; sourceTree = "<group>"; };
+		057DA7000005B0 /* TZImagePickerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZImagePickerController-umbrella.h"; sourceTree = "<group>"; };
+		057DA7000005D0 /* TZImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TZImagePickerController-Info.plist"; sourceTree = "<group>"; };
+		057DA7000005E0 /* TZImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZImagePickerController-prefix.pch"; sourceTree = "<group>"; };
+		057DA7000005F0 /* TZImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TZImagePickerController-dummy.m"; sourceTree = "<group>"; };
+		057DA700000610 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		0DBF2C5C77D8316134001812A5BD25EF /* TZImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TZImagePickerController.framework; path = TZImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		057DA700000330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057DA700000370 /* Foundation.framework in Frameworks */,
+				057DA700000620 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		057DA700000010 = {
+			isa = PBXGroup;
+			children = (
+				057DA700000060 /* Frameworks */,
+				057DA700000020 /* Products */,
+				057DA7000000B0 /* TZImagePickerController */,
+			);
+			sourceTree = "<group>";
+		};
+		057DA700000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DBF2C5C77D8316134001812A5BD25EF /* TZImagePickerController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		057DA700000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				057DA700000350 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		057DA7000000B0 /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				057DA7000000C0 /* NSBundle+TZImagePicker.h */,
+				057DA7000000D0 /* NSBundle+TZImagePicker.m */,
+				057DA7000000E0 /* TZAssetCell.h */,
+				057DA7000000F0 /* TZAssetCell.m */,
+				057DA700000100 /* TZAssetModel.h */,
+				057DA700000110 /* TZAssetModel.m */,
+				057DA700000120 /* TZGifPhotoPreviewController.h */,
+				057DA700000130 /* TZGifPhotoPreviewController.m */,
+				057DA700000140 /* TZImageCropManager.h */,
+				057DA700000150 /* TZImageCropManager.m */,
+				057DA700000160 /* TZImageManager.h */,
+				057DA700000170 /* TZImageManager.m */,
+				057DA700000180 /* TZImagePickerController.h */,
+				057DA700000190 /* TZImagePickerController.m */,
+				057DA7000001A0 /* TZImageRequestOperation.h */,
+				057DA7000001B0 /* TZImageRequestOperation.m */,
+				057DA7000001C0 /* TZLocationManager.h */,
+				057DA7000001D0 /* TZLocationManager.m */,
+				057DA7000001E0 /* TZPhotoPickerController.h */,
+				057DA7000001F0 /* TZPhotoPickerController.m */,
+				057DA700000200 /* TZPhotoPreviewCell.h */,
+				057DA700000210 /* TZPhotoPreviewCell.m */,
+				057DA700000220 /* TZPhotoPreviewController.h */,
+				057DA700000230 /* TZPhotoPreviewController.m */,
+				057DA700000240 /* TZProgressView.h */,
+				057DA700000250 /* TZProgressView.m */,
+				057DA700000260 /* TZVideoPlayerController.h */,
+				057DA700000270 /* TZVideoPlayerController.m */,
+				057DA700000280 /* UIView+Layout.h */,
+				057DA700000290 /* UIView+Layout.m */,
+				057DA7000002A0 /* Resources */,
+				057DA700000570 /* Support Files */,
+			);
+			name = TZImagePickerController;
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		057DA7000002A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				057DA7000002B0 /* TZImagePickerController.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		057DA700000350 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				057DA700000360 /* Foundation.framework */,
+				057DA700000610 /* Photos.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		057DA700000570 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				057DA7000005A0 /* TZImagePickerController.modulemap */,
+				057DA7000005F0 /* TZImagePickerController-dummy.m */,
+				057DA7000005D0 /* TZImagePickerController-Info.plist */,
+				057DA7000005E0 /* TZImagePickerController-prefix.pch */,
+				057DA7000005B0 /* TZImagePickerController-umbrella.h */,
+				057DA700000580 /* TZImagePickerController.debug.xcconfig */,
+				057DA700000590 /* TZImagePickerController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TZImagePickerController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		057DA700000310 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057DA700000470 /* NSBundle+TZImagePicker.h in Headers */,
+				057DA700000480 /* TZAssetCell.h in Headers */,
+				057DA700000490 /* TZAssetModel.h in Headers */,
+				057DA7000004A0 /* TZGifPhotoPreviewController.h in Headers */,
+				057DA7000004B0 /* TZImageCropManager.h in Headers */,
+				057DA7000004C0 /* TZImageManager.h in Headers */,
+				057DA7000005C0 /* TZImagePickerController-umbrella.h in Headers */,
+				057DA7000004D0 /* TZImagePickerController.h in Headers */,
+				057DA7000004E0 /* TZImageRequestOperation.h in Headers */,
+				057DA7000004F0 /* TZLocationManager.h in Headers */,
+				057DA700000500 /* TZPhotoPickerController.h in Headers */,
+				057DA700000510 /* TZPhotoPreviewCell.h in Headers */,
+				057DA700000520 /* TZPhotoPreviewController.h in Headers */,
+				057DA700000530 /* TZProgressView.h in Headers */,
+				057DA700000540 /* TZVideoPlayerController.h in Headers */,
+				057DA700000550 /* UIView+Layout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6090C91802307673CBF0A57EF1608978 /* TZImagePickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057DA7000002D0 /* Build configuration list for PBXNativeTarget "TZImagePickerController" */;
+			buildPhases = (
+				057DA700000310 /* Headers */,
+				057DA700000320 /* Sources */,
+				057DA700000330 /* Frameworks */,
+				057DA700000340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZImagePickerController;
+			productName = TZImagePickerController;
+			productReference = 0DBF2C5C77D8316134001812A5BD25EF /* TZImagePickerController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		057DA700000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 057DA700000030 /* Build configuration list for PBXProject "TZImagePickerController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 057DA700000010;
+			productRefGroup = 057DA700000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6090C91802307673CBF0A57EF1608978 /* TZImagePickerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		057DA700000340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057DA700000560 /* TZImagePickerController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		057DA700000320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057DA700000380 /* NSBundle+TZImagePicker.m in Sources */,
+				057DA700000390 /* TZAssetCell.m in Sources */,
+				057DA7000003A0 /* TZAssetModel.m in Sources */,
+				057DA7000003B0 /* TZGifPhotoPreviewController.m in Sources */,
+				057DA7000003C0 /* TZImageCropManager.m in Sources */,
+				057DA7000003D0 /* TZImageManager.m in Sources */,
+				057DA700000600 /* TZImagePickerController-dummy.m in Sources */,
+				057DA7000003E0 /* TZImagePickerController.m in Sources */,
+				057DA7000003F0 /* TZImageRequestOperation.m in Sources */,
+				057DA700000400 /* TZLocationManager.m in Sources */,
+				057DA700000410 /* TZPhotoPickerController.m in Sources */,
+				057DA700000420 /* TZPhotoPreviewCell.m in Sources */,
+				057DA700000430 /* TZPhotoPreviewController.m in Sources */,
+				057DA700000440 /* TZProgressView.m in Sources */,
+				057DA700000450 /* TZVideoPlayerController.m in Sources */,
+				057DA700000460 /* UIView+Layout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		057DA700000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		057DA700000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		057DA7000002E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057DA700000590 /* TZImagePickerController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController/TZImagePickerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TZImagePickerController/TZImagePickerController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TZImagePickerController/TZImagePickerController.modulemap";
+				PRODUCT_MODULE_NAME = TZImagePickerController;
+				PRODUCT_NAME = TZImagePickerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		057DA7000002F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057DA700000580 /* TZImagePickerController.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController/TZImagePickerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TZImagePickerController/TZImagePickerController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TZImagePickerController/TZImagePickerController.modulemap";
+				PRODUCT_MODULE_NAME = TZImagePickerController;
+				PRODUCT_NAME = TZImagePickerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		057DA700000030 /* Build configuration list for PBXProject "TZImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057DA700000040 /* Debug */,
+				057DA700000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057DA7000002D0 /* Build configuration list for PBXNativeTarget "TZImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057DA7000002F0 /* Debug */,
+				057DA7000002E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 057DA700000000 /* Project object */;
+}

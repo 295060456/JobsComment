@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5791E0000003A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5791E000000390 /* Foundation.framework */; };
+		5791E0000003B0 /* GKNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E0000000C0 /* GKNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E0000003C0 /* GKBaseAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E0000000F0 /* GKBaseAnimatedTransition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E0000003D0 /* GKGestureHandleConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000110 /* GKGestureHandleConfigure.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E0000003E0 /* GKPopAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000140 /* GKPopAnimatedTransition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E0000003F0 /* GKPushAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000160 /* GKPushAnimatedTransition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000400 /* GKTransitionDelegateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000180 /* GKTransitionDelegateHandler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000410 /* UINavigationController+GKGestureHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E0000001A0 /* UINavigationController+GKGestureHandle.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000420 /* UIScrollView+GKGestureHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E0000001C0 /* UIScrollView+GKGestureHandle.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000430 /* UIViewController+GKGestureHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E0000001E0 /* UIViewController+GKGestureHandle.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000440 /* GKBaseAnimatedTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E0000000E0 /* GKBaseAnimatedTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000450 /* GKGestureHandleConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000100 /* GKGestureHandleConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000460 /* GKGestureHandleDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000120 /* GKGestureHandleDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000470 /* GKPopAnimatedTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000130 /* GKPopAnimatedTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000480 /* GKPushAnimatedTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000150 /* GKPushAnimatedTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000490 /* GKTransitionDelegateHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000170 /* GKTransitionDelegateHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E0000004A0 /* UINavigationController+GKGestureHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000190 /* UINavigationController+GKGestureHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E0000004B0 /* UIScrollView+GKGestureHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E0000001B0 /* UIScrollView+GKGestureHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E0000004C0 /* UIViewController+GKGestureHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E0000001D0 /* UIViewController+GKGestureHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E0000004D0 /* GKCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000210 /* GKCustomNavigationBar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E0000004E0 /* GKNavigationBarConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000230 /* GKNavigationBarConfigure.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E0000004F0 /* UIBarButtonItem+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000260 /* UIBarButtonItem+GKCategory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000500 /* UIImage+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000280 /* UIImage+GKCategory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000510 /* UINavigationItem+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E0000002A0 /* UINavigationItem+GKCategory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000520 /* UIViewController+GKNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E0000002C0 /* UIViewController+GKNavigationBar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5791E000000530 /* GKCustomNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000200 /* GKCustomNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000540 /* GKNavigationBarConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000220 /* GKNavigationBarConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000550 /* GKNavigationBarDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000240 /* GKNavigationBarDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000560 /* UIBarButtonItem+GKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000250 /* UIBarButtonItem+GKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000570 /* UIImage+GKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000270 /* UIImage+GKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000580 /* UINavigationItem+GKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E000000290 /* UINavigationItem+GKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000590 /* UIViewController+GKNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E0000002B0 /* UIViewController+GKNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E0000005A0 /* GKNavigationBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5791E0000002E0 /* GKNavigationBar.bundle */; };
+		5791E000000600 /* GKNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5791E0000005F0 /* GKNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5791E000000640 /* GKNavigationBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791E000000630 /* GKNavigationBar-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5791E0000000C0 /* GKNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKNavigationBar.h; path = GKNavigationBar/GKNavigationBar.h; sourceTree = "<group>"; };
+		5791E0000000E0 /* GKBaseAnimatedTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKBaseAnimatedTransition.h; path = GKNavigationBar/GestureHandle/GKBaseAnimatedTransition.h; sourceTree = "<group>"; };
+		5791E0000000F0 /* GKBaseAnimatedTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKBaseAnimatedTransition.m; path = GKNavigationBar/GestureHandle/GKBaseAnimatedTransition.m; sourceTree = "<group>"; };
+		5791E000000100 /* GKGestureHandleConfigure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKGestureHandleConfigure.h; path = GKNavigationBar/GestureHandle/GKGestureHandleConfigure.h; sourceTree = "<group>"; };
+		5791E000000110 /* GKGestureHandleConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKGestureHandleConfigure.m; path = GKNavigationBar/GestureHandle/GKGestureHandleConfigure.m; sourceTree = "<group>"; };
+		5791E000000120 /* GKGestureHandleDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKGestureHandleDefine.h; path = GKNavigationBar/GestureHandle/GKGestureHandleDefine.h; sourceTree = "<group>"; };
+		5791E000000130 /* GKPopAnimatedTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKPopAnimatedTransition.h; path = GKNavigationBar/GestureHandle/GKPopAnimatedTransition.h; sourceTree = "<group>"; };
+		5791E000000140 /* GKPopAnimatedTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKPopAnimatedTransition.m; path = GKNavigationBar/GestureHandle/GKPopAnimatedTransition.m; sourceTree = "<group>"; };
+		5791E000000150 /* GKPushAnimatedTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKPushAnimatedTransition.h; path = GKNavigationBar/GestureHandle/GKPushAnimatedTransition.h; sourceTree = "<group>"; };
+		5791E000000160 /* GKPushAnimatedTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKPushAnimatedTransition.m; path = GKNavigationBar/GestureHandle/GKPushAnimatedTransition.m; sourceTree = "<group>"; };
+		5791E000000170 /* GKTransitionDelegateHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKTransitionDelegateHandler.h; path = GKNavigationBar/GestureHandle/GKTransitionDelegateHandler.h; sourceTree = "<group>"; };
+		5791E000000180 /* GKTransitionDelegateHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKTransitionDelegateHandler.m; path = GKNavigationBar/GestureHandle/GKTransitionDelegateHandler.m; sourceTree = "<group>"; };
+		5791E000000190 /* UINavigationController+GKGestureHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+GKGestureHandle.h"; path = "GKNavigationBar/GestureHandle/UINavigationController+GKGestureHandle.h"; sourceTree = "<group>"; };
+		5791E0000001A0 /* UINavigationController+GKGestureHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+GKGestureHandle.m"; path = "GKNavigationBar/GestureHandle/UINavigationController+GKGestureHandle.m"; sourceTree = "<group>"; };
+		5791E0000001B0 /* UIScrollView+GKGestureHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+GKGestureHandle.h"; path = "GKNavigationBar/GestureHandle/UIScrollView+GKGestureHandle.h"; sourceTree = "<group>"; };
+		5791E0000001C0 /* UIScrollView+GKGestureHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+GKGestureHandle.m"; path = "GKNavigationBar/GestureHandle/UIScrollView+GKGestureHandle.m"; sourceTree = "<group>"; };
+		5791E0000001D0 /* UIViewController+GKGestureHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+GKGestureHandle.h"; path = "GKNavigationBar/GestureHandle/UIViewController+GKGestureHandle.h"; sourceTree = "<group>"; };
+		5791E0000001E0 /* UIViewController+GKGestureHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+GKGestureHandle.m"; path = "GKNavigationBar/GestureHandle/UIViewController+GKGestureHandle.m"; sourceTree = "<group>"; };
+		5791E000000200 /* GKCustomNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKCustomNavigationBar.h; path = GKNavigationBar/NavigationBar/GKCustomNavigationBar.h; sourceTree = "<group>"; };
+		5791E000000210 /* GKCustomNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKCustomNavigationBar.m; path = GKNavigationBar/NavigationBar/GKCustomNavigationBar.m; sourceTree = "<group>"; };
+		5791E000000220 /* GKNavigationBarConfigure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKNavigationBarConfigure.h; path = GKNavigationBar/NavigationBar/GKNavigationBarConfigure.h; sourceTree = "<group>"; };
+		5791E000000230 /* GKNavigationBarConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKNavigationBarConfigure.m; path = GKNavigationBar/NavigationBar/GKNavigationBarConfigure.m; sourceTree = "<group>"; };
+		5791E000000240 /* GKNavigationBarDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKNavigationBarDefine.h; path = GKNavigationBar/NavigationBar/GKNavigationBarDefine.h; sourceTree = "<group>"; };
+		5791E000000250 /* UIBarButtonItem+GKCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+GKCategory.h"; path = "GKNavigationBar/NavigationBar/UIBarButtonItem+GKCategory.h"; sourceTree = "<group>"; };
+		5791E000000260 /* UIBarButtonItem+GKCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+GKCategory.m"; path = "GKNavigationBar/NavigationBar/UIBarButtonItem+GKCategory.m"; sourceTree = "<group>"; };
+		5791E000000270 /* UIImage+GKCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GKCategory.h"; path = "GKNavigationBar/NavigationBar/UIImage+GKCategory.h"; sourceTree = "<group>"; };
+		5791E000000280 /* UIImage+GKCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GKCategory.m"; path = "GKNavigationBar/NavigationBar/UIImage+GKCategory.m"; sourceTree = "<group>"; };
+		5791E000000290 /* UINavigationItem+GKCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+GKCategory.h"; path = "GKNavigationBar/NavigationBar/UINavigationItem+GKCategory.h"; sourceTree = "<group>"; };
+		5791E0000002A0 /* UINavigationItem+GKCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+GKCategory.m"; path = "GKNavigationBar/NavigationBar/UINavigationItem+GKCategory.m"; sourceTree = "<group>"; };
+		5791E0000002B0 /* UIViewController+GKNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+GKNavigationBar.h"; path = "GKNavigationBar/NavigationBar/UIViewController+GKNavigationBar.h"; sourceTree = "<group>"; };
+		5791E0000002C0 /* UIViewController+GKNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+GKNavigationBar.m"; path = "GKNavigationBar/NavigationBar/UIViewController+GKNavigationBar.m"; sourceTree = "<group>"; };
+		5791E0000002E0 /* GKNavigationBar.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GKNavigationBar.bundle; path = GKNavigationBar/NavigationBar/GKNavigationBar.bundle; sourceTree = "<group>"; };
+		5791E000000390 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5791E0000005C0 /* GKNavigationBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKNavigationBar.debug.xcconfig; sourceTree = "<group>"; };
+		5791E0000005D0 /* GKNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKNavigationBar.release.xcconfig; sourceTree = "<group>"; };
+		5791E0000005E0 /* GKNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GKNavigationBar.modulemap; sourceTree = "<group>"; };
+		5791E0000005F0 /* GKNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKNavigationBar-umbrella.h"; sourceTree = "<group>"; };
+		5791E000000610 /* GKNavigationBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GKNavigationBar-Info.plist"; sourceTree = "<group>"; };
+		5791E000000620 /* GKNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKNavigationBar-prefix.pch"; sourceTree = "<group>"; };
+		5791E000000630 /* GKNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKNavigationBar-dummy.m"; sourceTree = "<group>"; };
+		E269ED74A2C504504B42D95149D6925E /* GKNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKNavigationBar.framework; path = GKNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5791E000000360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5791E0000003A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5791E000000010 = {
+			isa = PBXGroup;
+			children = (
+				5791E000000060 /* Frameworks */,
+				5791E0000000B0 /* GKNavigationBar */,
+				5791E000000020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5791E000000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E269ED74A2C504504B42D95149D6925E /* GKNavigationBar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5791E000000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5791E000000380 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5791E0000000B0 /* GKNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5791E0000000C0 /* GKNavigationBar.h */,
+				5791E0000000D0 /* GestureHandle */,
+				5791E0000001F0 /* NavigationBar */,
+				5791E0000005B0 /* Support Files */,
+			);
+			name = GKNavigationBar;
+			path = GKNavigationBar;
+			sourceTree = "<group>";
+		};
+		5791E0000000D0 /* GestureHandle */ = {
+			isa = PBXGroup;
+			children = (
+				5791E0000000E0 /* GKBaseAnimatedTransition.h */,
+				5791E0000000F0 /* GKBaseAnimatedTransition.m */,
+				5791E000000100 /* GKGestureHandleConfigure.h */,
+				5791E000000110 /* GKGestureHandleConfigure.m */,
+				5791E000000120 /* GKGestureHandleDefine.h */,
+				5791E000000130 /* GKPopAnimatedTransition.h */,
+				5791E000000140 /* GKPopAnimatedTransition.m */,
+				5791E000000150 /* GKPushAnimatedTransition.h */,
+				5791E000000160 /* GKPushAnimatedTransition.m */,
+				5791E000000170 /* GKTransitionDelegateHandler.h */,
+				5791E000000180 /* GKTransitionDelegateHandler.m */,
+				5791E000000190 /* UINavigationController+GKGestureHandle.h */,
+				5791E0000001A0 /* UINavigationController+GKGestureHandle.m */,
+				5791E0000001B0 /* UIScrollView+GKGestureHandle.h */,
+				5791E0000001C0 /* UIScrollView+GKGestureHandle.m */,
+				5791E0000001D0 /* UIViewController+GKGestureHandle.h */,
+				5791E0000001E0 /* UIViewController+GKGestureHandle.m */,
+			);
+			name = GestureHandle;
+			sourceTree = "<group>";
+		};
+		5791E0000001F0 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5791E000000200 /* GKCustomNavigationBar.h */,
+				5791E000000210 /* GKCustomNavigationBar.m */,
+				5791E000000220 /* GKNavigationBarConfigure.h */,
+				5791E000000230 /* GKNavigationBarConfigure.m */,
+				5791E000000240 /* GKNavigationBarDefine.h */,
+				5791E000000250 /* UIBarButtonItem+GKCategory.h */,
+				5791E000000260 /* UIBarButtonItem+GKCategory.m */,
+				5791E000000270 /* UIImage+GKCategory.h */,
+				5791E000000280 /* UIImage+GKCategory.m */,
+				5791E000000290 /* UINavigationItem+GKCategory.h */,
+				5791E0000002A0 /* UINavigationItem+GKCategory.m */,
+				5791E0000002B0 /* UIViewController+GKNavigationBar.h */,
+				5791E0000002C0 /* UIViewController+GKNavigationBar.m */,
+				5791E0000002D0 /* Resources */,
+			);
+			name = NavigationBar;
+			sourceTree = "<group>";
+		};
+		5791E0000002D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5791E0000002E0 /* GKNavigationBar.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5791E000000380 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5791E000000390 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5791E0000005B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5791E0000005E0 /* GKNavigationBar.modulemap */,
+				5791E000000630 /* GKNavigationBar-dummy.m */,
+				5791E000000610 /* GKNavigationBar-Info.plist */,
+				5791E000000620 /* GKNavigationBar-prefix.pch */,
+				5791E0000005F0 /* GKNavigationBar-umbrella.h */,
+				5791E0000005C0 /* GKNavigationBar.debug.xcconfig */,
+				5791E0000005D0 /* GKNavigationBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GKNavigationBar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5791E000000340 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5791E000000440 /* GKBaseAnimatedTransition.h in Headers */,
+				5791E000000530 /* GKCustomNavigationBar.h in Headers */,
+				5791E000000450 /* GKGestureHandleConfigure.h in Headers */,
+				5791E000000460 /* GKGestureHandleDefine.h in Headers */,
+				5791E000000600 /* GKNavigationBar-umbrella.h in Headers */,
+				5791E0000003B0 /* GKNavigationBar.h in Headers */,
+				5791E000000540 /* GKNavigationBarConfigure.h in Headers */,
+				5791E000000550 /* GKNavigationBarDefine.h in Headers */,
+				5791E000000470 /* GKPopAnimatedTransition.h in Headers */,
+				5791E000000480 /* GKPushAnimatedTransition.h in Headers */,
+				5791E000000490 /* GKTransitionDelegateHandler.h in Headers */,
+				5791E000000560 /* UIBarButtonItem+GKCategory.h in Headers */,
+				5791E000000570 /* UIImage+GKCategory.h in Headers */,
+				5791E0000004A0 /* UINavigationController+GKGestureHandle.h in Headers */,
+				5791E000000580 /* UINavigationItem+GKCategory.h in Headers */,
+				5791E0000004B0 /* UIScrollView+GKGestureHandle.h in Headers */,
+				5791E0000004C0 /* UIViewController+GKGestureHandle.h in Headers */,
+				5791E000000590 /* UIViewController+GKNavigationBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5EC207F7E9DBDDF6C10A2C7A3545683C /* GKNavigationBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5791E000000300 /* Build configuration list for PBXNativeTarget "GKNavigationBar" */;
+			buildPhases = (
+				5791E000000340 /* Headers */,
+				5791E000000350 /* Sources */,
+				5791E000000360 /* Frameworks */,
+				5791E000000370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKNavigationBar;
+			productName = GKNavigationBar;
+			productReference = E269ED74A2C504504B42D95149D6925E /* GKNavigationBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5791E000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 5791E000000030 /* Build configuration list for PBXProject "GKNavigationBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5791E000000010;
+			productRefGroup = 5791E000000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EC207F7E9DBDDF6C10A2C7A3545683C /* GKNavigationBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5791E000000370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5791E0000005A0 /* GKNavigationBar.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5791E000000350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5791E0000003C0 /* GKBaseAnimatedTransition.m in Sources */,
+				5791E0000004D0 /* GKCustomNavigationBar.m in Sources */,
+				5791E0000003D0 /* GKGestureHandleConfigure.m in Sources */,
+				5791E000000640 /* GKNavigationBar-dummy.m in Sources */,
+				5791E0000004E0 /* GKNavigationBarConfigure.m in Sources */,
+				5791E0000003E0 /* GKPopAnimatedTransition.m in Sources */,
+				5791E0000003F0 /* GKPushAnimatedTransition.m in Sources */,
+				5791E000000400 /* GKTransitionDelegateHandler.m in Sources */,
+				5791E0000004F0 /* UIBarButtonItem+GKCategory.m in Sources */,
+				5791E000000500 /* UIImage+GKCategory.m in Sources */,
+				5791E000000410 /* UINavigationController+GKGestureHandle.m in Sources */,
+				5791E000000510 /* UINavigationItem+GKCategory.m in Sources */,
+				5791E000000420 /* UIScrollView+GKGestureHandle.m in Sources */,
+				5791E000000430 /* UIViewController+GKGestureHandle.m in Sources */,
+				5791E000000520 /* UIViewController+GKNavigationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5791E000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5791E000000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5791E000000310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5791E0000005D0 /* GKNavigationBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GKNavigationBar/GKNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GKNavigationBar/GKNavigationBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GKNavigationBar/GKNavigationBar.modulemap";
+				PRODUCT_MODULE_NAME = GKNavigationBar;
+				PRODUCT_NAME = GKNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5791E000000320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5791E0000005C0 /* GKNavigationBar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GKNavigationBar/GKNavigationBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GKNavigationBar/GKNavigationBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GKNavigationBar/GKNavigationBar.modulemap";
+				PRODUCT_MODULE_NAME = GKNavigationBar;
+				PRODUCT_NAME = GKNavigationBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5791E000000030 /* Build configuration list for PBXProject "GKNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5791E000000040 /* Debug */,
+				5791E000000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5791E000000300 /* Build configuration list for PBXNativeTarget "GKNavigationBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5791E000000320 /* Debug */,
+				5791E000000310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5791E000000000 /* Project object */;
+}
