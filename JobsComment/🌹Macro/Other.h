@@ -24,4 +24,6 @@
 #import "JobsCommentAppDelegate.h"
 #import "JobsCommentSceneDelegate.h"
 
+#import "PopUpVC.h"
+
 #endif /* Other_h */

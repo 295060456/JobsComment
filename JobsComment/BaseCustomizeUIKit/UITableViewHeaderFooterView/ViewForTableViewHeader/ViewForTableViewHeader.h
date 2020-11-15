@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier;
 -(void)richElementsInCellWithModel:(id _Nullable)model;
--(void)actionBlockViewForTableViewHeader:(MKDataBlock _Nullable)viewForTableViewHeaderBlock;
+-(void)actionBlockViewForTableViewHeader:(MKDataBlock _Nullable)viewForTableViewHeaderBlock;//点击事件
 
 @end
 

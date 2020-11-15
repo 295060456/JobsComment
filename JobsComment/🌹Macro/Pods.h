@@ -121,6 +121,12 @@
 #import "JXCategoryView.h"
 #endif
 
+#if __has_include(<LYEmptyView/LYEmptyViewHeader.h>)
+#import <LYEmptyView/LYEmptyViewHeader.h>
+#else
+#import "LYEmptyViewHeader.h"
+#endif
+
 #if __has_include(<YYKit/YYKit.h>)
 #import <YYKit/YYKit.h>
 #else
