@@ -1584,6 +1584,7 @@
 		C52E0EC4256112A600B245CF /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C542445A2561257F002D16AD /* JobsCommentCore */,
 				C52E15F9256116BC00B245CF /* ViewController@1 */,
 				C52E1603256116D400B245CF /* ViewController@2 */,
 				C52E1610256116EF00B245CF /* ViewController@3 */,
@@ -1738,6 +1739,13 @@
 				C52E1E7825611C0A00B245CF /* 启动页SLOGAN.png */,
 			);
 			path = "启动资源";
+			sourceTree = "<group>";
+		};
+		C542445A2561257F002D16AD /* JobsCommentCore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JobsCommentCore;
 			sourceTree = "<group>";
 		};
 		EB47A1B9BA8F5B8CDDB6674F /* Pods */ = {
