@@ -15,6 +15,7 @@ UITableViewDelegate
 >
 
 @property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)UIButton *cancelBtn;
 @property(nonatomic,strong)JobsCommentTableHeaderView *tableHeaderView;
 
 @end
@@ -33,14 +34,30 @@ UITableViewDelegate
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor = kRedColor;
+    self.view.backgroundColor = kWhiteColor;
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
+    self.gk_navTitle = @"评论";
+    self.gk_navTitleColor = kBlackColor;
+    self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.cancelBtn];
+    self.gk_navBackgroundColor = KGreenColor;
+
+    [self hideNavLine];
+    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
     [self loadData];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.tableView.alpha = 1;
+    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"");
+    self.gk_navigationBar.mj_h -= GK_NAVBAR_HEIGHT;
+    [self.gk_navigationBar layoutSubviews];
+    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -167,7 +184,7 @@ viewForHeaderInSection:(NSInteger)section{
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.mj_footer.hidden = NO;
         _tableView.tableFooterView = UIView.new;
-        _tableView.tableHeaderView = self.tableHeaderView;
+//        _tableView.tableHeaderView = self.tableHeaderView;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, self.popUpHeight, 0);
         
         if (self.mjModel.listMutArr.count) {
@@ -181,7 +198,9 @@ viewForHeaderInSection:(NSInteger)section{
                                                          detailStr:@"来发布第一条吧"];
         [self.view addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.view);
+//            make.edges.equalTo(self.view);
+            make.left.right.bottom.equalTo(self.view);
+            make.top.equalTo(self.gk_navigationBar.mas_bottom);
         }];
     }return _tableView;
 }
@@ -197,5 +216,18 @@ viewForHeaderInSection:(NSInteger)section{
     }return _tableHeaderView;
 }
 
+-(UIButton *)cancelBtn{
+    if (!_cancelBtn) {
+        _cancelBtn = UIButton.new;
+        _cancelBtn.size = CGSizeMake(50, 50);
+        [_cancelBtn setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除")
+                    forState:UIControlStateNormal];
+        @weakify(self)
+        [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            @strongify(self)
+            NSLog(@"点击了删除按钮");
+        }];
+    }return _cancelBtn;
+}
 
 @end
