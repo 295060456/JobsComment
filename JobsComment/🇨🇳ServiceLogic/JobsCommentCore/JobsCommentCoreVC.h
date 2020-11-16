@@ -17,7 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsCommentCoreVC : PopUpVC
 
-@property(nonatomic,strong)MKCommentModel *commentModel;
+//用下面两个都可以
+@property(nonatomic,strong)MKCommentModel *mjModel;
+@property(nonatomic,strong)MKCommentModel *yyModel;
 
 @end
 

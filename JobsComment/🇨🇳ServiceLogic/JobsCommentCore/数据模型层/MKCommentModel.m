@@ -50,27 +50,11 @@
     };
 }
 
-+(NSDictionary *)mj_objectClassInArray{
-    return @{
-        @"childMutArr" : MKChildCommentModel.class
-    };
-}
-#pragma mark —— 自定义属性
--(NSInteger)preMax{
-    if (_preMax == 0) {
-        _preMax = 3;
-    }return _preMax;
-}
-
--(NSInteger)loadMoreDataNum{
-    if (_loadMoreDataNum == 0) {
-        return self.childMutArr.count - self.firstShonNum;//全加载 = 数据库有的 - 默认已经显示的
-    }return _loadMoreDataNum;
-}
-
--(NSInteger)firstShonNum{
-    return self.childMutArr.count > self.preMax ? self.preMax : self.childMutArr.count;
-}
+//+(NSDictionary *)mj_objectClassInArray{
+//    return @{
+//        @"childMutArr" : MKChildCommentModel.class
+//    };
+//}
 
 @end
 
@@ -78,7 +62,9 @@
 
 #pragma mark —— YYModel
 + (NSDictionary *)modelCustomPropertyMapper{
-    return @{@"listMutArr"  : @"list"};
+    return @{
+        @"listMutArr": @"list"
+    };
 }
 
 + (NSDictionary *)modelContainerPropertyGenericClass {
@@ -90,16 +76,39 @@
 +(NSDictionary *)mj_replacedKeyFromPropertyName{
     /* 返回的字典，key为模型属性名，value为转化的字典的多级key */
     return @{
-        @"listMutArr" : @"list"
+        @"listMutArr" : @"list",
+        @"childMutArr":@"child"
     };
 }
 
 +(NSDictionary *)mj_objectClassInArray{
     return @{
-        @"list" : MKFirstCommentModel.class
+        @"list" : MKFirstCommentModel.class,
+        @"childMutArr" : MKChildCommentModel.class
     };
 }
 
 @end
 
+@implementation MKFirstCommentCustomCofigModel
 
+#pragma mark —— 自定义属性
+-(NSInteger)preMax{
+    if (_preMax == 0) {
+        _preMax = 3;
+    }return _preMax;
+}
+
+-(NSInteger)loadMoreDataNum{
+    if (_loadMoreDataNum == 0) {
+        if (self.childMutArr) {
+            return self.childMutArr.count - self.firstShonNum;//全加载 = 数据库有的 - 默认已经显示的
+        }
+    }return _loadMoreDataNum;
+}
+
+-(NSInteger)firstShonNum{
+    return self.childMutArr.count > self.preMax ? self.preMax : self.childMutArr.count;
+}
+
+@end

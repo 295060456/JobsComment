@@ -46,11 +46,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *commentId;
 @property(nonatomic,assign)NSInteger isPraise;
 @property(nonatomic,assign)BOOL isVip;
-#pragma mask —— 自定义字段
-@property(nonatomic,assign)BOOL isFullShow;//是否全显示 默认不全显示
-@property(nonatomic,assign)NSInteger preMax;//显示控制，二级数据默认最多显示多少个 默认3
-@property(nonatomic,assign)NSInteger firstShonNum;//在满足限制条件的情况下，第一次显示的数据条数 （数据库有但小于PreMax）
-@property(nonatomic,assign)NSInteger loadMoreDataNum;//加载更多数据,一次加载的个数，为0全加载
 
 @end
 /// 对应字段 data
@@ -59,6 +54,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSMutableArray <MKFirstCommentModel *>*listMutArr;//一级评论
 
 @end
+
+@interface MKFirstCommentCustomCofigModel : NSObject
+
+@property(nonatomic,strong)NSMutableArray <MKChildCommentModel *>*childMutArr;//二级评论
+#pragma mask —— 自定义字段
+@property(nonatomic,assign)BOOL isFullShow;//是否全显示 默认不全显示
+@property(nonatomic,assign)NSInteger preMax;//显示控制，二级数据默认最多显示多少个 默认3
+@property(nonatomic,assign)NSInteger firstShonNum;//在满足限制条件的情况下，第一次显示的数据条数 （数据库有但小于PreMax）
+@property(nonatomic,assign)NSInteger loadMoreDataNum;//加载更多数据,一次加载的个数，为0全加载
+
+@end
+
 
 NS_ASSUME_NONNULL_END
 

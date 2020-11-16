@@ -17,10 +17,10 @@
 @implementation LoadMoreTBVCell
 
 +(instancetype)cellWithTableView:(UITableView *)tableView{
-    LoadMoreTBVCell *cell = (LoadMoreTBVCell *)[tableView dequeueReusableCellWithIdentifier:@"LoadMoreTBVCell"];
+    LoadMoreTBVCell *cell = (LoadMoreTBVCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
         cell = [[LoadMoreTBVCell alloc]initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:@"LoadMoreTBVCell"];
+                                      reuseIdentifier:ReuseIdentifier];
         cell.contentView.backgroundColor = [UIColor blueColor];
 
     }return cell;

@@ -39,6 +39,7 @@ UITableViewDelegate
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.tableView.alpha = 1;
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -100,78 +101,56 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section{
-    MKFirstCommentModel *firstCommentModel = self.commentModel.listMutArr[section];
-    if (firstCommentModel.childMutArr.count > firstCommentModel.preMax &&
-        !firstCommentModel.isFullShow) {
-        return firstCommentModel.preMax + 1;
-    }else{
-        return firstCommentModel.childMutArr.count;
-    }
+ numberOfRowsInSection:(NSInteger)section{// 二级评论
+    MKFirstCommentModel *firstCommentModel = (MKFirstCommentModel *)self.mjModel.listMutArr[section];
+    MKFirstCommentCustomCofigModel *customCofigModel = MKFirstCommentCustomCofigModel.new;
+    customCofigModel.childMutArr = firstCommentModel.childMutArr;
+    return customCofigModel.firstShonNum;
 }
-
+//二级评论数据 展示在cellForRowAtIndexPath
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //二级标题数据从这里进去
-    MKFirstCommentModel *firstCommentModel = self.commentModel.listMutArr[indexPath.section];
-    MKChildCommentModel *childCommentModel = firstCommentModel.childMutArr[indexPath.row];
-    if (firstCommentModel.isFullShow) {//是全显示
+    MKFirstCommentModel *firstCommentModel = (MKFirstCommentModel *)self.mjModel.listMutArr[indexPath.section];//一级评论数据 展示在viewForHeaderInSection
+    MKChildCommentModel *childCommentModel = firstCommentModel.childMutArr[indexPath.row];//二级评论数据 展示在cellForRowAtIndexPath
+    
+    MKFirstCommentCustomCofigModel *customCofigModel = MKFirstCommentCustomCofigModel.new;
+    customCofigModel.childMutArr = firstCommentModel.childMutArr;
+    
+    if (customCofigModel.isFullShow) {
         InfoTBVCell *cell = [InfoTBVCell cellWithTableView:tableView];
         [cell richElementsInCellWithModel:childCommentModel];
-        @weakify(self)
-        [cell action:^(id data) {
-            @strongify(self)
-//            if ([data isKindOfClass:RBCLikeButton.class]) {
-//                RBCLikeButton *btn = (RBCLikeButton *)data;
-//                [self likeBtnClickAction:btn];
-//            }
-        }];
         return cell;
-    }else{//不是全显示
-        if (indexPath.row == firstCommentModel.preMax) {//
-            LoadMoreTBVCell *cell = [LoadMoreTBVCell cellWithTableView:tableView];
+    }else{
+        if (indexPath.row <= customCofigModel.firstShonNum) {
+            // 二级评论展示...
+            InfoTBVCell *cell = [InfoTBVCell cellWithTableView:tableView];
             [cell richElementsInCellWithModel:childCommentModel];
             return cell;
         }else{
-            InfoTBVCell *cell = [InfoTBVCell cellWithTableView:tableView];
-//            int r = indexPath.row;
-//            int d = indexPath.section;
-            @weakify(self)
-            [cell richElementsInCellWithModel:childCommentModel];
-            [cell action:^(id data) {
-                @strongify(self)
-//                if ([data isKindOfClass:NSDictionary.class]) {
-//                    NSDictionary *dic = (NSDictionary *)data;
-//                    if ([dic[@"sender"] isKindOfClass:RBCLikeButton.class]) {
-//                        RBCLikeButton *btn = (RBCLikeButton *)dic[@"sender"];
-//                        [self likeBtnClickAction:btn];
-//                    }
-//                }
-            }];return cell;
+            // 加载更多...
+            LoadMoreTBVCell *cell = [LoadMoreTBVCell cellWithTableView:tableView];
+            [cell richElementsInCellWithModel:nil];
+            return cell;
         }
     }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.commentModel.listMutArr.count;
+    return self.mjModel.listMutArr.count;//一级评论
 }
 
 - (CGFloat)tableView:(UITableView *)tableView
 heightForHeaderInSection:(NSInteger)section{
     return [LoadMoreTBVCell cellHeightWithModel:nil];
 }
-
+//一级评论数据 展示在viewForHeaderInSection
 - (UIView *)tableView:(UITableView *)tableView
 viewForHeaderInSection:(NSInteger)section{
-    //一级标题数据从这里进去
-    JobsCommentPopUpViewForTVH *header = nil;
-    MKFirstCommentModel *firstCommentModel = self.commentModel.listMutArr[section];
-    
-    header = [[JobsCommentPopUpViewForTVH alloc] initWithReuseIdentifier:NSStringFromClass(JobsCommentPopUpViewForTVH.class) withData:firstCommentModel];
+    MKFirstCommentModel *firstCommentModel = self.mjModel.listMutArr[section];//一级评论数据 展示在viewForHeaderInSection
+    JobsCommentPopUpViewForTVH *header = [[JobsCommentPopUpViewForTVH alloc] initWithReuseIdentifier:NSStringFromClass(JobsCommentPopUpViewForTVH.class) withData:firstCommentModel];
     @weakify(self)
     [header actionBlockViewForTableViewHeader:^(id data) {
         @strongify(self)
-        NSLog(@"123");
     }];return header;
 }
 #pragma mark —— lazyLoad

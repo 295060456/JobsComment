@@ -17,10 +17,10 @@
 @implementation InfoTBVCell
 
 +(instancetype)cellWithTableView:(UITableView *)tableView{
-    InfoTBVCell *cell = (InfoTBVCell *)[tableView dequeueReusableCellWithIdentifier:@"InfoTBVCell"];
+    InfoTBVCell *cell = (InfoTBVCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     if (!cell) {
         cell = [[InfoTBVCell alloc]initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:@"InfoTBVCell"];
+                                      reuseIdentifier:ReuseIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.contentView.backgroundColor = HEXCOLOR(0x242A37);
     }return cell;
@@ -34,7 +34,7 @@
     if ([model isKindOfClass:MKChildCommentModel.class]) {
         self.childCommentModel = (MKChildCommentModel *)model;
         self.LikeBtn.selected = self.childCommentModel.isPraise.boolValue;
-//        self.LikeBtn.thumpNum = self.childCommentModel.praiseNum.integerValue;
+        self.LikeBtn.thumpNum = self.childCommentModel.praiseNum;
         self.textLabel.text = self.childCommentModel.nickname;
         self.detailTextLabel.text = self.childCommentModel.content;
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.childCommentModel.headImg]
