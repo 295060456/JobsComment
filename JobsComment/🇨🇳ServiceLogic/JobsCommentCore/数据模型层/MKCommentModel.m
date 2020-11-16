@@ -50,11 +50,11 @@
     };
 }
 
-//+(NSDictionary *)mj_objectClassInArray{
-//    return @{
-//        @"childMutArr" : MKChildCommentModel.class
-//    };
-//}
++(NSDictionary *)mj_objectClassInArray{
+    return @{
+        @"childMutArr" : MKChildCommentModel.class
+    };
+}
 
 @end
 
