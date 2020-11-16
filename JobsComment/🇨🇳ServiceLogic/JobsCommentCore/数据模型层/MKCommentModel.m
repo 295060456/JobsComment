@@ -89,7 +89,6 @@
 @end
 
 @implementation MKFirstCommentCustomCofigModel
-
 #pragma mark —— 自定义属性
 -(NSInteger)preMax{
     if (_preMax == 0) {
