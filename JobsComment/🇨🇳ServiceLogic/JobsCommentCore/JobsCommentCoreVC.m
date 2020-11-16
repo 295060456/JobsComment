@@ -15,6 +15,7 @@ UITableViewDelegate
 >
 
 @property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)JobsCommentTableHeaderView *tableHeaderView;
 
 @end
 
@@ -162,8 +163,19 @@ viewForHeaderInSection:(NSInteger)section{
         _tableView.dataSource = self;
         _tableView.mj_header = self.mjRefreshGifHeader;
         _tableView.mj_footer = self.mjRefreshBackNormalFooter;
+        _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.mj_footer.hidden = NO;
         _tableView.tableFooterView = UIView.new;
+        _tableView.tableHeaderView = self.tableHeaderView;
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, self.popUpHeight, 0);
+        
+        if (self.mjModel.listMutArr.count) {
+            [_tableView ly_hideEmptyView];
+        }else{
+            [_tableView ly_showEmptyView];
+        }
+        
         _tableView.ly_emptyView = [EmptyView emptyViewWithImageStr:@"Indeterminate Spinner - Small"
                                                           titleStr:@"没有评论"
                                                          detailStr:@"来发布第一条吧"];
@@ -172,6 +184,17 @@ viewForHeaderInSection:(NSInteger)section{
             make.edges.equalTo(self.view);
         }];
     }return _tableView;
+}
+
+-(JobsCommentTableHeaderView *)tableHeaderView{
+    if (!_tableHeaderView) {
+        _tableHeaderView = JobsCommentTableHeaderView.new;
+        _tableHeaderView.frame = _tableHeaderView.makeRect;
+        @weakify(self)
+        [_tableHeaderView actionBlockJobsCommentTableHeaderView:^(id data) {
+            @strongify(self)
+        }];
+    }return _tableHeaderView;
 }
 
 

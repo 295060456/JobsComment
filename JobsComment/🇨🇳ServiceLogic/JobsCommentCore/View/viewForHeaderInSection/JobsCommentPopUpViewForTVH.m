@@ -27,7 +27,7 @@
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
                               withData:(id)data{
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = HEXCOLOR(0x242A37);
+        self.contentView.backgroundColor = kRedColor;//HEXCOLOR(0x242A37);
         if ([data isKindOfClass:MKFirstCommentModel.class]) {
             self.firstCommentModel = (MKFirstCommentModel *)data;
             [self.headerIMGV sd_setImageWithURL:[NSURL URLWithString:self.firstCommentModel.headImg]

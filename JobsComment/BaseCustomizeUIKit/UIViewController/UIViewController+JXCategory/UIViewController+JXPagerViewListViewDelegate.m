@@ -21,9 +21,9 @@ static char *UIViewController_JXPagingViewListViewDelegate_scrollViewClass = "UI
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if ([scrollView isKindOfClass:self.scrollViewClass]) {
         CGFloat sectionHeaderHeight = 40;
-        if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+        if (scrollView.contentOffset.y <= sectionHeaderHeight&&scrollView.contentOffset.y >= 0) {
             scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
-        } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+        } else if (scrollView.contentOffset.y >= sectionHeaderHeight) {
             scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
         }
     }

@@ -1,8 +1,8 @@
 <div align="center">    
  <img src="https://javer.oss-cn-shanghai.aliyuncs.com/doraemon/github/DoraemonKit_github.png" width = "150" height = "150" alt="DoraemonKit" align=left />
  <img src="https://img.shields.io/github/license/didi/DoraemonKit.svg" align=left />
- <img src="https://img.shields.io/badge/Android-3.1.4-blue.svg" align=left />
- <img src="https://img.shields.io/badge/iOS-3.0.1-yellow.svg" align=left />
+ <img src="https://img.shields.io/badge/Android-3.2.0-blue.svg" align=left />
+ <img src="https://img.shields.io/badge/iOS-3.0.2-yellow.svg" align=left />
  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" align=left />
 </div>
 
@@ -17,6 +17,16 @@
 A full-featured App (iOS & Android) development assistant. You deserve it.
 
 > [中文文档](README_CN.md)
+
+**community activity**
+
+>DoKit official community satisfaction survey
+
+link:https://page.juyanwenjuan.com/jy_0CMpJzlu.html
+
+<div align="center">    
+  <img src="https://pt-starimg.didistatic.com/static/starimg/img/INLjGkp9wN1597062733948.jpg" width = "250" alt="DoKit 首页效果演示" align=center />
+</div>
  
 ## Introduction
 
@@ -82,9 +92,9 @@ DoKit is rich in functions, easy to access, and easy to expand. Everyone is welc
 ### iOS
 #### Cocoapods
 ```
-    pod 'DoraemonKit/Core', '~> 3.0.1', :configurations => ['Debug'] #Required
-    pod 'DoraemonKit/WithGPS', '~> 3.0.1', :configurations => ['Debug'] #Optional
-    pod 'DoraemonKit/WithLoad', '~> 3.0.1', :configurations => ['Debug'] #Optional
+    pod 'DoraemonKit/Core', '~> 3.0.2', :configurations => ['Debug'] #Required
+    pod 'DoraemonKit/WithGPS', '~> 3.0.2', :configurations => ['Debug'] #Optional
+    pod 'DoraemonKit/WithLoad', '~> 3.0.2', :configurations => ['Debug'] #Optional
 ```
 #### Example Usage
 
@@ -112,7 +122,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
-        classpath 'com.didichuxing.doraemonkit:doraemonkit-plugin:3.1.4'
+        classpath 'com.didichuxing.doraemonkit:doraemonkit-plugin:3.2.0'
     }
 }
 
@@ -125,8 +135,8 @@ apply plugin: 'com.didi.dokit'
 
 and then implementation DoKit SDK
 ```
-debugImplementation "com.didichuxing.doraemonkit:doraemonkit:3.1.4"
-releaseImplementation "com.didichuxing.doraemonkit:doraemonkit-no-op:3.1.4"
+debugImplementation "com.didichuxing.doraemonkit:doraemonkit:3.2.0"
+releaseImplementation "com.didichuxing.doraemonkit:doraemonkit-no-op:3.2.0"
 ```
 
 #### 2、SDK Init
