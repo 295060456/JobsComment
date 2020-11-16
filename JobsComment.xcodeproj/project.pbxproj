@@ -10,6 +10,7 @@
 		2DA0DD6408B80790349A6C18 /* Pods_JobsCommentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579ABADE8D3B80C755A8114E /* Pods_JobsCommentTests.framework */; };
 		35835B64510F43E5FE00B9B7 /* Pods_JobsComment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1BD4296D7DD3F0C026DB3E /* Pods_JobsComment.framework */; };
 		90497C267776EC012273AFCC /* Pods_JobsCommentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F1791953C71B229A264F60 /* Pods_JobsCommentUITests.framework */; };
+		C518A308256278000016EEFA /* Gif in Resources */ = {isa = PBXBuildFile; fileRef = C518A307256278000016EEFA /* Gif */; };
 		C52E0B7A25610F5300B245CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52E0B7825610F5300B245CF /* Main.storyboard */; };
 		C52E0B7D25610F5300B245CF /* JobsComment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C52E0B7B25610F5300B245CF /* JobsComment.xcdatamodeld */; };
 		C52E0B7F25610F5400B245CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52E0B7E25610F5400B245CF /* Assets.xcassets */; };
@@ -239,6 +240,7 @@
 		AC1BD4296D7DD3F0C026DB3E /* Pods_JobsComment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsComment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C2B8A40B44C0B14E13A5C9 /* Pods-JobsComment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsComment.release.xcconfig"; path = "Target Support Files/Pods-JobsComment/Pods-JobsComment.release.xcconfig"; sourceTree = "<group>"; };
 		C517EFE1256254310032BBE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C518A307256278000016EEFA /* Gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Gif; sourceTree = "<group>"; };
 		C52E0B6C25610F5300B245CF /* JobsComment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsComment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52E0B7925610F5300B245CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C52E0B7C25610F5300B245CF /* JobsComment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobsComment.xcdatamodel; sourceTree = "<group>"; };
@@ -744,6 +746,7 @@
 		C52E0C5B256110AB00B245CF /* 资源文件管理 */ = {
 			isa = PBXGroup;
 			children = (
+				C518A307256278000016EEFA /* Gif */,
 				C52E1E7525611C0A00B245CF /* 启动资源 */,
 				C52E0CA72561114E00B245CF /* ⚽️PicResource */,
 				C52E0B7E25610F5400B245CF /* Assets.xcassets */,
@@ -1993,6 +1996,7 @@
 				C52E0E882561129D00B245CF /* 移除 系统自带的 UITabBarButton in Resources */,
 				C52E0D6C2561128100B245CF /* wode.json in Resources */,
 				C52E0D732561128100B245CF /* upgrade.json in Resources */,
+				C518A308256278000016EEFA /* Gif in Resources */,
 				C52E0D722561128100B245CF /* tab_me_animate.json in Resources */,
 				C52E0E792561129D00B245CF /* WhiteRightArrow@2x.png in Resources */,
 				C52E0D7B2561128100B245CF /* fangzi.json in Resources */,
