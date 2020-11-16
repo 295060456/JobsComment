@@ -11,7 +11,9 @@
 //装载本地假数据
 -(void)loadData{
     NSDictionary *dic = [NSString readLocalFileWithName:@"CommentData"];
-    MKCommentModel *model1 = [MKCommentModel mj_objectWithKeyValues:dic[@"data"]];
+    MKCommentModel *mjModel = [MKCommentModel mj_objectWithKeyValues:dic[@"data"]];
+    
+    MKCommentModel *yyModel = [MKCommentModel yy_modelWithDictionary:dic[@"data"]];
     
     NSLog(@"");
 //

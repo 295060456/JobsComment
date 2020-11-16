@@ -203,10 +203,10 @@
 		};
 		46EB2E000009E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000260 /* YYKit.xcodeproj */;
+			containerPortal = 46EB2E00000260 /* YYModel.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 72514A559E512D8B1A63797534CB1E4B;
-			remoteInfo = YYKit;
+			remoteGlobalIDString = B24F71FDC23D2B2E241DE51DECC7ED5F;
+			remoteInfo = YYModel;
 		};
 		46EB2E00000A00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -261,7 +261,7 @@
 		46EB2E00000230 /* TXFileOperation */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXFileOperation; path = TXFileOperation.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000240 /* TZImagePickerController */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TZImagePickerController; path = TZImagePickerController.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000250 /* WHToast */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WHToast; path = WHToast.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000260 /* YYKit */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YYKit; path = YYKit.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000260 /* YYModel */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YYModel; path = YYModel.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000270 /* lottie-ios */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "lottie-ios"; path = "lottie-ios.xcodeproj"; sourceTree = "<group>"; };
 		46EB2E00000320 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46EB2E00000350 /* Pods-JobsComment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsComment.release.xcconfig"; sourceTree = "<group>"; };
@@ -389,7 +389,7 @@
 				46EB2E00000230 /* TXFileOperation */,
 				46EB2E00000240 /* TZImagePickerController */,
 				46EB2E00000250 /* WHToast */,
-				46EB2E00000260 /* YYKit */,
+				46EB2E00000260 /* YYModel */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -665,7 +665,7 @@
 					ProjectRef = 46EB2E00000250 /* WHToast */;
 				},
 				{
-					ProjectRef = 46EB2E00000260 /* YYKit */;
+					ProjectRef = 46EB2E00000260 /* YYModel */;
 				},
 				{
 					ProjectRef = 46EB2E00000270 /* lottie-ios */;
@@ -864,7 +864,7 @@
 		};
 		46EB2E000009F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YYKit;
+			name = YYModel;
 			targetProxy = 46EB2E000009E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000A10 /* PBXTargetDependency */ = {

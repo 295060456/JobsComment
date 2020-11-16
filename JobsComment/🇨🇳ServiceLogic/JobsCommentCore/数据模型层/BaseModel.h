@@ -12,12 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseModel : NSObject
 
-@property(nonatomic,strong)NSString *total;
+@property(nonatomic,copy)NSString *total;
 @property(nonatomic,assign)NSInteger pageNum;
 @property(nonatomic,assign)NSInteger pageSize;
 @property(nonatomic,assign)NSInteger size;
-@property(nonatomic,strong)NSString *startRow;
-@property(nonatomic,strong)NSString *endRow;
+@property(nonatomic,copy)NSString *startRow;
+@property(nonatomic,copy)NSString *endRow;
 @property(nonatomic,assign)NSInteger pages;
 @property(nonatomic,assign)NSInteger prePage;
 @property(nonatomic,assign)NSInteger nextPage;

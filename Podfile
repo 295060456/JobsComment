@@ -28,7 +28,6 @@ def func
   pod 'GKNavigationBar'
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager' # https://github.com/pujiaxin33/JXPagingView NO_SMP
-  pod 'YYKit'
   pod 'IQKeyboardManager'
   pod 'LYEmptyView'
   pod 'SDWebImage'
@@ -45,6 +44,9 @@ def func
   pod 'Reachability'  # https://github.com/tonymillion/Reachability 检查联网情况 NO_SMP
   pod 'DoraemonKit' # https://github.com/didi/DoraemonKit 滴滴打车出的工具 NO_SMP
   pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
+  pod 'YYModel'
+  #  pod 'YYKit'
+  
   end
 
 # 基础的公共配置

@@ -127,10 +127,16 @@
 #import "LYEmptyViewHeader.h"
 #endif
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYKit.h>
+#if __has_include(<YYModel/YYModel.h>)
+#import <YYModel/YYModel.h>
 #else
-#import "YYKit.h"
+#import "YYModel.h"
 #endif
+
+//#if __has_include(<YYKit/YYKit.h>)
+//#import <YYKit/YYKit.h>
+//#else
+//#import "YYKit.h"
+//#endif
 
 #endif /* Pods_h */

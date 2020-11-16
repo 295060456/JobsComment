@@ -10,6 +10,13 @@
 
 @implementation MKChildCommentModel
 
+#pragma mark —— YYModel
++ (NSDictionary *)modelCustomPropertyMapper{
+    return @{
+        @"ID" : @"id"
+    };
+}
+#pragma mark —— MJExtention
 +(NSDictionary *)mj_replacedKeyFromPropertyName {
     /* 返回的字典，key为模型属性名，value为转化的字典的多级key */
     return @{
@@ -21,6 +28,20 @@
 
 @implementation MKFirstCommentModel
 
+#pragma mark —— YYModel
++ (NSDictionary *)modelCustomPropertyMapper{
+    return @{
+        @"ID" : @"id",
+        @"childMutArr":@"child"
+    };
+}
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{
+        @"childMutArr" : MKChildCommentModel.class
+    };
+}
+#pragma mark —— MJExtention
 +(NSDictionary *)mj_replacedKeyFromPropertyName{
     /* 返回的字典，key为模型属性名，value为转化的字典的多级key */
     return @{
@@ -31,10 +52,10 @@
 
 +(NSDictionary *)mj_objectClassInArray{
     return @{
-        @"childMutArr" : [MKChildCommentModel class]
+        @"childMutArr" : MKChildCommentModel.class
     };
 }
-
+#pragma mark —— 自定义属性
 -(NSInteger)preMax{
     if (_preMax == 0) {
         _preMax = 3;
@@ -55,6 +76,17 @@
 
 @implementation MKCommentModel
 
+#pragma mark —— YYModel
++ (NSDictionary *)modelCustomPropertyMapper{
+    return @{@"listMutArr"  : @"list"};
+}
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{
+        @"list" : MKFirstCommentModel.class
+    };
+}
+#pragma mark —— MJExtention
 +(NSDictionary *)mj_replacedKeyFromPropertyName{
     /* 返回的字典，key为模型属性名，value为转化的字典的多级key */
     return @{
@@ -64,7 +96,7 @@
 
 +(NSDictionary *)mj_objectClassInArray{
     return @{
-        @"list" : [MKFirstCommentModel class]
+        @"list" : MKFirstCommentModel.class
     };
 }
 

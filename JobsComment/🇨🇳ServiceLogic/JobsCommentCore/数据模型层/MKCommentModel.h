@@ -12,19 +12,19 @@ NS_ASSUME_NONNULL_BEGIN
 //对应字段 child
 @interface MKChildCommentModel : NSObject
 
-@property(nonatomic,strong)NSString *ID;
-@property(nonatomic,strong)NSString *parentId;
-@property(nonatomic,strong)NSString *headImg;
-@property(nonatomic,strong)NSString *userId;
-@property(nonatomic,strong)NSString *nickname;
-@property(nonatomic,strong)NSString *content;
-@property(nonatomic,strong)NSString *commentDate;
+@property(nonatomic,copy)NSString *ID;
+@property(nonatomic,copy)NSString *parentId;
+@property(nonatomic,copy)NSString *headImg;
+@property(nonatomic,copy)NSString *userId;
+@property(nonatomic,copy)NSString *nickname;
+@property(nonatomic,copy)NSString *content;
+@property(nonatomic,copy)NSString *commentDate;
 @property(nonatomic,assign)NSInteger praiseNum;
-@property(nonatomic,strong)NSString *toReplyUserId;
-@property(nonatomic,strong)NSString *toReplyUserImg;
-@property(nonatomic,strong)NSString *toReplyUserName;
-@property(nonatomic,strong)NSString *commentId;
-@property(nonatomic,strong)NSString *isPraise;
+@property(nonatomic,copy)NSString *toReplyUserId;
+@property(nonatomic,copy)NSString *toReplyUserImg;
+@property(nonatomic,copy)NSString *toReplyUserName;
+@property(nonatomic,copy)NSString *commentId;
+@property(nonatomic,copy)NSString *isPraise;
 @property(nonatomic,assign)NSInteger isVip;
 @property(nonatomic,assign)NSInteger toIsVip;
 
@@ -32,18 +32,18 @@ NS_ASSUME_NONNULL_BEGIN
 // 对应字段 list
 @interface MKFirstCommentModel : NSObject
 
-@property(nonatomic,strong)NSString *ID;
-@property(nonatomic,strong)NSString *parentId;
-@property(nonatomic,strong)NSString *headImg;
-@property(nonatomic,strong)NSString *userId;
-@property(nonatomic,strong)NSString *nickname;
-@property(nonatomic,strong)NSString *content;
-@property(nonatomic,strong)NSString *commentDate;
+@property(nonatomic,copy)NSString *ID;
+@property(nonatomic,copy)NSString *parentId;
+@property(nonatomic,copy)NSString *headImg;
+@property(nonatomic,copy)NSString *userId;
+@property(nonatomic,copy)NSString *nickname;
+@property(nonatomic,copy)NSString *content;
+@property(nonatomic,copy)NSString *commentDate;
 @property(nonatomic,assign)NSInteger praiseNum;
 @property(nonatomic,assign)NSInteger replyNum;
 @property(nonatomic,strong)NSMutableArray <MKChildCommentModel *>*childMutArr;//二级评论
-@property(nonatomic,strong)NSString *videoId;
-@property(nonatomic,strong)NSString *commentId;
+@property(nonatomic,copy)NSString *videoId;
+@property(nonatomic,copy)NSString *commentId;
 @property(nonatomic,assign)NSInteger isPraise;
 @property(nonatomic,assign)BOOL isVip;
 #pragma mask —— 自定义字段

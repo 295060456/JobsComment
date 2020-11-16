@@ -15,6 +15,12 @@
 #import "MJExtension.h"
 #endif
 
+#if __has_include(<YYModel/YYModel.h>)
+#import <YYModel/YYModel.h>
+#else
+#import "YYModel.h"
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JobsCommentCoreVC (VM)

@@ -72,9 +72,7 @@ PODS:
   - TXFileOperation (1.0)
   - TZImagePickerController (3.5.1)
   - WHToast (0.0.7)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
@@ -101,7 +99,7 @@ DEPENDENCIES:
   - TXFileOperation
   - TZImagePickerController
   - WHToast
-  - YYKit
+  - YYModel
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -132,7 +130,7 @@ SPEC REPOS:
     - TXFileOperation
     - TZImagePickerController
     - WHToast
-    - YYKit
+    - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
@@ -162,8 +160,8 @@ SPEC CHECKSUMS:
   TXFileOperation: 99bc7e3763678fdea8e8c407e2b87fb18038385f
   TZImagePickerController: 21b5e8af2458053ec55b33044316d87c366d7707
   WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 43c7cd7d0a64d2d8e31e99c81bbc7fb2ba91db71
+PODFILE CHECKSUM: cb56b2f6033bfddc563ba7c2424096eca9e75b34
 
 COCOAPODS: 1.10.0
