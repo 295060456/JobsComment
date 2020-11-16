@@ -34,7 +34,7 @@
     if ([model isKindOfClass:MKChildCommentModel.class]) {
         self.childCommentModel = (MKChildCommentModel *)model;
         self.LikeBtn.selected = self.childCommentModel.isPraise.boolValue;
-        self.LikeBtn.thumpNum = self.childCommentModel.praiseNum.integerValue;
+//        self.LikeBtn.thumpNum = self.childCommentModel.praiseNum.integerValue;
         self.textLabel.text = self.childCommentModel.nickname;
         self.detailTextLabel.text = self.childCommentModel.content;
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.childCommentModel.headImg]

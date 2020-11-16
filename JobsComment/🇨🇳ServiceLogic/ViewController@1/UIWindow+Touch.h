@@ -6,6 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JobsCommentCoreVC.h"
+#import "PopUpVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

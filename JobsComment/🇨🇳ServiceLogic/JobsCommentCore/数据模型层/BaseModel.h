@@ -12,25 +12,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseModel : NSObject
 
-@property(nonatomic,strong)NSNumber *endRow;
-@property(nonatomic,strong)NSNumber *hasNextPage;
-@property(nonatomic,strong)NSNumber *hasPreviousPage;
-@property(nonatomic,strong)NSNumber *isFirstPage;
-@property(nonatomic,strong)NSNumber *isLastPage;
-
-@property(nonatomic,strong)NSNumber *navigateFirstPage;
-@property(nonatomic,strong)NSNumber *navigateLastPage;
-@property(nonatomic,strong)NSNumber *navigatePages;
-@property(nonatomic,strong)NSArray *navigatepageNums;
-
-@property(nonatomic,strong)NSNumber *nextPage;
-@property(nonatomic,strong)NSNumber *pageNum;
-@property(nonatomic,strong)NSNumber *pageSize;
-@property(nonatomic,strong)NSNumber *pages;
-@property(nonatomic,strong)NSNumber *prePage;
-@property(nonatomic,strong)NSNumber *size;
-@property(nonatomic,strong)NSNumber *startRow;
-@property(nonatomic,strong)NSNumber *total;
+@property(nonatomic,strong)NSString *total;
+@property(nonatomic,assign)NSInteger pageNum;
+@property(nonatomic,assign)NSInteger pageSize;
+@property(nonatomic,assign)NSInteger size;
+@property(nonatomic,strong)NSString *startRow;
+@property(nonatomic,strong)NSString *endRow;
+@property(nonatomic,assign)NSInteger pages;
+@property(nonatomic,assign)NSInteger prePage;
+@property(nonatomic,assign)NSInteger nextPage;
+@property(nonatomic,assign)BOOL isFirstPage;
+@property(nonatomic,assign)BOOL isLastPage;
+@property(nonatomic,assign)BOOL hasPreviousPage;
+@property(nonatomic,assign)BOOL hasNextPage;
+@property(nonatomic,assign)NSInteger navigatePages;
+@property(nonatomic,assign)NSArray *navigatepageNums;
+@property(nonatomic,assign)NSInteger navigateFirstPage;
+@property(nonatomic,assign)NSInteger navigateLastPage;
 
 @end
 

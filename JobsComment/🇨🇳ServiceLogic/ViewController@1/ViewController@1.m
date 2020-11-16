@@ -7,8 +7,10 @@
 
 #import "ViewController@1.h"
 #import "UIWindow+Touch.h"
+#import "JobsCommentCoreVC.h"
 
 PopUpVC *popUpVC;
+JobsCommentCoreVC *jobsCommentCoreVC;
 
 @interface ViewController_1 ()<UIGestureRecognizerDelegate>
 
@@ -43,20 +45,37 @@ PopUpVC *popUpVC;
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    //触发
-    popUpVC = PopUpVC.new;
-//        @weakify(self)
-    [popUpVC actionBlockPopUpVC:^(id data) {
-//            @strongify(self)
-        NSLog(@"您点击了关注");
-    }];
-    [UIViewController comingFromVC:self
-                              toVC:popUpVC
-                       comingStyle:ComingStyle_PRESENT
-                 presentationStyle:UIModalPresentationAutomatic
-                     requestParams:@""
-                           success:^(id data) {}
-                          animated:YES];
+//    {    //触发
+//        popUpVC = PopUpVC.new;
+//    //        @weakify(self)
+//        [popUpVC actionBlockPopUpVC:^(id data) {
+//    //            @strongify(self)
+//            NSLog(@"您点击了关注");
+//        }];
+//        [UIViewController comingFromVC:self
+//                                  toVC:popUpVC
+//                           comingStyle:ComingStyle_PRESENT
+//                     presentationStyle:UIModalPresentationAutomatic
+//                         requestParams:@""
+//                               success:^(id data) {}
+//                              animated:YES];
+//    }
+    
+    {    //触发
+        jobsCommentCoreVC = JobsCommentCoreVC.new;
+    //        @weakify(self)
+        [jobsCommentCoreVC actionBlockPopUpVC:^(id data) {
+    //            @strongify(self)
+            NSLog(@"您点击了关注");
+        }];
+        [UIViewController comingFromVC:self
+                                  toVC:jobsCommentCoreVC
+                           comingStyle:ComingStyle_PRESENT
+                     presentationStyle:UIModalPresentationAutomatic
+                         requestParams:@""
+                               success:^(id data) {}
+                              animated:YES];
+    }
 }
 //拖拽手势
 -(void)panGR:(UIPanGestureRecognizer *)panGR{

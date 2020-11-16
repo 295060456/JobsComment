@@ -5,34 +5,30 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            uuid = "082AF768-EA41-497F-AC01-49E78B3F1F91"
+            uuid = "BC719826-C3B2-4346-9E2C-4912388C7428"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JobsComment/AppDelegate &amp; SceneDelegate/AppDelegate/JobsCommentAppDelegate+Func.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "-launchAd_localPic_default"
-            landmarkType = "7">
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C3E947E7-B63B-4BDB-A5F5-0935836D20C1"
+            uuid = "A91DE5B6-C245-4AEC-B08D-0FFB178B217F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JobsComment/&#x1f1e8;&#x1f1f3;ServiceLogic/JobsCommentCore/&#x6570;&#x636e;&#x6a21;&#x578b;&#x5c42;/MKCommentModel.m"
+            filePath = "JobsComment/&#x1f1e8;&#x1f1f3;ServiceLogic/JobsCommentCore/JobsCommentCoreVC+VM.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "+mj_replacedKeyFromPropertyName"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "-loadData"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

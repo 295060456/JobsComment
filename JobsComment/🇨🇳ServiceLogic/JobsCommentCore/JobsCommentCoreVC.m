@@ -6,6 +6,7 @@
 //
 
 #import "JobsCommentCoreVC.h"
+#import "JobsCommentCoreVC+VM.h"
 
 @interface JobsCommentCoreVC ()
 <
@@ -33,6 +34,7 @@ UITableViewDelegate
     [super viewDidLoad];
     self.view.backgroundColor = kRedColor;
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
+    [self loadData];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -99,11 +101,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
-    MKFirstCommentModel *firstCommentModel = self.commentModel.listMytArr[section];
-    if (firstCommentModel.childMutArr.count > firstCommentModel.PreMax &&
-        firstCommentModel._hasMore &&
+    MKFirstCommentModel *firstCommentModel = self.commentModel.listMutArr[section];
+    if (firstCommentModel.childMutArr.count > firstCommentModel.preMax &&
         !firstCommentModel.isFullShow) {
-        return firstCommentModel.PreMax + 1;
+        return firstCommentModel.preMax + 1;
     }else{
         return firstCommentModel.childMutArr.count;
     }
@@ -112,7 +113,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //二级标题数据从这里进去
-    MKFirstCommentModel *firstCommentModel = self.commentModel.listMytArr[indexPath.section];
+    MKFirstCommentModel *firstCommentModel = self.commentModel.listMutArr[indexPath.section];
     MKChildCommentModel *childCommentModel = firstCommentModel.childMutArr[indexPath.row];
     if (firstCommentModel.isFullShow) {//是全显示
         InfoTBVCell *cell = [InfoTBVCell cellWithTableView:tableView];
@@ -127,8 +128,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         }];
         return cell;
     }else{//不是全显示
-        if (indexPath.row == firstCommentModel.PreMax &&
-            firstCommentModel._hasMore) {//
+        if (indexPath.row == firstCommentModel.preMax) {//
             LoadMoreTBVCell *cell = [LoadMoreTBVCell cellWithTableView:tableView];
             [cell richElementsInCellWithModel:childCommentModel];
             return cell;
@@ -153,7 +153,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.commentModel.listMytArr.count;
+    return self.commentModel.listMutArr.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView
@@ -165,7 +165,7 @@ heightForHeaderInSection:(NSInteger)section{
 viewForHeaderInSection:(NSInteger)section{
     //一级标题数据从这里进去
     JobsCommentPopUpViewForTVH *header = nil;
-    MKFirstCommentModel *firstCommentModel = self.commentModel.listMytArr[section];
+    MKFirstCommentModel *firstCommentModel = self.commentModel.listMutArr[section];
     
     header = [[JobsCommentPopUpViewForTVH alloc] initWithReuseIdentifier:NSStringFromClass(JobsCommentPopUpViewForTVH.class) withData:firstCommentModel];
     @weakify(self)

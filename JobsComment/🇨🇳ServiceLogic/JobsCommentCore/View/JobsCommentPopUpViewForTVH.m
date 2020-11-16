@@ -36,7 +36,7 @@
             self.contentStr = self.firstCommentModel.content;
             self.titleLab.alpha = 1;
             self.contentLab.alpha = 1;
-            self.LikeBtn.selected = self.firstCommentModel.isPraise.boolValue;
+//            self.LikeBtn.selected = self.firstCommentModel.isPraise.boolValue;
         }
     }return self;
 }

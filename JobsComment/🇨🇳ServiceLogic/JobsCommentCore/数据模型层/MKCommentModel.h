@@ -8,80 +8,55 @@
 
 #import "BaseModel.h"
 
-///子标题一开始最多加载的个数
-#define preMax 3
-///加载更多数据 一次加载的个数
-#define LoadDataNum 1
-
 NS_ASSUME_NONNULL_BEGIN
-
+//对应字段 child
 @interface MKChildCommentModel : NSObject
 
-@property(nonatomic,strong)NSString *commentDate;
-@property(nonatomic,strong)NSString *commentId;
-@property(nonatomic,strong)NSString *content;//第二级
-@property(nonatomic,strong)NSString *headImg;
 @property(nonatomic,strong)NSString *ID;
-@property(nonatomic,strong)NSNumber *isPraise;
+@property(nonatomic,strong)NSString *parentId;
+@property(nonatomic,strong)NSString *headImg;
+@property(nonatomic,strong)NSString *userId;
 @property(nonatomic,strong)NSString *nickname;
-@property(nonatomic,strong)NSNumber *parentId;
-@property(nonatomic,strong)NSNumber *praiseNum;
-@property(nonatomic,strong)NSNumber *toReplyUserId;
+@property(nonatomic,strong)NSString *content;
+@property(nonatomic,strong)NSString *commentDate;
+@property(nonatomic,assign)NSInteger praiseNum;
+@property(nonatomic,strong)NSString *toReplyUserId;
 @property(nonatomic,strong)NSString *toReplyUserImg;
 @property(nonatomic,strong)NSString *toReplyUserName;
-@property(nonatomic,strong)NSNumber *userId;
+@property(nonatomic,strong)NSString *commentId;
+@property(nonatomic,strong)NSString *isPraise;
+@property(nonatomic,assign)NSInteger isVip;
+@property(nonatomic,assign)NSInteger toIsVip;
 
 @end
-
+// 对应字段 list
 @interface MKFirstCommentModel : NSObject
 
-@property(nonatomic,strong)NSMutableArray <MKChildCommentModel *>*childMutArr;
-@property(nonatomic,strong)NSString *commentDate;
-@property(nonatomic,strong)NSString *commentId;
-@property(nonatomic,strong)NSString *content;//第一级
-@property(nonatomic,strong)NSString *headImg;
 @property(nonatomic,strong)NSString *ID;
-@property(nonatomic,strong)NSNumber *isPraise;
-@property(nonatomic,strong)NSString *nickname;
-@property(nonatomic,strong)NSNumber *parentId;
-@property(nonatomic,strong)NSNumber *praiseNum;
-@property(nonatomic,strong)NSNumber *replyNum;
-@property(nonatomic,strong)NSString *userId;
-@property(nonatomic,strong)NSNumber *videoId;
-
-#pragma mask --- define
-@property(nonatomic,assign)BOOL _hasMore;
-@property(nonatomic,assign)BOOL isFullShow;
-///当前二级数据实际个数
-@property(nonatomic,assign)int rand;
-///当前二级数据显示个数
-@property(nonatomic,assign)int randShow;
-///显示控制，二级数据默认最多显示多少个
-@property(nonatomic,assign)int PreMax;
-
-@end
-
-@interface MKCommentModel : BaseModel
-//对于第一级来讲，commentId = ID
-//parentId对于第一级没用，是上个级别的父节点
-@property(nonatomic,strong)NSMutableArray <MKFirstCommentModel *>*listMytArr;
-
-@end
-///直接回复的，是一级评论
-@interface MKCommentVideoModel : NSObject
-
-@property(nonatomic,strong)NSString *commentDate;
-@property(nonatomic,strong)NSString *commentId;
-@property(nonatomic,strong)NSString *content;
+@property(nonatomic,strong)NSString *parentId;
 @property(nonatomic,strong)NSString *headImg;
-@property(nonatomic,strong)NSString *ID;//评论id
-@property(nonatomic,strong)NSNumber *isPraise;
+@property(nonatomic,strong)NSString *userId;
 @property(nonatomic,strong)NSString *nickname;
-@property(nonatomic,strong)NSNumber *parentId;
-@property(nonatomic,strong)NSNumber *praiseNum;
-@property(nonatomic,strong)NSNumber *replyNum;
-@property(nonatomic,strong)NSString *userId;//这条评论的拥有者id
-@property(nonatomic,strong)NSNumber *videoId;
+@property(nonatomic,strong)NSString *content;
+@property(nonatomic,strong)NSString *commentDate;
+@property(nonatomic,assign)NSInteger praiseNum;
+@property(nonatomic,assign)NSInteger replyNum;
+@property(nonatomic,strong)NSMutableArray <MKChildCommentModel *>*childMutArr;//二级评论
+@property(nonatomic,strong)NSString *videoId;
+@property(nonatomic,strong)NSString *commentId;
+@property(nonatomic,assign)NSInteger isPraise;
+@property(nonatomic,assign)BOOL isVip;
+#pragma mask —— 自定义字段
+@property(nonatomic,assign)BOOL isFullShow;//是否全显示 默认不全显示
+@property(nonatomic,assign)NSInteger preMax;//显示控制，二级数据默认最多显示多少个 默认3
+@property(nonatomic,assign)NSInteger firstShonNum;//在满足限制条件的情况下，第一次显示的数据条数 （数据库有但小于PreMax）
+@property(nonatomic,assign)NSInteger loadMoreDataNum;//加载更多数据,一次加载的个数，为0全加载
+
+@end
+/// 对应字段 data
+@interface MKCommentModel : BaseModel
+
+@property(nonatomic,strong)NSMutableArray <MKFirstCommentModel *>*listMutArr;//一级评论
 
 @end
 

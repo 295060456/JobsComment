@@ -201,6 +201,7 @@
 		C542468225614E2D002D16AD /* JobsCommentCoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468125614E2D002D16AD /* JobsCommentCoreVC.m */; };
 		C542468C256154FE002D16AD /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468B256154FE002D16AD /* EmptyView.m */; };
 		C590871F256166680070E150 /* CommentData.json in Resources */ = {isa = PBXBuildFile; fileRef = C590871E256166680070E150 /* CommentData.json */; };
+		C5908B3325616BBA0070E150 /* JobsCommentCoreVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */; };
 		C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3D256156200071CEEE /* InfoTBVCell.m */; };
 		C5BC5B42256156200071CEEE /* LoadMoreTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */; };
 		C5BC5B48256156310071CEEE /* JobsCommentPopUpViewForTVH.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B47256156310071CEEE /* JobsCommentPopUpViewForTVH.m */; };
@@ -592,6 +593,8 @@
 		C542468A256154FE002D16AD /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
 		C542468B256154FE002D16AD /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		C590871E256166680070E150 /* CommentData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CommentData.json; sourceTree = "<group>"; };
+		C5908B3125616BBA0070E150 /* JobsCommentCoreVC+VM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsCommentCoreVC+VM.h"; sourceTree = "<group>"; };
+		C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JobsCommentCoreVC+VM.m"; sourceTree = "<group>"; };
 		C5BC5B3D256156200071CEEE /* InfoTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTBVCell.m; sourceTree = "<group>"; };
 		C5BC5B3E256156200071CEEE /* LoadMoreTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTBVCell.h; sourceTree = "<group>"; };
 		C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTBVCell.m; sourceTree = "<group>"; };
@@ -1316,12 +1319,12 @@
 		C52E0DF12561129D00B245CF /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0DF22561129D00B245CF /* NSString+Extras.m */,
-				C52E0DF32561129D00B245CF /* TimeModel.m */,
-				C52E0DF42561129D00B245CF /* NSString+Time.h */,
-				C52E0DF52561129D00B245CF /* TimeModel.h */,
 				C52E0DF62561129D00B245CF /* NSString+Extras.h */,
+				C52E0DF22561129D00B245CF /* NSString+Extras.m */,
+				C52E0DF42561129D00B245CF /* NSString+Time.h */,
 				C52E0DF72561129D00B245CF /* NSString+Time.m */,
+				C52E0DF52561129D00B245CF /* TimeModel.h */,
+				C52E0DF32561129D00B245CF /* TimeModel.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1787,6 +1790,8 @@
 				C5BC5B4C256156340071CEEE /* View */,
 				C542468025614E2D002D16AD /* JobsCommentCoreVC.h */,
 				C542468125614E2D002D16AD /* JobsCommentCoreVC.m */,
+				C5908B3125616BBA0070E150 /* JobsCommentCoreVC+VM.h */,
+				C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */,
 			);
 			path = JobsCommentCore;
 			sourceTree = "<group>";
@@ -2156,6 +2161,7 @@
 				C52E0E802561129D00B245CF /* UIView+Measure.m in Sources */,
 				C52E0E962561129D00B245CF /* UIViewController+Shake.m in Sources */,
 				C52E0CC02561120F00B245CF /* JobsCommentSceneDelegate.m in Sources */,
+				C5908B3325616BBA0070E150 /* JobsCommentCoreVC+VM.m in Sources */,
 				C52E0E702561129D00B245CF /* UIImage+YBGIF.m in Sources */,
 				C52E15CB2561167700B245CF /* ZZCountingLabel.m in Sources */,
 				C52E15482561162D00B245CF /* NoticePopupView.m in Sources */,

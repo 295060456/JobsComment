@@ -16,6 +16,12 @@
         [popUpVC dismissViewControllerAnimated:YES
                                     completion:Nil];
     }
+    
+    extern JobsCommentCoreVC *jobsCommentCoreVC;
+    if (jobsCommentCoreVC) {
+        [jobsCommentCoreVC dismissViewControllerAnimated:YES
+                                              completion:Nil];
+    }
 }
 
 @end
