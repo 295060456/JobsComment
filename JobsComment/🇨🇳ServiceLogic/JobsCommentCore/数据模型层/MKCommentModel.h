@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 对应字段 data
 @interface MKCommentModel : BaseModel
 
-@property(nonatomic,strong)NSMutableArray <MKFirstCommentModel *>*listMutArr;//一级评论
+@property(nonatomic,strong) NSMutableArray <MKFirstCommentModel *>*listMutArr;//一级评论
 
 @end
 

@@ -77,14 +77,12 @@
     /* 返回的字典，key为模型属性名，value为转化的字典的多级key */
     return @{
         @"listMutArr" : @"list",
-        @"childMutArr":@"child"
     };
 }
 
 +(NSDictionary *)mj_objectClassInArray{
     return @{
-        @"list" : MKFirstCommentModel.class,
-        @"childMutArr" : MKChildCommentModel.class
+        @"listMutArr" : MKFirstCommentModel.class,
     };
 }
 

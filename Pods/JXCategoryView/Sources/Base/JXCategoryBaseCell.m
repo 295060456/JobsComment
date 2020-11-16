@@ -17,7 +17,8 @@
 
 @implementation JXCategoryBaseCell
 
-- (void)dealloc {
+- (void)dealloc
+{
     [self.animator stop];
 }
 
@@ -29,14 +30,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    if (self) {
-        [self initializeViews];
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder {
-    self = [super initWithCoder:coder];
     if (self) {
         [self initializeViews];
     }
@@ -58,15 +51,17 @@
         if ([self checkCanStartSelectedAnimation:cellModel]) {
             _animator = [[JXCategoryViewAnimator alloc] init];
             self.animator.duration = cellModel.selectedAnimationDuration;
-        } else {
+        }else {
             [self.animator stop];
         }
     }
 }
 
 - (BOOL)checkCanStartSelectedAnimation:(JXCategoryBaseCellModel *)cellModel {
-    BOOL canStartSelectedAnimation = ((cellModel.selectedType == JXCategoryCellSelectedTypeCode) || (cellModel.selectedType == JXCategoryCellSelectedTypeClick));
-    return canStartSelectedAnimation;
+    if (cellModel.selectedType == JXCategoryCellSelectedTypeCode || cellModel.selectedType == JXCategoryCellSelectedTypeClick) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)addSelectedAnimationBlock:(JXCategoryCellSelectedAnimationBlock)block {

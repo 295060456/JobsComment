@@ -31,13 +31,13 @@ struct DelegateFlags {
 @property (nonatomic, assign) NSInteger scrollingTargetIndex;
 @property (nonatomic, assign, getter=isNeedReloadByBecomeActive) BOOL needReloadByBecomeActive;
 @property (nonatomic, assign, getter=isFirstLayoutSubviews) BOOL firstLayoutSubviews;
-@property (nonatomic, assign, getter=isNeedConfigAutomaticallyAdjustsScrollViewInsets) BOOL needConfigAutomaticallyAdjustsScrollViewInsets;
 
 @end
 
 @implementation JXCategoryBaseView
 
-- (void)dealloc {
+- (void)dealloc
+{
     if (self.contentScrollView) {
         [self.contentScrollView removeObserver:self forKeyPath:@"contentOffset"];
     }
@@ -45,7 +45,8 @@ struct DelegateFlags {
     [self.animator stop];
 }
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame
+{
     self = [super initWithFrame:frame];
     if (self) {
         [self initializeData];
@@ -54,7 +55,8 @@ struct DelegateFlags {
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)coder {
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
     self = [super initWithCoder:coder];
     if (self) {
         [self initializeData];
@@ -66,7 +68,14 @@ struct DelegateFlags {
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
 
-    [self configAutomaticallyAdjustsScrollViewInsets:newSuperview];
+    UIResponder *next = newSuperview;
+    while (next != nil) {
+        if ([next isKindOfClass:[UIViewController class]]) {
+            ((UIViewController *)next).automaticallyAdjustsScrollViewInsets = NO;
+            break;
+        }
+        next = next.nextResponder;
+    }
 }
 
 - (void)reloadData {
@@ -96,19 +105,14 @@ struct DelegateFlags {
     [self selectCellAtIndex:index selectedType:JXCategoryCellSelectedTypeCode];
 }
 
-- (void)layoutSubviews {
+- (void)layoutSubviews
+{
     [super layoutSubviews];
 
     //部分使用者为了适配不同的手机屏幕尺寸，JXCategoryView的宽高比要求保持一样，所以它的高度就会因为不同宽度的屏幕而不一样。计算出来的高度，有时候会是位数很长的浮点数，如果把这个高度设置给UICollectionView就会触发内部的一个错误。所以，为了规避这个问题，在这里对高度统一向下取整。
     //如果向下取整导致了你的页面异常，请自己重新设置JXCategoryView的高度，保证为整数即可。
     CGRect targetFrame = CGRectMake(0, 0, self.bounds.size.width, floor(self.bounds.size.height));
     if (self.isFirstLayoutSubviews) {
-        if (self.bounds.size.width == 0 || self.bounds.size.height == 0) {
-            return;
-        }
-        if (self.isNeedConfigAutomaticallyAdjustsScrollViewInsets) {
-            [self configAutomaticallyAdjustsScrollViewInsets:self.superview];
-        }
         self.firstLayoutSubviews = NO;
         self.collectionView.frame = targetFrame;
         [self reloadDataWithoutListContainer];
@@ -133,14 +137,16 @@ struct DelegateFlags {
     _delegateFlags.scrollingFromLeftIndexToRightIndexFlag = [delegate respondsToSelector:@selector(categoryView:scrollingFromLeftIndex:toRightIndex:ratio:)];
 }
 
-- (void)setDefaultSelectedIndex:(NSInteger)defaultSelectedIndex {
+- (void)setDefaultSelectedIndex:(NSInteger)defaultSelectedIndex
+{
     _defaultSelectedIndex = defaultSelectedIndex;
 
     self.selectedIndex = defaultSelectedIndex;
     [self.listContainer setDefaultSelectedIndex:defaultSelectedIndex];
 }
 
-- (void)setContentScrollView:(UIScrollView *)contentScrollView {
+- (void)setContentScrollView:(UIScrollView *)contentScrollView
+{
     if (_contentScrollView != nil) {
         [_contentScrollView removeObserver:self forKeyPath:@"contentOffset"];
     }
@@ -223,21 +229,6 @@ struct DelegateFlags {
 
 #pragma mark - Private
 
-- (void)configAutomaticallyAdjustsScrollViewInsets:(UIView *)view {
-    UIResponder *next = view;
-    while (next != nil) {
-        if ([next isKindOfClass:[UIViewController class]]) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            ((UIViewController *)next).automaticallyAdjustsScrollViewInsets = NO;
-#pragma clang diagnostic pop
-            self.needConfigAutomaticallyAdjustsScrollViewInsets = NO;
-            break;
-        }
-        next = next.nextResponder;
-    }
-}
-
 - (CGFloat)getContentEdgeInsetLeft {
     if (self.contentEdgeInsetLeft == JXCategoryViewAutomaticDimension) {
         return self.innerCellSpacing;
@@ -279,7 +270,8 @@ struct DelegateFlags {
 
 @implementation JXCategoryBaseView (UISubclassingBaseHooks)
 
-- (CGRect)getTargetCellFrame:(NSInteger)targetIndex {
+- (CGRect)getTargetCellFrame:(NSInteger)targetIndex
+{
     CGFloat x = [self getContentEdgeInsetLeft];
     for (int i = 0; i < targetIndex; i ++) {
         JXCategoryBaseCellModel *cellModel = self.dataSource[i];
@@ -306,7 +298,8 @@ struct DelegateFlags {
     return CGRectMake(x, 0, width, self.bounds.size.height);
 }
 
-- (CGRect)getTargetSelectedCellFrame:(NSInteger)targetIndex selectedType:(JXCategoryCellSelectedType)selectedType {
+- (CGRect)getTargetSelectedCellFrame:(NSInteger)targetIndex selectedType:(JXCategoryCellSelectedType)selectedType
+{
     CGFloat x = [self getContentEdgeInsetLeft];
     for (int i = 0; i < targetIndex; i ++) {
         JXCategoryBaseCellModel *cellModel = self.dataSource[i];
@@ -322,7 +315,8 @@ struct DelegateFlags {
     return CGRectMake(x, 0, cellWidth, self.bounds.size.height);
 }
 
-- (void)initializeData {
+- (void)initializeData
+{
     _firstLayoutSubviews = YES;
     _dataSource = [NSMutableArray array];
     _selectedIndex = 0;
@@ -343,7 +337,8 @@ struct DelegateFlags {
     _needReloadByBecomeActive = NO;
 }
 
-- (void)initializeViews {
+- (void)initializeViews
+{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     _collectionView = [[JXCategoryCollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
@@ -358,9 +353,7 @@ struct DelegateFlags {
         self.collectionView.prefetchingEnabled = NO;
     }
     if (@available(iOS 11.0, *)) {
-        if ([self.collectionView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
-            self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        }
+        self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
     if ([RTLManager supportRTL]) {
         self.collectionView.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
@@ -371,7 +364,9 @@ struct DelegateFlags {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
-- (void)refreshDataSource {}
+- (void)refreshDataSource {
+
+}
 
 - (void)refreshState {
     if (self.selectedIndex < 0 || self.selectedIndex >= self.dataSource.count) {
@@ -533,7 +528,7 @@ struct DelegateFlags {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.selectedAnimationDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
         });
-    } else {
+    }else {
         [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     }
 
@@ -545,12 +540,12 @@ struct DelegateFlags {
     self.selectedIndex = targetIndex;
     if (selectedType == JXCategoryCellSelectedTypeCode) {
         [self.listContainer didClickSelectedItemAtIndex:targetIndex];
-    } else if (selectedType == JXCategoryCellSelectedTypeClick) {
+    }else if (selectedType == JXCategoryCellSelectedTypeClick) {
         [self.listContainer didClickSelectedItemAtIndex:targetIndex];
         if (self.delegateFlags.didClickSelectedItemAtIndexFlag) {
             [self.delegate categoryView:self didClickSelectedItemAtIndex:targetIndex];
         }
-    } else if(selectedType == JXCategoryCellSelectedTypeScroll) {
+    }else if(selectedType == JXCategoryCellSelectedTypeScroll) {
         if (self.delegateFlags.didScrollSelectedItemAtIndexFlag) {
             [self.delegate categoryView:self didScrollSelectedItemAtIndex:targetIndex];
         }
@@ -588,7 +583,7 @@ struct DelegateFlags {
                 unselectedCellModel.transitionAnimating = NO;
             };
             [self.animator start];
-        } else {
+        }else {
             selectedCellModel.cellWidthCurrentZoomScale = selectedCellModel.cellWidthSelectedZoomScale;
             selectedCellModel.cellWidth = [self getCellWidthAtIndex:selectedCellModel.index] * selectedCellModel.cellWidthCurrentZoomScale;
             unselectedCellModel.cellWidthCurrentZoomScale = unselectedCellModel.cellWidthNormalZoomScale;
@@ -622,7 +617,7 @@ struct DelegateFlags {
         if (!(self.lastContentViewContentOffset.x == contentOffset.x && self.selectedIndex == baseIndex)) {
             [self scrollSelectItemAtIndex:baseIndex];
         }
-    } else {
+    }else {
         self.needReloadByBecomeActive = YES;
         if (self.animator.isExecuting) {
             [self.animator invalid];
@@ -648,7 +643,7 @@ struct DelegateFlags {
 
         if (self.selectedIndex == baseIndex) {
             self.scrollingTargetIndex = baseIndex + 1;
-        } else {
+        }else {
             self.scrollingTargetIndex = baseIndex;
         }
 
