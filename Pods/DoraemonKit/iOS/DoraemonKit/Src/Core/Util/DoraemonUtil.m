@@ -297,13 +297,7 @@
     if ([[UIApplication sharedApplication].delegate respondsToSelector:@selector(window)]) {
         keyWindow = [[UIApplication sharedApplication].delegate window];
     }else{
-        NSArray *windows = [UIApplication sharedApplication].windows;
-        for (UIWindow *window in windows) {
-            if (!window.hidden) {
-                keyWindow = window;
-                break;
-            }
-        }
+        keyWindow = [UIApplication sharedApplication].windows.firstObject;
     }
     return keyWindow;
 }

@@ -13,7 +13,6 @@
 #import "UIView+Doraemon.h"
 #import "UIColor+Doraemon.h"
 #import <CoreTelephony/CTCellularData.h>
-#import <objc/runtime.h>
 
 @interface DoraemonAppInfoViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -26,14 +25,6 @@
 
 @implementation DoraemonAppInfoViewController{
     
-}
-
-+ (void)setCustomAppInfoBlock:(void (^)(NSMutableArray<NSDictionary *> *))customAppInfoBlock {
-    objc_setAssociatedObject(self, @selector(customAppInfoBlock), customAppInfoBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
-}
-
-+ (void (^)(NSMutableArray<NSDictionary *> *))customAppInfoBlock {
-    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (void)viewDidLoad {
@@ -154,18 +145,6 @@
     //获取提醒事项权限
     NSString *remindAuthority = [DoraemonAppInfoUtil remindAuthority];
     
-    //可自定义的App信息
-    NSMutableArray *appInfos = @[@{@"title":@"Bundle ID",
-                            @"value":bundleIdentifier},
-                          @{@"title":@"Version",
-                            @"value":bundleVersion},
-                          @{@"title":@"VersionCode",
-                            @"value":bundleShortVersionString}].mutableCopy;
-    if (DoraemonAppInfoViewController.customAppInfoBlock) {
-        DoraemonAppInfoViewController.customAppInfoBlock(appInfos);
-    }
-    
-    
     NSArray *dataArray = @[
                            @{
                                @"title":DoraemonLocalizedString(@"手机信息"),
@@ -198,7 +177,19 @@
                                },
                            @{
                                @"title":DoraemonLocalizedString(@"App信息"),
-                               @"array":appInfos
+                               @"array":@[@{
+                                              @"title":@"Bundle ID",
+                                              @"value":bundleIdentifier
+                                              },
+                                          @{
+                                              @"title":@"Version",
+                                              @"value":bundleVersion
+                                              },
+                                          @{
+                                              @"title":@"VersionCode",
+                                              @"value":bundleShortVersionString
+                                              }
+                                          ]
                                },
                            @{
                                @"title":DoraemonLocalizedString(@"权限信息"),

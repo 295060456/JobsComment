@@ -9,7 +9,8 @@
 #ifndef GKNavigationBar_h
 #define GKNavigationBar_h
 
-#import "GKNavigationBarDefine.h"
-#import "GKGestureHandleDefine.h"
+#import "GKCategory.h"
+#import "GKNavigationBarConfigure.h"
+#import "GKTransitionDelegateHandler.h"
 
 #endif /* GKNavigationBar_h */

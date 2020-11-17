@@ -28,6 +28,7 @@
 
     _imageView = [[UIImageView alloc] init];
     _imageView.contentMode = UIViewContentModeScaleAspectFit;
+    _imageView.layer.masksToBounds = YES;
     [self.contentView addSubview:_imageView];
 }
 
@@ -37,10 +38,7 @@
     JXCategoryImageCellModel *myCellModel = (JXCategoryImageCellModel *)self.cellModel;
     self.imageView.bounds = CGRectMake(0, 0, myCellModel.imageSize.width, myCellModel.imageSize.height);
     self.imageView.center = self.contentView.center;
-    if (myCellModel.imageCornerRadius && (myCellModel.imageCornerRadius != 0)) {
-        self.imageView.layer.cornerRadius = myCellModel.imageCornerRadius;
-        self.imageView.layer.masksToBounds = YES;
-    }
+    self.imageView.layer.cornerRadius = myCellModel.imageCornerRadius;
 }
 
 - (void)reloadData:(JXCategoryBaseCellModel *)cellModel {
@@ -48,26 +46,26 @@
 
     JXCategoryImageCellModel *myCellModel = (JXCategoryImageCellModel *)cellModel;
     //因为`- (void)reloadData:(JXCategoryBaseCellModel *)cellModel`方法会回调多次，尤其是左右滚动的时候会调用无数次，如果每次都触发图片加载，会非常消耗性能。所以只会在图片发生了变化的时候，才进行图片加载。
-    NSString *currentImageName;
-    NSURL *currentImageURL;
-    if (myCellModel.imageName) {
+    NSString *currentImageName = nil;
+    NSURL *currentImageURL = nil;
+    if (myCellModel.imageName != nil) {
         currentImageName = myCellModel.imageName;
-    } else if (myCellModel.imageURL) {
+    }else if (myCellModel.imageURL != nil) {
         currentImageURL = myCellModel.imageURL;
     }
     if (myCellModel.isSelected) {
-        if (myCellModel.selectedImageName) {
+        if (myCellModel.selectedImageName != nil) {
             currentImageName = myCellModel.selectedImageName;
-        } else if (myCellModel.selectedImageURL) {
+        }else if (myCellModel.selectedImageURL != nil) {
             currentImageURL = myCellModel.selectedImageURL;
         }
     }
-    if (currentImageName && ![currentImageName isEqualToString:self.currentImageName]) {
+    if (currentImageName != nil && ![currentImageName isEqualToString:self.currentImageName]) {
         self.currentImageName = currentImageName;
         self.imageView.image = [UIImage imageNamed:currentImageName];
-    } else if (currentImageURL && ![currentImageURL.absoluteString isEqualToString:self.currentImageURL.absoluteString]) {
+    }else if (currentImageURL != nil && ![currentImageURL.absoluteString isEqualToString:self.currentImageURL.absoluteString]) {
         self.currentImageURL = currentImageURL;
-        if (myCellModel.loadImageCallback) {
+        if (myCellModel.loadImageCallback != nil) {
             myCellModel.loadImageCallback(self.imageView, currentImageURL);
         }
     }
