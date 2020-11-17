@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
                               withData:(id)data;
--(void)actionBlockCommentPopUpNonHoveringHeaderView:(MKDataBlock _Nullable)commentPopUpNonHoveringHeaderViewBlock;
+-(void)actionBlockjobsCommentPopUpViewForTVHBlock:(MKDataBlock _Nullable)jobsCommentPopUpViewForTVHBlock;
 +(CGFloat)viewForTableViewHeaderHeightWithModel:(id _Nullable)model;
 
 @end

@@ -136,13 +136,19 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (customCofigModel.isFullShow) {
         InfoTBVCell *cell = [InfoTBVCell cellWithTableView:tableView];
         [cell richElementsInCellWithModel:childCommentModel];
-        return cell;
+        @weakify(self)
+        [cell actionBlockInfoTBVCell:^(id data) {
+            @strongify(self)
+        }];return cell;
     }else{
         if (indexPath.row <= customCofigModel.firstShonNum) {
             // 二级评论展示...
             InfoTBVCell *cell = [InfoTBVCell cellWithTableView:tableView];
             [cell richElementsInCellWithModel:childCommentModel];
-            return cell;
+            @weakify(self)
+            [cell actionBlockInfoTBVCell:^(id data) {
+                @strongify(self)
+            }];return cell;
         }else{
             // 加载更多...
             LoadMoreTBVCell *cell = [LoadMoreTBVCell cellWithTableView:tableView];
@@ -165,10 +171,33 @@ heightForHeaderInSection:(NSInteger)section{
 viewForHeaderInSection:(NSInteger)section{
     MKFirstCommentModel *firstCommentModel = self.mjModel.listMutArr[section];//一级评论数据 展示在viewForHeaderInSection
     JobsCommentPopUpViewForTVH *header = [[JobsCommentPopUpViewForTVH alloc] initWithReuseIdentifier:NSStringFromClass(JobsCommentPopUpViewForTVH.class) withData:firstCommentModel];
-//    @weakify(self)
-    [header actionBlockViewForTableViewHeader:^(id data) {
-//        @strongify(self)
+    @weakify(self)
+    [header actionBlockjobsCommentPopUpViewForTVHBlock:^(id data) {
+        @strongify(self)
     }];return header;
+}
+///下拉刷新
+-(void)pullToRefresh{
+    NSLog(@"下拉刷新");
+    [self.tableView.mj_header endRefreshing];
+//
+}
+///上拉加载更多
+- (void)loadMoreRefresh{
+    NSLog(@"上拉加载更多");
+//    [self.tableView reloadData];
+    //特别说明：pagingEnabled = YES 在此会影响Cell的偏移量，原作者希望我们在这里临时关闭一下，刷新完成以后再打开
+    self.tableView.pagingEnabled = NO;
+    [self performSelector:@selector(delayMethods)
+               withObject:nil
+               afterDelay:2];
+}
+
+-(void)delayMethods{
+    self.tableView.mj_footer.state = MJRefreshStateIdle;
+    self.tableView.mj_footer.hidden = YES;
+    self.tableView.pagingEnabled = YES;
+//    [self.mj_footer endRefreshingWithNoMoreData];
 }
 #pragma mark —— lazyLoad
 -(UITableView *)tableView{
@@ -184,19 +213,26 @@ viewForHeaderInSection:(NSInteger)section{
         _tableView.mj_footer.hidden = NO;
         _tableView.tableFooterView = UIView.new;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, self.popUpHeight, 0);
+        [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+        _tableView.ly_emptyView = [EmptyView emptyViewWithImageStr:@"Indeterminate Spinner - Small"
+                                                          titleStr:@"没有评论"
+                                                         detailStr:@"来发布第一条吧"];
         
         if (self.mjModel.listMutArr.count) {
             [_tableView ly_hideEmptyView];
         }else{
             [_tableView ly_showEmptyView];
         }
+
+        @weakify(self)
+        _tableView.mj_header = [CustomGifHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            sleep(3);
+            [self pullToRefresh];
+        }];
         
-        _tableView.ly_emptyView = [EmptyView emptyViewWithImageStr:@"Indeterminate Spinner - Small"
-                                                          titleStr:@"没有评论"
-                                                         detailStr:@"来发布第一条吧"];
         [self.view addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.edges.equalTo(self.view);
             make.left.right.bottom.equalTo(self.view);
             make.top.equalTo(self.gk_navigationBar.mas_bottom);
         }];
@@ -213,6 +249,8 @@ viewForHeaderInSection:(NSInteger)section{
         [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             @strongify(self)
             NSLog(@"点击了删除按钮");
+            [self dismissViewControllerAnimated:YES
+                                     completion:Nil];
         }];
     }return _cancelBtn;
 }

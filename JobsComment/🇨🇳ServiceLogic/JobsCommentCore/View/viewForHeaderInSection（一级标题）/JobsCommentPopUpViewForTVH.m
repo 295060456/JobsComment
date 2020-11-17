@@ -18,7 +18,7 @@
 @property(nonatomic,strong)NSString *titleStr;
 @property(nonatomic,strong)NSString *contentStr;
 @property(nonatomic,strong)MKFirstCommentModel *firstCommentModel;
-@property(nonatomic,copy)MKDataBlock commentPopUpNonHoveringHeaderViewBlock;
+@property(nonatomic,copy)MKDataBlock jobsCommentPopUpViewForTVHBlock;
 
 @end
 
@@ -45,17 +45,8 @@
     return JobsCommentConfig.sharedInstance.cellHeight;
 }
 
--(void)actionBlockCommentPopUpNonHoveringHeaderView:(MKDataBlock _Nullable)commentPopUpNonHoveringHeaderViewBlock{
-    self.commentPopUpNonHoveringHeaderViewBlock = commentPopUpNonHoveringHeaderViewBlock;
-}
-//点赞/取消点赞操作
-- (void)likeBtnClickAction:(RBCLikeButton *)sender{
-    if (self.commentPopUpNonHoveringHeaderViewBlock) {
-        self.commentPopUpNonHoveringHeaderViewBlock(@{
-            @"sender":sender,
-            @"model":self.firstCommentModel
-                         });//RBCLikeButton
-    }
+-(void)actionBlockjobsCommentPopUpViewForTVHBlock:(MKDataBlock _Nullable)jobsCommentPopUpViewForTVHBlock{
+    self.jobsCommentPopUpViewForTVHBlock = jobsCommentPopUpViewForTVHBlock;
 }
 #pragma mark —— lazyLoad
 -(UIImageView *)headerIMGV{
@@ -119,9 +110,23 @@
 //        _LikeBtn.layer.borderColor = kGrayColor.CGColor;
 //        _LikeBtn.layer.borderWidth = 1;
         _LikeBtn.thumpNum = 0;
-        [_LikeBtn addTarget:self
-                     action:@selector(likeBtnClickAction:)
-           forControlEvents:UIControlEventTouchUpInside];
+        @weakify(self)
+        [[_LikeBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            @strongify(self)
+            if (self.jobsCommentPopUpViewForTVHBlock) {
+                self.jobsCommentPopUpViewForTVHBlock(x);
+            }
+            
+            if (self->_LikeBtn.selected) {
+                [self->_LikeBtn setThumbWithSelected:NO
+                                            thumbNum:self->_LikeBtn.thumpNum - 1
+                                     animation:YES];
+            }else{
+                [self->_LikeBtn setThumbWithSelected:YES
+                                            thumbNum:self->_LikeBtn.thumpNum + 1
+                                     animation:YES];
+            }
+        }];
         [self.contentView addSubview:_LikeBtn];
         [_LikeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(JobsCommentConfig.sharedInstance.cellHeight / 2, JobsCommentConfig.sharedInstance.cellHeight / 2));

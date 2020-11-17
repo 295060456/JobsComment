@@ -202,6 +202,8 @@
 		C542468C256154FE002D16AD /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468B256154FE002D16AD /* EmptyView.m */; };
 		C590871F256166680070E150 /* CommentData.json in Resources */ = {isa = PBXBuildFile; fileRef = C590871E256166680070E150 /* CommentData.json */; };
 		C5908B3325616BBA0070E150 /* JobsCommentCoreVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */; };
+		C591EF652563C82F005B78CC /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C591EF632563C82E005B78CC /* JsonRes.bundle */; };
+		C591EF662563C82F005B78CC /* CustomGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C591EF642563C82E005B78CC /* CustomGifHeader.m */; };
 		C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3D256156200071CEEE /* InfoTBVCell.m */; };
 		C5BC5B42256156200071CEEE /* LoadMoreTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */; };
 		C5BC5B48256156310071CEEE /* JobsCommentPopUpViewForTVH.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B47256156310071CEEE /* JobsCommentPopUpViewForTVH.m */; };
@@ -604,6 +606,9 @@
 		C590871E256166680070E150 /* CommentData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CommentData.json; sourceTree = "<group>"; };
 		C5908B3125616BBA0070E150 /* JobsCommentCoreVC+VM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsCommentCoreVC+VM.h"; sourceTree = "<group>"; };
 		C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JobsCommentCoreVC+VM.m"; sourceTree = "<group>"; };
+		C591EF622563C82E005B78CC /* CustomGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGifHeader.h; sourceTree = "<group>"; };
+		C591EF632563C82E005B78CC /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
+		C591EF642563C82E005B78CC /* CustomGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGifHeader.m; sourceTree = "<group>"; };
 		C5BC5B3D256156200071CEEE /* InfoTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTBVCell.m; sourceTree = "<group>"; };
 		C5BC5B3E256156200071CEEE /* LoadMoreTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTBVCell.h; sourceTree = "<group>"; };
 		C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTBVCell.m; sourceTree = "<group>"; };
@@ -656,13 +661,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C50A28A92562993E006996BD /* viewForHeaderInSection */ = {
+		C50A28A92562993E006996BD /* viewForHeaderInSection（一级标题） */ = {
 			isa = PBXGroup;
 			children = (
 				C5BC5B46256156310071CEEE /* JobsCommentPopUpViewForTVH.h */,
 				C5BC5B47256156310071CEEE /* JobsCommentPopUpViewForTVH.m */,
 			);
-			path = viewForHeaderInSection;
+			path = "viewForHeaderInSection（一级标题）";
 			sourceTree = "<group>";
 		};
 		C52E0B6325610F5300B245CF = {
@@ -817,6 +822,7 @@
 		C52E0CEB2561128100B245CF /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C591EF612563C82E005B78CC /* CustomGifHeader */,
 				C5BC5B9E256160670071CEEE /* 高仿抖音点赞动画 */,
 				C5424689256154FE002D16AD /* LYEmptyView */,
 				C52E15452561162D00B245CF /* 广告或者公示弹出框 */,
@@ -1844,7 +1850,17 @@
 			path = LYEmptyView;
 			sourceTree = "<group>";
 		};
-		C5BC5B3C256156200071CEEE /* TBVCell */ = {
+		C591EF612563C82E005B78CC /* CustomGifHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C591EF622563C82E005B78CC /* CustomGifHeader.h */,
+				C591EF632563C82E005B78CC /* JsonRes.bundle */,
+				C591EF642563C82E005B78CC /* CustomGifHeader.m */,
+			);
+			path = CustomGifHeader;
+			sourceTree = "<group>";
+		};
+		C5BC5B3C256156200071CEEE /* TBVCell（二级标题） */ = {
 			isa = PBXGroup;
 			children = (
 				C5BC5B40256156200071CEEE /* InfoTBVCell.h */,
@@ -1852,14 +1868,14 @@
 				C5BC5B3E256156200071CEEE /* LoadMoreTBVCell.h */,
 				C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */,
 			);
-			path = TBVCell;
+			path = "TBVCell（二级标题）";
 			sourceTree = "<group>";
 		};
 		C5BC5B4C256156340071CEEE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C50A28A92562993E006996BD /* viewForHeaderInSection */,
-				C5BC5B3C256156200071CEEE /* TBVCell */,
+				C50A28A92562993E006996BD /* viewForHeaderInSection（一级标题） */,
+				C5BC5B3C256156200071CEEE /* TBVCell（二级标题） */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2056,6 +2072,7 @@
 				C52E0D6E2561128100B245CF /* green_lottie_tab_news.json in Resources */,
 				C52E0B8225610F5400B245CF /* LaunchScreen.storyboard in Resources */,
 				C52E0CA82561114E00B245CF /* ⚽️PicResource in Resources */,
+				C591EF652563C82F005B78CC /* JsonRes.bundle in Resources */,
 				C52E0E7C2561129D00B245CF /* 高度自定义的按钮.md in Resources */,
 				C5C1575F256378A500285E2E /* 钱袋.gif in Resources */,
 				C52E0D6D2561128100B245CF /* 任务.json in Resources */,
@@ -2346,6 +2363,7 @@
 				C52E0EAF2561129D00B245CF /* CALayer+Anim.m in Sources */,
 				C52E0E852561129D00B245CF /* UIView+Gradient.m in Sources */,
 				C52E0E9B2561129D00B245CF /* UIViewController+TZImagePickerControllerDelegate.m in Sources */,
+				C591EF662563C82F005B78CC /* CustomGifHeader.m in Sources */,
 				C52E0E8D2561129D00B245CF /* UIImageView+GIF.m in Sources */,
 				C52E15CE2561167700B245CF /* XHLaunchAdButton.m in Sources */,
 				C52E0EA72561129D00B245CF /* NSArray+Extension.m in Sources */,

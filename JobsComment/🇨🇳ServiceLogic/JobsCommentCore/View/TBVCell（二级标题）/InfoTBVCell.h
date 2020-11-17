@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 +(CGFloat)cellHeightWithModel:(id _Nullable)model;
 - (void)richElementsInCellWithModel:(id _Nullable)model;
--(void)action:(MKDataBlock _Nullable)actionBlock;
+-(void)actionBlockInfoTBVCell:(MKDataBlock _Nullable)infoTBVCellBlock;
 
 @end
 
