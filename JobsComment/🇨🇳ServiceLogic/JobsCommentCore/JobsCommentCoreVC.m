@@ -58,6 +58,9 @@ UITableViewDelegate
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [LoadMoreTBVCell cellHeightWithModel:nil];
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.01;
+}
 
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -189,7 +192,8 @@ viewForHeaderInSection:(NSInteger)section{
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = UITableView.new;
+        // UITableViewStyleGrouped 取消悬停效果
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tableView.backgroundColor = HEXCOLOR(0x242A37);
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -197,6 +201,8 @@ viewForHeaderInSection:(NSInteger)section{
         _tableView.mj_footer = self.mjRefreshBackNormalFooter;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.showsHorizontalScrollIndicator = NO;
+        _tableView.estimatedSectionFooterHeight = 0;
+        _tableView.estimatedSectionHeaderHeight = 0;
         _tableView.mj_footer.hidden = NO;
         _tableView.tableFooterView = UIView.new;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, self.popUpHeight, 0);

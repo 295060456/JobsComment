@@ -42,6 +42,7 @@
 		057DA7000005C0 /* TZImagePickerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 057DA7000005B0 /* TZImagePickerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		057DA700000600 /* TZImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 057DA7000005F0 /* TZImagePickerController-dummy.m */; };
 		057DA700000620 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057DA700000610 /* Photos.framework */; };
+		057DA700000640 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057DA700000630 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		057DA7000005E0 /* TZImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZImagePickerController-prefix.pch"; sourceTree = "<group>"; };
 		057DA7000005F0 /* TZImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TZImagePickerController-dummy.m"; sourceTree = "<group>"; };
 		057DA700000610 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		057DA700000630 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		0DBF2C5C77D8316134001812A5BD25EF /* TZImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TZImagePickerController.framework; path = TZImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				057DA700000370 /* Foundation.framework in Frameworks */,
+				057DA700000640 /* MobileCoreServices.framework in Frameworks */,
 				057DA700000620 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				057DA700000360 /* Foundation.framework */,
+				057DA700000630 /* MobileCoreServices.framework */,
 				057DA700000610 /* Photos.framework */,
 			);
 			name = iOS;

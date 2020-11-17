@@ -54,7 +54,7 @@
 #pragma mark —— lazyLoad
 -(CGFloat)popUpHeight{
     if (_popUpHeight == 0) {
-        _popUpHeight = 300;//默认弹出高度300
+        _popUpHeight = 200;//默认弹出高度300
     }return _popUpHeight;
 }
 

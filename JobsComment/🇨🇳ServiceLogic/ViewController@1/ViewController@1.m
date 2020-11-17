@@ -68,13 +68,17 @@ JobsCommentCoreVC *jobsCommentCoreVC;
     //            @strongify(self)
             NSLog(@"您点击了关注");
         }];
-        [UIViewController comingFromVC:self
-                                  toVC:jobsCommentCoreVC
-                           comingStyle:ComingStyle_PRESENT
-                     presentationStyle:UIModalPresentationAutomatic
-                         requestParams:@""
-                               success:^(id data) {}
-                              animated:YES];
+        if (@available(iOS 13.0, *)) {
+            [UIViewController comingFromVC:self
+                                      toVC:jobsCommentCoreVC
+                               comingStyle:ComingStyle_PRESENT
+                         presentationStyle:UIModalPresentationAutomatic
+                             requestParams:@""
+                                   success:^(id data) {}
+                                  animated:YES];
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 //拖拽手势

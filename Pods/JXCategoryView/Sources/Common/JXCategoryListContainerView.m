@@ -104,9 +104,7 @@
         self.scrollView.scrollsToTop = NO;
         self.scrollView.bounces = NO;
         if (@available(iOS 11.0, *)) {
-            if ([self.scrollView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
-                self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-            }
+            self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }
         [RTLManager horizontalFlipViewIfNeeded:self.scrollView];
         [self.containerVC.view addSubview:self.scrollView];
@@ -134,9 +132,7 @@
             self.collectionView.prefetchingEnabled = NO;
         }
         if (@available(iOS 11.0, *)) {
-            if ([self.collectionView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
-                self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-            }
+            self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }
         if ([RTLManager supportRTL]) {
             self.collectionView.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
@@ -181,7 +177,6 @@
         if (CGRectEqualToRect(self.collectionView.frame, CGRectZero) ||  !CGSizeEqualToSize(self.collectionView.bounds.size, self.bounds.size)) {
             [self.collectionView.collectionViewLayout invalidateLayout];
             self.collectionView.frame = self.bounds;
-            [self.collectionView reloadData];
             [self.collectionView setContentOffset:CGPointMake(self.collectionView.bounds.size.width*self.currentIndex, 0) animated:NO];
         }else {
             self.collectionView.frame = self.bounds;
@@ -216,16 +211,7 @@
     }
     id<JXCategoryListContentViewDelegate> list = _validListDict[@(indexPath.item)];
     if (list != nil) {
-        //fixme:如果list是UIViewController，如果这里的frame修改是`[list listView].frame = cell.bounds;`。那么就必须给list vc添加如下代码:
-        //- (void)loadView {
-        //    self.view = [[UIView alloc] init];
-        //}
-        //所以，总感觉是把UIViewController当做普通view使用，导致了系统内部的bug。所以，缓兵之计就是用下面的方法，暂时解决问题。
-        if ([list isKindOfClass:[UIViewController class]]) {
-            [list listView].frame = cell.contentView.bounds;
-        } else {
-            [list listView].frame = cell.bounds;
-        }
+        [list listView].frame = cell.contentView.bounds;
         [cell.contentView addSubview:[list listView]];
     }
     return cell;
@@ -242,7 +228,7 @@
         [self.delegate listContainerViewDidScroll:scrollView];
     }
 
-    if (!scrollView.isDragging && !scrollView.isTracking && !scrollView.isDecelerating) {
+    if (!scrollView.isDragging && !scrollView.isTracking) {
         return;
     }
     CGFloat ratio = scrollView.contentOffset.x/scrollView.bounds.size.width;
