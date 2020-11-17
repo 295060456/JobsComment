@@ -8,6 +8,8 @@
 #import "JobsCommentCoreVC.h"
 #import "JobsCommentCoreVC+VM.h"
 
+
+#define kHeadViewHeight 50
 @interface JobsCommentCoreVC ()
 <
 UITableViewDelegate
@@ -16,6 +18,11 @@ UITableViewDelegate
 
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)UIButton *cancelBtn;
+
+
+@property(nonatomic, strong) UIView *headView;
+
+@property(nonatomic, strong) UILabel *titleLabel;
 
 @end
 
@@ -35,27 +42,65 @@ UITableViewDelegate
     [super viewDidLoad];
     self.view.backgroundColor = kWhiteColor;
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
-    self.gk_navTitle = @"评论";
-    self.gk_navTitleColor = kBlackColor;
-    self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.cancelBtn];
-    self.gk_navBackgroundColor = KGreenColor;
+    
 
-    [self hideNavLine];
+    // 隐藏状态栏和导航栏
+    self.gk_statusBarHidden = YES;
+    self.gk_navigationBar.hidden = YES;
+    
+    // 加载UI
+    [self configUI];
+    
+//    self.gk_navTitle = @"评论";
+//    self.gk_navTitleColor = kBlackColor;
+//    self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.cancelBtn];
+//    self.gk_navBackgroundColor = KGreenColor;
+
+  
     NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
     [self loadData];
 }
 
+#pragma mark - 配置UI
+#pragma mark -- configUI
+- (void)configUI{
+    // 添加自定义headView
+    [self.view addSubview:self.headView];
+    [self.headView addSubview:self.titleLabel];
+    [self.headView addSubview:self.cancelBtn];
+    // 添加tableview
+    [self.view addSubview:self.tableView];
+    
+    [self.headView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.equalTo(self.view);
+        make.height.mas_equalTo(kHeadViewHeight);
+    }];
+    [self.cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.headView);
+        make.width.height.mas_equalTo(40);
+        make.right.equalTo(self.headView).offset(-10);
+    }];
+    
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.headView);
+    }];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(self.headView.mas_bottom);
+    }];
+}
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.tableView.alpha = 1;
-    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
+//    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     NSLog(@"");
-    self.gk_navigationBar.mj_h -= GK_NAVBAR_HEIGHT;
-    [self.gk_navigationBar layoutSubviews];
+//    self.gk_navigationBar.mj_h -= GK_NAVBAR_HEIGHT;
+//    [self.gk_navigationBar layoutSubviews];
     NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
 }
 
@@ -230,19 +275,12 @@ viewForHeaderInSection:(NSInteger)section{
             sleep(3);
             [self pullToRefresh];
         }];
-        
-        [self.view addSubview:_tableView];
-        [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.right.bottom.equalTo(self.view);
-            make.top.equalTo(self.gk_navigationBar.mas_bottom);
-        }];
     }return _tableView;
 }
 
 -(UIButton *)cancelBtn{
     if (!_cancelBtn) {
         _cancelBtn = UIButton.new;
-        _cancelBtn.size = CGSizeMake(50, 50);
         [_cancelBtn setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除")
                     forState:UIControlStateNormal];
         @weakify(self)
@@ -255,4 +293,22 @@ viewForHeaderInSection:(NSInteger)section{
     }return _cancelBtn;
 }
 
+- (UIView *)headView{
+    if (!_headView) {
+        _headView = [[UIView alloc] init];
+        _headView.backgroundColor = [UIColor whiteColor];
+    }
+    return _headView;
+}
+
+- (UILabel *)titleLabel{
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.font = [UIFont systemFontOfSize:18];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.textColor = [UIColor redColor];
+        _titleLabel.text = @"评论";
+    }
+    return _titleLabel;
+}
 @end
