@@ -22,12 +22,12 @@
         cell = [[InfoTBVCell alloc]initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:ReuseIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.contentView.backgroundColor = HEXCOLOR(0x242A37);
+        cell.contentView.backgroundColor = JobsCommentConfig.sharedInstance.bgCor;
     }return cell;
 }
 
 +(CGFloat)cellHeightWithModel:(id _Nullable)model{
-    return 55;
+    return JobsCommentConfig.sharedInstance.cellHeight;
 }
 
 - (void)richElementsInCellWithModel:(id _Nullable)model{
@@ -38,10 +38,17 @@
         self.textLabel.text = self.childCommentModel.nickname;
         self.detailTextLabel.text = self.childCommentModel.content;
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.childCommentModel.headImg]
-                          placeholderImage:[UIImage animatedGIFNamed:@"钱袋"]];
-        [UIView cornerCutToCircleWithView:self.imageView
-                          AndCornerRadius:55 / 2];
+                          placeholderImage:[UIImage animatedGIFNamed:@"动态头像 尺寸126"]];
     }
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.imageView.size = JobsCommentConfig.sharedInstance.headerImageViewSize;
+    [UIView cornerCutToCircleWithView:self.imageView
+                      AndCornerRadius:self.imageView.mj_h / 2];
+    self.textLabel.font = JobsCommentConfig.sharedInstance.titleFont;
+    self.detailTextLabel.font = JobsCommentConfig.sharedInstance.subTitleFont;
 }
 
 -(void)action:(MKDataBlock _Nullable)actionBlock{
@@ -60,9 +67,9 @@
 -(RBCLikeButton *)LikeBtn{
     if (!_LikeBtn) {
         _LikeBtn = RBCLikeButton.new;
-        [_LikeBtn setImage:KIMG(@"day_like")
+        [_LikeBtn setImage:KBuddleIMG(nil, @"RBCLikeButton", nil, @"day_like")
                   forState:UIControlStateNormal];
-        [_LikeBtn setImage:KIMG(@"day_like_red")
+        [_LikeBtn setImage:KBuddleIMG(nil, @"RBCLikeButton", nil, @"day_like_red")
                    forState:UIControlStateSelected];
 //        _LikeBtn.layer.cornerRadius = SCALING_RATIO(55 / 4);
 //        _LikeBtn.layer.borderColor = kGrayColor.CGColor;

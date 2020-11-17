@@ -21,22 +21,22 @@
     if (!cell) {
         cell = [[LoadMoreTBVCell alloc]initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:ReuseIdentifier];
-        cell.contentView.backgroundColor = [UIColor blueColor];
-
+        cell.contentView.backgroundColor = JobsCommentConfig.sharedInstance.bgCor;
     }return cell;
 }
 
 +(CGFloat)cellHeightWithModel:(id _Nullable)model{
-    return 55;
+    return JobsCommentConfig.sharedInstance.cellHeight;
 }
 
 - (void)richElementsInCellWithModel:(id _Nullable)model{
-    self.titleLab.text = @"加载更多...";
+    self.titleLab.alpha = 1;
 }
-
+#pragma mark —— lazyLoad
 -(UILabel *)titleLab{
     if (!_titleLab) {
         _titleLab = UILabel.new;
+        _titleLab.text = @"点击加载更多...";
         _titleLab.textAlignment = NSTextAlignmentCenter;
         _titleLab.backgroundColor = [UIColor systemYellowColor];
         [self.contentView addSubview:_titleLab];

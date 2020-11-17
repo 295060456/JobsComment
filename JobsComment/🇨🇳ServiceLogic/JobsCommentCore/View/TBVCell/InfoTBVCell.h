@@ -10,6 +10,7 @@
 #import "UIImage+YBGIF.h"
 #import "RBCLikeButton.h"
 #import "MKCommentModel.h"
+#import "JobsCommentConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

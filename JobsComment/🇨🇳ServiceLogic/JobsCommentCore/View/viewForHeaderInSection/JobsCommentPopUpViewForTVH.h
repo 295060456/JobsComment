@@ -10,6 +10,7 @@
 #import "RBCLikeButton.h"
 #import "MKCommentModel.h"
 #import "UIImage+YBGIF.h"
+#import "JobsCommentConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
                               withData:(id)data;
-
 -(void)actionBlockCommentPopUpNonHoveringHeaderView:(MKDataBlock _Nullable)commentPopUpNonHoveringHeaderViewBlock;
++(CGFloat)viewForTableViewHeaderHeightWithModel:(id _Nullable)model;
 
 @end
 

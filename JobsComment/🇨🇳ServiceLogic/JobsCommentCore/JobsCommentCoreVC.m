@@ -16,7 +16,6 @@ UITableViewDelegate
 
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)UIButton *cancelBtn;
-@property(nonatomic,strong)JobsCommentTableHeaderView *tableHeaderView;
 
 @end
 
@@ -159,16 +158,16 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (CGFloat)tableView:(UITableView *)tableView
 heightForHeaderInSection:(NSInteger)section{
-    return [LoadMoreTBVCell cellHeightWithModel:nil];
+    return [JobsCommentPopUpViewForTVH viewForTableViewHeaderHeightWithModel:nil];
 }
 //一级评论数据 展示在viewForHeaderInSection
 - (UIView *)tableView:(UITableView *)tableView
 viewForHeaderInSection:(NSInteger)section{
     MKFirstCommentModel *firstCommentModel = self.mjModel.listMutArr[section];//一级评论数据 展示在viewForHeaderInSection
     JobsCommentPopUpViewForTVH *header = [[JobsCommentPopUpViewForTVH alloc] initWithReuseIdentifier:NSStringFromClass(JobsCommentPopUpViewForTVH.class) withData:firstCommentModel];
-    @weakify(self)
+//    @weakify(self)
     [header actionBlockViewForTableViewHeader:^(id data) {
-        @strongify(self)
+//        @strongify(self)
     }];return header;
 }
 #pragma mark —— lazyLoad
@@ -184,7 +183,6 @@ viewForHeaderInSection:(NSInteger)section{
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.mj_footer.hidden = NO;
         _tableView.tableFooterView = UIView.new;
-//        _tableView.tableHeaderView = self.tableHeaderView;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, self.popUpHeight, 0);
         
         if (self.mjModel.listMutArr.count) {
@@ -203,17 +201,6 @@ viewForHeaderInSection:(NSInteger)section{
             make.top.equalTo(self.gk_navigationBar.mas_bottom);
         }];
     }return _tableView;
-}
-
--(JobsCommentTableHeaderView *)tableHeaderView{
-    if (!_tableHeaderView) {
-        _tableHeaderView = JobsCommentTableHeaderView.new;
-        _tableHeaderView.frame = _tableHeaderView.makeRect;
-        @weakify(self)
-        [_tableHeaderView actionBlockJobsCommentTableHeaderView:^(id data) {
-            @strongify(self)
-        }];
-    }return _tableHeaderView;
 }
 
 -(UIButton *)cancelBtn{

@@ -8,11 +8,11 @@
 #import <UIKit/UIKit.h>
 #import "PopUpVC.h"
 #import "EmptyView.h"
-#import "JobsCommentTableHeaderView.h"
 #import "JobsCommentPopUpViewForTVH.h"
 #import "InfoTBVCell.h"//显示具体的有用讯息
 #import "LoadMoreTBVCell.h"//加载更多
 #import "MKCommentModel.h"
+#import "JobsCommentConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
