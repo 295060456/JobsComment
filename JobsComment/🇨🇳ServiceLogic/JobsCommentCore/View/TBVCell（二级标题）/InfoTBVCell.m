@@ -10,7 +10,7 @@
 
 @interface InfoTBVCell ()
 
-@property(nonatomic,copy)MKDataBlock actionBlock;
+@property(nonatomic,copy)MKDataBlock infoTBVCellBlock;
 
 @end
 
@@ -44,24 +44,22 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.imageView.size = JobsCommentConfig.sharedInstance.headerImageViewSize;
+    self.imageView.size = JobsCommentConfig.sharedInstance.headerImageViewSize;//subTitleOffset
     [UIView cornerCutToCircleWithView:self.imageView
                       AndCornerRadius:self.imageView.mj_h / 2];
     self.textLabel.font = JobsCommentConfig.sharedInstance.titleFont;
     self.detailTextLabel.font = JobsCommentConfig.sharedInstance.subTitleFont;
+    self.textLabel.textColor = JobsCommentConfig.sharedInstance.titleCor;
+    self.detailTextLabel.textColor = JobsCommentConfig.sharedInstance.subTitleCor;
+    
+    //因为二级评论和一级评论的控件之间存在一定的offset(向右偏)，故这里进行重写约束
+    self.imageView.mj_x += JobsCommentConfig.sharedInstance.secondLevelCommentOffset;
+    self.textLabel.mj_x += JobsCommentConfig.sharedInstance.secondLevelCommentOffset;
+    self.detailTextLabel.mj_x += JobsCommentConfig.sharedInstance.secondLevelCommentOffset;
 }
 
--(void)action:(MKDataBlock _Nullable)actionBlock{
-    self.actionBlock = actionBlock;
-}
-//点赞/取消点赞操作
-- (void)likeBtnClickAction:(RBCLikeButton *)sender{
-    if (self.actionBlock) {
-        self.actionBlock(@{
-            @"sender":sender,
-            @"model":self.childCommentModel
-                         });
-    }
+-(void)actionBlockInfoTBVCell:(MKDataBlock _Nullable)infoTBVCellBlock{
+    self.infoTBVCellBlock = infoTBVCellBlock;
 }
 #pragma mark —— lazyLoad
 -(RBCLikeButton *)LikeBtn{
@@ -75,9 +73,23 @@
 //        _LikeBtn.layer.borderColor = kGrayColor.CGColor;
 //        _LikeBtn.layer.borderWidth = 1;
         _LikeBtn.thumpNum = 0;
-        [_LikeBtn addTarget:self
-                     action:@selector(likeBtnClickAction:)
-           forControlEvents:UIControlEventTouchUpInside];
+        @weakify(self)
+        [[_LikeBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            @strongify(self)
+            if (self.infoTBVCellBlock) {
+                self.infoTBVCellBlock(x);
+            }
+            
+            if (self->_LikeBtn.selected) {
+                [self->_LikeBtn setThumbWithSelected:NO
+                                            thumbNum:self->_LikeBtn.thumpNum - 1
+                                     animation:YES];
+            }else{
+                [self->_LikeBtn setThumbWithSelected:YES
+                                            thumbNum:self->_LikeBtn.thumpNum + 1
+                                     animation:YES];
+            }
+        }];
         [self.contentView addSubview:_LikeBtn];
         [_LikeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(55 / 2, 55 / 2));

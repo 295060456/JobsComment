@@ -16,6 +16,7 @@
 @property(nonatomic,strong)UIColor *subTitleCor;
 @property(nonatomic,assign)UIColor *bgCor;
 @property(nonatomic,assign)CGFloat cellHeight;
+@property(nonatomic,assign)CGFloat secondLevelCommentOffset;
 
 @end
 
@@ -48,15 +49,19 @@ static JobsCommentConfig *static_jobsCommentConfig = nil;
 }
 
 -(UIColor *)subTitleCor{
-    return COLOR_RGB(255, 255, 255, 1);
+    return kBlackColor;
 }
 
 -(UIColor *)bgCor{
-    return KLightGrayColor;
+    return kWhiteColor;
 }
 
 -(CGFloat)cellHeight{
     return 55;
+}
+
+-(CGFloat)secondLevelCommentOffset{
+    return 50;
 }
 
 @end
