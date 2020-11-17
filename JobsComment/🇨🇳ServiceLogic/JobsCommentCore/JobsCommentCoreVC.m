@@ -8,21 +8,14 @@
 #import "JobsCommentCoreVC.h"
 #import "JobsCommentCoreVC+VM.h"
 
-
-#define kHeadViewHeight 50
 @interface JobsCommentCoreVC ()
 <
 UITableViewDelegate
 ,UITableViewDataSource
 >
 
+@property(nonatomic,strong)JobsCommentTitleHeaderView *titleHeaderView;
 @property(nonatomic,strong)UITableView *tableView;
-@property(nonatomic,strong)UIButton *cancelBtn;
-
-
-@property(nonatomic, strong) UIView *headView;
-
-@property(nonatomic, strong) UILabel *titleLabel;
 
 @end
 
@@ -42,66 +35,19 @@ UITableViewDelegate
     [super viewDidLoad];
     self.view.backgroundColor = kWhiteColor;
     self.isHiddenNavigationBar = YES;//禁用系统的导航栏
-    
-
-    // 隐藏状态栏和导航栏
     self.gk_statusBarHidden = YES;
     self.gk_navigationBar.hidden = YES;
-    
-    // 加载UI
-    [self configUI];
-    
-//    self.gk_navTitle = @"评论";
-//    self.gk_navTitleColor = kBlackColor;
-//    self.gk_navRightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.cancelBtn];
-//    self.gk_navBackgroundColor = KGreenColor;
-
-  
-    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
     [self loadData];
+    self.titleHeaderView.alpha = 1;
+    self.tableView.alpha = 1;
 }
 
-#pragma mark - 配置UI
-#pragma mark -- configUI
-- (void)configUI{
-    // 添加自定义headView
-    [self.view addSubview:self.headView];
-    [self.headView addSubview:self.titleLabel];
-    [self.headView addSubview:self.cancelBtn];
-    // 添加tableview
-    [self.view addSubview:self.tableView];
-    
-    [self.headView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.right.equalTo(self.view);
-        make.height.mas_equalTo(kHeadViewHeight);
-    }];
-    [self.cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.headView);
-        make.width.height.mas_equalTo(40);
-        make.right.equalTo(self.headView).offset(-10);
-    }];
-    
-    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.headView);
-    }];
-    
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(self.view);
-        make.top.equalTo(self.headView.mas_bottom);
-    }];
-}
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.tableView.alpha = 1;
-//    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    NSLog(@"");
-//    self.gk_navigationBar.mj_h -= GK_NAVBAR_HEIGHT;
-//    [self.gk_navigationBar layoutSubviews];
-    NSLog(@"self.gk_navigationBar = %@",self.gk_navigationBar);
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -115,51 +61,17 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if ([[tableView cellForRowAtIndexPath:indexPath] isKindOfClass:LoadMoreTBVCell.class]) {//加载更多
-//        MKFirstCommentModel *firstCommentModel = self.firstCommentModelMutArr[indexPath.section];
-//        firstCommentModel.randShow += LoadDataNum;//randShow 初始值是 preMax
-//        if (firstCommentModel.rand > firstCommentModel.randShow) {//还有数据
-//            firstCommentModel.PreMax += LoadDataNum;
-//            firstCommentModel._hasMore = YES;
-//        }else{//fcm.rand = preMax + 1 + LoadDataNum 数据没了
-//            firstCommentModel._hasMore = NO;
-//        }
-//
-//        if (firstCommentModel._hasMore) {
-//            if ((firstCommentModel.isFullShow && indexPath.row < firstCommentModel.childMutArr.count) ||
-//                indexPath.row < firstCommentModel.PreMax) {
-//                #pragma warning 点击单元格要做的事
-//                NSLog(@"KKK");
-//            }else{
-//                firstCommentModel.isFullShow = !firstCommentModel.isFullShow;
-//            }
-//        }else{}
-//    #warning 使用动画刷屏 在下面几个数据刷新的时候会闪屏
-//    //        [tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section]
-//    //                 withRowAnimation:UITableViewRowAnimationNone];
-//        [self.tableView reloadData];
-//    }
-//    else if ([[tableView cellForRowAtIndexPath:indexPath] isKindOfClass:InfoTBVCell.class]){// 有内容
-//        InfoTBVCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//        self.childCommentModel = cell.childCommentModel;
-//        self.commentId = self.childCommentModel.commentId;
-//        self.ID = self.childCommentModel.ID;
-//        @weakify(self)
-//        [cell action:^(id data) {
-//            @strongify(self)
-//            [self likeBtnClickAction:cell.LikeBtn];
-//        }];
-//        [NSObject showSYSActionSheetTitle:nil
-//                                  message:nil
-//                          isSeparateStyle:YES
-//                           btnTitleArr:@[@"回复",@"复制",@"举报",@"取消"]
-//                           alertBtnAction:@[@"reply",@"copyIt",@"report",@"cancel"]
-//                                 targetVC:self
-//                                   sender:nil
-//                             alertVCBlock:^(id data) {
-//            //DIY
-//        }];
-//    }else{}
+    // 二级标题点击事件
+    [NSObject showSYSActionSheetTitle:nil
+                              message:nil
+                      isSeparateStyle:YES
+                       btnTitleArr:@[@"回复",@"复制",@"举报",@"取消"]
+                       alertBtnAction:@[@"reply",@"copyIt",@"report",@"cancel"]
+                             targetVC:self
+                               sender:nil
+                         alertVCBlock:^(id data) {
+        //DIY
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -217,6 +129,20 @@ viewForHeaderInSection:(NSInteger)section{
     MKFirstCommentModel *firstCommentModel = self.mjModel.listMutArr[section];//一级评论数据 展示在viewForHeaderInSection
     JobsCommentPopUpViewForTVH *header = [[JobsCommentPopUpViewForTVH alloc] initWithReuseIdentifier:NSStringFromClass(JobsCommentPopUpViewForTVH.class) withData:firstCommentModel];
     @weakify(self)
+    // 一级标题点击事件
+    [header actionBlockViewForTableViewHeader:^(id data) {
+        @strongify(self)
+        [NSObject showSYSAlertViewTitle:@"牛逼"
+                                message:@"哈哈哈"
+                        isSeparateStyle:NO
+                            btnTitleArr:@[@"好的"]
+                         alertBtnAction:@[@""]
+                               targetVC:self
+                           alertVCBlock:^(id data) {
+            //DIY
+        }];
+    }];
+    
     [header actionBlockjobsCommentPopUpViewForTVHBlock:^(id data) {
         @strongify(self)
     }];return header;
@@ -242,9 +168,25 @@ viewForHeaderInSection:(NSInteger)section{
     self.tableView.mj_footer.state = MJRefreshStateIdle;
     self.tableView.mj_footer.hidden = YES;
     self.tableView.pagingEnabled = YES;
-//    [self.mj_footer endRefreshingWithNoMoreData];
 }
 #pragma mark —— lazyLoad
+-(JobsCommentTitleHeaderView *)titleHeaderView{
+    if (!_titleHeaderView) {
+        _titleHeaderView = JobsCommentTitleHeaderView.new;
+        @weakify(self)
+        [_titleHeaderView actionBlockJobsCommentTitleHeaderViewBlock:^(id data) {
+            @strongify(self)
+            [self dismissViewControllerAnimated:YES
+                                     completion:Nil];
+        }];
+        [self.view addSubview:_titleHeaderView];
+        [_titleHeaderView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.right.equalTo(self.view);
+            make.height.mas_equalTo(50);
+        }];
+    }return _titleHeaderView;
+}
+
 -(UITableView *)tableView{
     if (!_tableView) {
         _tableView = UITableView.new;
@@ -275,40 +217,13 @@ viewForHeaderInSection:(NSInteger)section{
             sleep(3);
             [self pullToRefresh];
         }];
+        
+        [self.view addSubview:_tableView];
+        [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.left.right.equalTo(self.view);
+            make.top.equalTo(self.titleHeaderView.mas_bottom);
+        }];
     }return _tableView;
 }
 
--(UIButton *)cancelBtn{
-    if (!_cancelBtn) {
-        _cancelBtn = UIButton.new;
-        [_cancelBtn setImage:KBuddleIMG(@"⚽️PicResource", @"Others", nil, @"删除")
-                    forState:UIControlStateNormal];
-        @weakify(self)
-        [[_cancelBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-            @strongify(self)
-            NSLog(@"点击了删除按钮");
-            [self dismissViewControllerAnimated:YES
-                                     completion:Nil];
-        }];
-    }return _cancelBtn;
-}
-
-- (UIView *)headView{
-    if (!_headView) {
-        _headView = [[UIView alloc] init];
-        _headView.backgroundColor = [UIColor whiteColor];
-    }
-    return _headView;
-}
-
-- (UILabel *)titleLabel{
-    if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font = [UIFont systemFontOfSize:18];
-        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.textColor = [UIColor redColor];
-        _titleLabel.text = @"评论";
-    }
-    return _titleLabel;
-}
 @end

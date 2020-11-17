@@ -9,6 +9,7 @@
 #import "PopUpVC.h"
 #import "EmptyView.h"
 #import "JobsCommentPopUpViewForTVH.h"
+#import "JobsCommentTitleHeaderView.h"
 #import "InfoTBVCell.h"//显示具体的有用讯息
 #import "LoadMoreTBVCell.h"//加载更多
 #import "CustomGifHeader.h"
