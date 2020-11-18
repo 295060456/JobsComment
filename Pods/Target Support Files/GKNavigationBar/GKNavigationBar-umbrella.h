@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "GKNavigationBar.h"
 #import "GKBaseAnimatedTransition.h"
 #import "GKGestureHandleConfigure.h"
 #import "GKGestureHandleDefine.h"
@@ -19,7 +20,6 @@
 #import "UINavigationController+GKGestureHandle.h"
 #import "UIScrollView+GKGestureHandle.h"
 #import "UIViewController+GKGestureHandle.h"
-#import "GKNavigationBar.h"
 #import "GKCustomNavigationBar.h"
 #import "GKNavigationBarConfigure.h"
 #import "GKNavigationBarDefine.h"
