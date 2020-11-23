@@ -14,7 +14,13 @@
 static inline UIWindow * getMainWindow(){
     UIWindow *window = nil;
     if (@available(iOS 13.0, *)) {
-        window = [JobsCommentSceneDelegate sharedInstance].window;
+//        window = [JobsCommentSceneDelegate sharedInstance].window;
+        for (UIWindowScene* windowScene in [UIApplication sharedApplication].connectedScenes){
+            if (windowScene.activationState == UISceneActivationStateForegroundActive){
+                window = windowScene.windows.firstObject;
+                break;
+            }
+        }
     }else{
         window = UIApplication.sharedApplication.delegate.window;
 //        [UIApplication sharedApplication].keyWindow
