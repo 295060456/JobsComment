@@ -64,6 +64,7 @@ def cocoPodsConfig
   # 当我们下载完成，但是还没有安装之时，可以使用hook机制通过pre_install指定要做更改，更改完之后进入安装阶段。 格式如下：
   pre_install do |installer|
       # 做一些安装之前的更改
+      
     end
   
   # 这个是cocoapods的一些配置,官网并没有太详细的说明,一般采取默认就好了,也就是不写.
