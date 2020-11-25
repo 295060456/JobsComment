@@ -91,7 +91,7 @@
 		C52E0E732561129D00B245CF /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DAD2561129C00B245CF /* UIImage+Extras.m */; };
 		C52E0E742561129D00B245CF /* UIImage+SYS.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DAF2561129C00B245CF /* UIImage+SYS.m */; };
 		C52E0E752561129D00B245CF /* UIImage+Overlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DB32561129C00B245CF /* UIImage+Overlay.m */; };
-		C52E0E762561129D00B245CF /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DB62561129C00B245CF /* UILabel+RichText.m */; };
+		C52E0E762561129D00B245CF /* NSObject+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DB62561129C00B245CF /* NSObject+RichText.m */; };
 		C52E0E772561129D00B245CF /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DB92561129C00B245CF /* UILabel+Extra.m */; };
 		C52E0E782561129D00B245CF /* UITableViewCell+Margin.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DBD2561129C00B245CF /* UITableViewCell+Margin.m */; };
 		C52E0E792561129D00B245CF /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C52E0DC02561129C00B245CF /* WhiteRightArrow@2x.png */; };
@@ -393,9 +393,9 @@
 		C52E0DB22561129C00B245CF /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
 		C52E0DB32561129C00B245CF /* UIImage+Overlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Overlay.m"; sourceTree = "<group>"; };
 		C52E0DB42561129C00B245CF /* UIImage+screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+screenshot.h"; sourceTree = "<group>"; };
-		C52E0DB62561129C00B245CF /* UILabel+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RichText.m"; sourceTree = "<group>"; };
+		C52E0DB62561129C00B245CF /* NSObject+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RichText.m"; sourceTree = "<group>"; };
 		C52E0DB72561129C00B245CF /* UILabel+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
-		C52E0DB82561129C00B245CF /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
+		C52E0DB82561129C00B245CF /* NSObject+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RichText.h"; sourceTree = "<group>"; };
 		C52E0DB92561129C00B245CF /* UILabel+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
 		C52E0DBC2561129C00B245CF /* UITableViewCell+Margin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Margin.h"; sourceTree = "<group>"; };
 		C52E0DBD2561129C00B245CF /* UITableViewCell+Margin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Margin.m"; sourceTree = "<group>"; };
@@ -1205,10 +1205,10 @@
 		C52E0DB52561129C00B245CF /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0DB62561129C00B245CF /* UILabel+RichText.m */,
 				C52E0DB72561129C00B245CF /* UILabel+Extra.h */,
-				C52E0DB82561129C00B245CF /* UILabel+RichText.h */,
 				C52E0DB92561129C00B245CF /* UILabel+Extra.m */,
+				C52E0DB82561129C00B245CF /* NSObject+RichText.h */,
+				C52E0DB62561129C00B245CF /* NSObject+RichText.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -2273,7 +2273,7 @@
 				C52E0D8A2561128100B245CF /* CustomTabBar.m in Sources */,
 				C52E0E8E2561129D00B245CF /* NavigationBar.m in Sources */,
 				C52E0EA02561129D00B245CF /* BaseNavigationVC.m in Sources */,
-				C52E0E762561129D00B245CF /* UILabel+RichText.m in Sources */,
+				C52E0E762561129D00B245CF /* NSObject+RichText.m in Sources */,
 				C52E15C42561167700B245CF /* WMZBannerView.m in Sources */,
 				C52E0E732561129D00B245CF /* UIImage+Extras.m in Sources */,
 				C52E15C72561167700B245CF /* WMZBannerOverLayout.m in Sources */,
