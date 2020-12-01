@@ -194,6 +194,7 @@
 		C542467C25614C97002D16AD /* UIWindow+Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = C542467B25614C97002D16AD /* UIWindow+Touch.m */; };
 		C542468225614E2D002D16AD /* JobsCommentCoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468125614E2D002D16AD /* JobsCommentCoreVC.m */; };
 		C542468C256154FE002D16AD /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468B256154FE002D16AD /* EmptyView.m */; };
+		C54FE2B22576722900937C11 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54FE2B12576722900937C11 /* BaseViewController.m */; };
 		C55169002575207000FF5217 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C55168F32575207000FF5217 /* HQTextField.m */; };
 		C55169012575207000FF5217 /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C55168F62575207000FF5217 /* UITextField+Extend.m */; };
 		C55169022575207000FF5217 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C55168F82575207000FF5217 /* ZYTextField.m */; };
@@ -592,6 +593,8 @@
 		C542468125614E2D002D16AD /* JobsCommentCoreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsCommentCoreVC.m; sourceTree = "<group>"; };
 		C542468A256154FE002D16AD /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
 		C542468B256154FE002D16AD /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
+		C54FE2B02576722900937C11 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C54FE2B12576722900937C11 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C55168F22575207000FF5217 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		C55168F32575207000FF5217 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		C55168F52575207000FF5217 /* UITextField+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extend.h"; sourceTree = "<group>"; };
@@ -1370,26 +1373,8 @@
 		C52E0DF82561129D00B245CF /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0E0A2561129D00B245CF /* UIViewController+TZImagePickerController */,
-				C52E0DFC2561129D00B245CF /* UIViewController+JXCategory */,
-				C52E0DFA2561129D00B245CF /* UIViewController+BackBtn.h */,
-				C52E0E072561129D00B245CF /* UIViewController+BackBtn.m */,
-				C52E0E032561129D00B245CF /* UIViewController+BaseVC.h */,
-				C52E0E142561129D00B245CF /* UIViewController+BaseVC.m */,
-				C52E0E152561129D00B245CF /* UIViewController+BRPickerView.h */,
-				C52E0E052561129D00B245CF /* UIViewController+BRPickerView.m */,
-				C52E0E112561129D00B245CF /* UIViewController+BWShareView.h */,
-				C52E0DFB2561129D00B245CF /* UIViewController+BWShareView.m */,
-				C52E0E162561129D00B245CF /* UIViewController+GifImageView.h */,
-				C52E0E062561129D00B245CF /* UIViewController+GifImageView.m */,
-				C52E0E082561129D00B245CF /* UIViewController+JPImageresizerView.h */,
-				C52E0DF92561129D00B245CF /* UIViewController+JPImageresizerView.m */,
-				C52E0E022561129D00B245CF /* UIViewController+MJRefresh.h */,
-				C52E0E132561129D00B245CF /* UIViewController+MJRefresh.m */,
-				C52E0E042561129D00B245CF /* UIViewController+NavigationBar.h */,
-				C52E0E122561129D00B245CF /* UIViewController+NavigationBar.m */,
-				C52E0E092561129D00B245CF /* UIViewController+Shake.h */,
-				C52E0E012561129D00B245CF /* UIViewController+Shake.m */,
+				C54FE2AF2576721E00937C11 /* BaseViewController */,
+				C54FE2AE2576720B00937C11 /* UIViewController+Category */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1813,6 +1798,42 @@
 				C542468B256154FE002D16AD /* EmptyView.m */,
 			);
 			path = LYEmptyView;
+			sourceTree = "<group>";
+		};
+		C54FE2AE2576720B00937C11 /* UIViewController+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C52E0E0A2561129D00B245CF /* UIViewController+TZImagePickerController */,
+				C52E0DFC2561129D00B245CF /* UIViewController+JXCategory */,
+				C52E0DFA2561129D00B245CF /* UIViewController+BackBtn.h */,
+				C52E0E072561129D00B245CF /* UIViewController+BackBtn.m */,
+				C52E0E032561129D00B245CF /* UIViewController+BaseVC.h */,
+				C52E0E142561129D00B245CF /* UIViewController+BaseVC.m */,
+				C52E0E152561129D00B245CF /* UIViewController+BRPickerView.h */,
+				C52E0E052561129D00B245CF /* UIViewController+BRPickerView.m */,
+				C52E0E112561129D00B245CF /* UIViewController+BWShareView.h */,
+				C52E0DFB2561129D00B245CF /* UIViewController+BWShareView.m */,
+				C52E0E162561129D00B245CF /* UIViewController+GifImageView.h */,
+				C52E0E062561129D00B245CF /* UIViewController+GifImageView.m */,
+				C52E0E082561129D00B245CF /* UIViewController+JPImageresizerView.h */,
+				C52E0DF92561129D00B245CF /* UIViewController+JPImageresizerView.m */,
+				C52E0E022561129D00B245CF /* UIViewController+MJRefresh.h */,
+				C52E0E132561129D00B245CF /* UIViewController+MJRefresh.m */,
+				C52E0E042561129D00B245CF /* UIViewController+NavigationBar.h */,
+				C52E0E122561129D00B245CF /* UIViewController+NavigationBar.m */,
+				C52E0E092561129D00B245CF /* UIViewController+Shake.h */,
+				C52E0E012561129D00B245CF /* UIViewController+Shake.m */,
+			);
+			path = "UIViewController+Category";
+			sourceTree = "<group>";
+		};
+		C54FE2AF2576721E00937C11 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C54FE2B02576722900937C11 /* BaseViewController.h */,
+				C54FE2B12576722900937C11 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		C55168F12575207000FF5217 /* HQTextField */ = {
@@ -2289,6 +2310,7 @@
 				C542449D256126AD002D16AD /* PopUpVC.m in Sources */,
 				C52E0E7E2561129D00B245CF /* UIColor+Hex.m in Sources */,
 				C52E0E8F2561129D00B245CF /* NSString+Extras.m in Sources */,
+				C54FE2B22576722900937C11 /* BaseViewController.m in Sources */,
 				C52E0EA62561129D00B245CF /* UIView+JHGestureBlock.m in Sources */,
 				C52E0E752561129D00B245CF /* UIImage+Overlay.m in Sources */,
 				C52E0C6C256110C200B245CF /* YBNotificationManager.m in Sources */,

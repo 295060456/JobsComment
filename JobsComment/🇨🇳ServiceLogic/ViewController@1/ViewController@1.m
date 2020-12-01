@@ -68,17 +68,17 @@ JobsCommentCoreVC *jobsCommentCoreVC;
     //            @strongify(self)
             NSLog(@"您点击了关注");
         }];
-        if (@available(iOS 13.0, *)) {
-            [UIViewController comingFromVC:self
-                                      toVC:jobsCommentCoreVC
-                               comingStyle:ComingStyle_PRESENT
-                         presentationStyle:UIModalPresentationAutomatic
-                             requestParams:@""
-                                   success:^(id data) {}
-                                  animated:YES];
-        } else {
-            // Fallback on earlier versions
-        }
+
+        [UIViewController comingFromVC:self
+                                  toVC:jobsCommentCoreVC
+                           comingStyle:ComingStyle_PUSH
+                     presentationStyle:[UIDevice currentDevice].systemVersion.doubleValue >= 13.0 ? UIModalPresentationAutomatic : UIModalPresentationFullScreen
+                         requestParams:@""
+              hidesBottomBarWhenPushed:YES
+                              animated:YES
+                               success:^(id data) {
+            
+        }];
     }
 }
 //拖拽手势
