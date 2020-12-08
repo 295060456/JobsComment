@@ -221,7 +221,7 @@
 		C5D774F0257F59AB0087FC92 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D774E8257F59AB0087FC92 /* HQTextField.m */; };
 		C5D774F1257F59AB0087FC92 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D774EA257F59AB0087FC92 /* ZYTextField.m */; };
 		C5D774F2257F59AB0087FC92 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5D774EC257F59AB0087FC92 /* ZYTextField.bundle */; };
-		C5D77D3C257F5F020087FC92 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77D3B257F5F020087FC92 /* ZYTextField+HistoryDataList.m */; };
+		C5D78567257F72E80087FC92 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D78566257F72E80087FC92 /* ZYTextField+HistoryDataList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -638,7 +638,7 @@
 		C5D774EB257F59AB0087FC92 /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
 		C5D774EC257F59AB0087FC92 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		C5D77D3A257F5F020087FC92 /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
-		C5D77D3B257F5F020087FC92 /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYTextField+HistoryDataList.m"; path = "../../../../../../../Desktop/未命名文件夹/ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
+		C5D78566257F72E80087FC92 /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
 		D44A56E854A665160C50053B /* Pods-JobsCommentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsCommentTests.debug.xcconfig"; path = "Target Support Files/Pods-JobsCommentTests/Pods-JobsCommentTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1160,30 +1160,30 @@
 		C52E0DA62561129C00B245CF /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0DA72561129C00B245CF /* UIImage */,
-				C52E0DB52561129C00B245CF /* UILabel */,
-				C52E0DBA2561129C00B245CF /* UITableViewCell */,
-				C52E0DC32561129C00B245CF /* UIButton */,
-				C52E0DC82561129C00B245CF /* UIColor */,
-				C52E0DCB2561129C00B245CF /* UIView */,
-				C52E0DDA2561129C00B245CF /* UIFont */,
+				C52E0E422561129D00B245CF /* CALayer */,
+				C52E0E2C2561129D00B245CF /* NSArray */,
+				C52E0E4A2561129D00B245CF /* NSObject */,
+				C52E0DF12561129D00B245CF /* NSString */,
 				C52E0DDD2561129D00B245CF /* RedefineSys */,
+				C52E0DC32561129C00B245CF /* UIButton */,
+				C52E0E472561129D00B245CF /* UICollectionReusableView 用作基类 */,
 				C52E0DE22561129D00B245CF /* UICollectionView */,
 				C52E0DE82561129D00B245CF /* UICollectionViewCell */,
+				C52E0E382561129D00B245CF /* UICollectionViewFlowLayout */,
+				C52E0DC82561129C00B245CF /* UIColor */,
+				C52E0DDA2561129C00B245CF /* UIFont */,
+				C52E0E292561129D00B245CF /* UIGestureRecognizer */,
+				C52E0DA72561129C00B245CF /* UIImage */,
 				C52E0DEB2561129D00B245CF /* UIImageView */,
+				C52E0DB52561129C00B245CF /* UILabel */,
 				C52E0DEE2561129D00B245CF /* UINavigationBar */,
-				C52E0DF12561129D00B245CF /* NSString */,
-				C52E0DF82561129D00B245CF /* UIViewController */,
 				C52E0E172561129D00B245CF /* UINavigationController */,
 				C52E0E1A2561129D00B245CF /* UITableView */,
-				C52E0E292561129D00B245CF /* UIGestureRecognizer */,
-				C52E0E2C2561129D00B245CF /* NSArray */,
+				C52E0DBA2561129C00B245CF /* UITableViewCell */,
 				C52E0E312561129D00B245CF /* UITableViewHeaderFooterView */,
-				C52E0E382561129D00B245CF /* UICollectionViewFlowLayout */,
-				C52E0E422561129D00B245CF /* CALayer */,
-				C52E0E472561129D00B245CF /* UICollectionReusableView 用作基类 */,
-				C52E0E4A2561129D00B245CF /* NSObject */,
 				C52E0E602561129D00B245CF /* UITextField */,
+				C52E0DCB2561129C00B245CF /* UIView */,
+				C52E0DF82561129D00B245CF /* UIViewController */,
 			);
 			path = BaseCustomizeUIKit;
 			sourceTree = "<group>";
@@ -1354,8 +1354,8 @@
 		C52E0DEE2561129D00B245CF /* UINavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0DEF2561129D00B245CF /* NavigationBar.m */,
 				C52E0DF02561129D00B245CF /* NavigationBar.h */,
+				C52E0DEF2561129D00B245CF /* NavigationBar.m */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -1633,10 +1633,10 @@
 		C52E15912561167700B245CF /* Pod 不进去的 */ = {
 			isa = PBXGroup;
 			children = (
-				C52E15922561167700B245CF /* WMZBanner */,
 				C52E15A02561167700B245CF /* FDFullscreenPopGesture */,
-				C52E15A52561167700B245CF /* ZZCircleProgress */,
+				C52E15922561167700B245CF /* WMZBanner */,
 				C52E15AB2561167700B245CF /* XHLaunchAd */,
+				C52E15A52561167700B245CF /* ZZCircleProgress */,
 			);
 			path = "Pod 不进去的";
 			sourceTree = "<group>";
@@ -1806,26 +1806,9 @@
 		C54FE2AE2576720B00937C11 /* UIViewController+Category */ = {
 			isa = PBXGroup;
 			children = (
+				C5D78880257F79B60087FC92 /* UIViewController+Others */,
 				C52E0E0A2561129D00B245CF /* UIViewController+TZImagePickerController */,
 				C52E0DFC2561129D00B245CF /* UIViewController+JXCategory */,
-				C52E0DFA2561129D00B245CF /* UIViewController+BackBtn.h */,
-				C52E0E072561129D00B245CF /* UIViewController+BackBtn.m */,
-				C52E0E032561129D00B245CF /* UIViewController+BaseVC.h */,
-				C52E0E142561129D00B245CF /* UIViewController+BaseVC.m */,
-				C52E0E152561129D00B245CF /* UIViewController+BRPickerView.h */,
-				C52E0E052561129D00B245CF /* UIViewController+BRPickerView.m */,
-				C52E0E112561129D00B245CF /* UIViewController+BWShareView.h */,
-				C52E0DFB2561129D00B245CF /* UIViewController+BWShareView.m */,
-				C52E0E162561129D00B245CF /* UIViewController+GifImageView.h */,
-				C52E0E062561129D00B245CF /* UIViewController+GifImageView.m */,
-				C52E0E082561129D00B245CF /* UIViewController+JPImageresizerView.h */,
-				C52E0DF92561129D00B245CF /* UIViewController+JPImageresizerView.m */,
-				C52E0E022561129D00B245CF /* UIViewController+MJRefresh.h */,
-				C52E0E132561129D00B245CF /* UIViewController+MJRefresh.m */,
-				C52E0E042561129D00B245CF /* UIViewController+NavigationBar.h */,
-				C52E0E122561129D00B245CF /* UIViewController+NavigationBar.m */,
-				C52E0E092561129D00B245CF /* UIViewController+Shake.h */,
-				C52E0E012561129D00B245CF /* UIViewController+Shake.m */,
 			);
 			path = "UIViewController+Category";
 			sourceTree = "<group>";
@@ -1967,9 +1950,34 @@
 				C5D774EB257F59AB0087FC92 /* ZYTextField.h */,
 				C5D774EA257F59AB0087FC92 /* ZYTextField.m */,
 				C5D77D3A257F5F020087FC92 /* ZYTextField+HistoryDataList.h */,
-				C5D77D3B257F5F020087FC92 /* ZYTextField+HistoryDataList.m */,
+				C5D78566257F72E80087FC92 /* ZYTextField+HistoryDataList.m */,
 			);
 			path = ZYTextField;
+			sourceTree = "<group>";
+		};
+		C5D78880257F79B60087FC92 /* UIViewController+Others */ = {
+			isa = PBXGroup;
+			children = (
+				C52E0DFA2561129D00B245CF /* UIViewController+BackBtn.h */,
+				C52E0E072561129D00B245CF /* UIViewController+BackBtn.m */,
+				C52E0E032561129D00B245CF /* UIViewController+BaseVC.h */,
+				C52E0E142561129D00B245CF /* UIViewController+BaseVC.m */,
+				C52E0E152561129D00B245CF /* UIViewController+BRPickerView.h */,
+				C52E0E052561129D00B245CF /* UIViewController+BRPickerView.m */,
+				C52E0E112561129D00B245CF /* UIViewController+BWShareView.h */,
+				C52E0DFB2561129D00B245CF /* UIViewController+BWShareView.m */,
+				C52E0E162561129D00B245CF /* UIViewController+GifImageView.h */,
+				C52E0E062561129D00B245CF /* UIViewController+GifImageView.m */,
+				C52E0E082561129D00B245CF /* UIViewController+JPImageresizerView.h */,
+				C52E0DF92561129D00B245CF /* UIViewController+JPImageresizerView.m */,
+				C52E0E022561129D00B245CF /* UIViewController+MJRefresh.h */,
+				C52E0E132561129D00B245CF /* UIViewController+MJRefresh.m */,
+				C52E0E042561129D00B245CF /* UIViewController+NavigationBar.h */,
+				C52E0E122561129D00B245CF /* UIViewController+NavigationBar.m */,
+				C52E0E092561129D00B245CF /* UIViewController+Shake.h */,
+				C52E0E012561129D00B245CF /* UIViewController+Shake.m */,
+			);
+			path = "UIViewController+Others";
 			sourceTree = "<group>";
 		};
 		EB47A1B9BA8F5B8CDDB6674F /* Pods */ = {
@@ -2279,7 +2287,6 @@
 				C52E15C32561167700B245CF /* WMZBannerParam.m in Sources */,
 				C52E0D872561128100B245CF /* TLTabBarAnimation.m in Sources */,
 				C52E0E7B2561129D00B245CF /* UITableViewCell+WhiteArrows.m in Sources */,
-				C5D77D3C257F5F020087FC92 /* ZYTextField+HistoryDataList.m in Sources */,
 				C5D774EE257F59AB0087FC92 /* UITextField+Extend.m in Sources */,
 				C52E0EB42561129D00B245CF /* NSObject+SYSAlertController.m in Sources */,
 				C52E0E742561129D00B245CF /* UIImage+SYS.m in Sources */,
@@ -2383,6 +2390,7 @@
 				C52E0E862561129D00B245CF /* UIFont+Extras.m in Sources */,
 				C52E0D942561128100B245CF /* UIControl+XY.m in Sources */,
 				C52E0E7F2561129D00B245CF /* UIView+Chain.m in Sources */,
+				C5D78567257F72E80087FC92 /* ZYTextField+HistoryDataList.m in Sources */,
 				C52E0EBA2561129D00B245CF /* NSObject+Time.m in Sources */,
 				C52E0E8B2561129D00B245CF /* UICollectionView+RegisterClass.m in Sources */,
 				C52E162A2561171E00B245CF /* ViewController@5.m in Sources */,
