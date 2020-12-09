@@ -19,12 +19,8 @@
 
     [NSObject OpenURL:openModel
               options:@{}
-             showText:@""
-            superView:getMainWindow()
-            useAssert:NO
-    completionHandler:^{
-            //TODO
-    }];
+completionOpenSuccessHandler:nil
+completionOpenFailHandler:nil];
     
     return YES;
 }
