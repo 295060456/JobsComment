@@ -12,7 +12,7 @@
 #import "JobsCommentTitleHeaderView.h"
 #import "InfoTBVCell.h"//显示具体的有用讯息
 #import "LoadMoreTBVCell.h"//加载更多
-#import "CustomGifHeader.h"
+#import "LOTAnimationMJRefreshHeader.h"
 #import "MKCommentModel.h"
 #import "JobsCommentConfig.h"
 
