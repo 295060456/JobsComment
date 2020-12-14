@@ -10,7 +10,6 @@
 #define Manual_Add_ThirdParty_h
 
 #import "AABlock.h"
-
 //NSString
 #import "NSString+Extras.h"
 //UIFont
@@ -69,6 +68,8 @@
 #import "UITableViewCell+WhiteArrows.h"
 //UIColor
 #import "UIColor+Hex.h"
+//UIControl
+#import "UIControl+XY.h"
 
 #import "LoadingImage.h"
 
@@ -79,8 +80,6 @@
 
 #import "UIButton+ImageTitleSpacing.h"
 #import "NSTimerManager.h"
-#import "UIControl+XY.h"
-#import "PlaySound.h"
 #import "YBNotificationManager.h"
 #import "TXFileOperation.h"
 #import "FileFolderHandleTool.h"
