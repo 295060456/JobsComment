@@ -110,7 +110,6 @@
                            value:[NSURL URLWithString:richLabelDataStringsModel.richLabelURLModel.urlStr]
                            range:richLabelDataStringsModel.richLabelURLModel.range];
     }
-    
     return attrString;
 }
 
