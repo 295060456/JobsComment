@@ -204,6 +204,8 @@
 		C5D0B75025878CB6002CA224 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B74D25878CB6002CA224 /* Sound.wav */; };
 		C5D0B75125878CB6002CA224 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B74E25878CB6002CA224 /* 带有按键音的按钮.md */; };
 		C5D0B75225878CB6002CA224 /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B74F25878CB6002CA224 /* SoundBtn.m */; };
+		C5D1BE3F258B1F5A00784D2F /* UIViewController+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BE3E258B1F5900784D2F /* UIViewController+EmptyData.m */; };
+		C5D1BE46258B1F6400784D2F /* UIView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1BE44258B1F6400784D2F /* UIView+EmptyData.m */; };
 		C5D600FE258630CC00029AFF /* UIViewController+BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D600FC258630CC00029AFF /* UIViewController+BaseVC.m */; };
 		C5D60107258630DA00029AFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D60105258630DA00029AFF /* BaseViewController.m */; };
 		C5D60110258630EF00029AFF /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D6010E258630EE00029AFF /* UIViewController+NavigationBar.m */; };
@@ -607,6 +609,10 @@
 		C5D0B74D25878CB6002CA224 /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
 		C5D0B74E25878CB6002CA224 /* 带有按键音的按钮.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "带有按键音的按钮.md"; sourceTree = "<group>"; };
 		C5D0B74F25878CB6002CA224 /* SoundBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBtn.m; sourceTree = "<group>"; };
+		C5D1BE3D258B1F5900784D2F /* UIViewController+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EmptyData.h"; sourceTree = "<group>"; };
+		C5D1BE3E258B1F5900784D2F /* UIViewController+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EmptyData.m"; sourceTree = "<group>"; };
+		C5D1BE44258B1F6400784D2F /* UIView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyData.m"; sourceTree = "<group>"; };
+		C5D1BE45258B1F6400784D2F /* UIView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyData.h"; sourceTree = "<group>"; };
 		C5D600FC258630CC00029AFF /* UIViewController+BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseVC.m"; sourceTree = "<group>"; };
 		C5D600FD258630CC00029AFF /* UIViewController+BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseVC.h"; sourceTree = "<group>"; };
 		C5D60105258630DA00029AFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -1223,11 +1229,12 @@
 		C52E0DCB2561129C00B245CF /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C5529E682589CDE900A89501 /* UIView+JHGestureBlock */,
 				C595BB37258640F8002A4531 /* UIView+Animation */,
 				C595BB38258640FD002A4531 /* UIView+Chain */,
+				C5D1BE43258B1F6400784D2F /* UIView+EmptyData */,
 				C595BB3925864103002A4531 /* UIView+Extras */,
 				C595BB3A2586410B002A4531 /* UIView+Gradient */,
+				C5529E682589CDE900A89501 /* UIView+JHGestureBlock */,
 				C595BB3B25864111002A4531 /* UIView+Measure */,
 				C595BB3C2586411D002A4531 /* UIView+SuspendView */,
 			);
@@ -2182,6 +2189,24 @@
 			path = "公共配置文件";
 			sourceTree = "<group>";
 		};
+		C5D1B949258B0C0A00784D2F /* UIViewController+EmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1BE3D258B1F5900784D2F /* UIViewController+EmptyData.h */,
+				C5D1BE3E258B1F5900784D2F /* UIViewController+EmptyData.m */,
+			);
+			path = "UIViewController+EmptyData";
+			sourceTree = "<group>";
+		};
+		C5D1BE43258B1F6400784D2F /* UIView+EmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1BE44258B1F6400784D2F /* UIView+EmptyData.m */,
+				C5D1BE45258B1F6400784D2F /* UIView+EmptyData.h */,
+			);
+			path = "UIView+EmptyData";
+			sourceTree = "<group>";
+		};
 		C5D6C71A2585F19300029AFF /* NSObject+AFNReachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -2327,6 +2352,7 @@
 				C544BAA62583714D00C6CF2A /* UIViewController+BaseVC */,
 				C544BAA72583715400C6CF2A /* UIViewController+BRPickerView */,
 				C544BAA82583715D00C6CF2A /* UIViewController+BWShareView */,
+				C5D1B949258B0C0A00784D2F /* UIViewController+EmptyData */,
 				C544BAAF2583716D00C6CF2A /* UIViewController+GifImageView */,
 				C544BAB02583717700C6CF2A /* UIViewController+JPImageresizerView */,
 				C544BAB12583718000C6CF2A /* UIViewController+MJRefresh */,
@@ -2682,6 +2708,7 @@
 				C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */,
 				C52E0D9F2561128100B245CF /* GCD_TimerManager.m in Sources */,
 				C52E15D02561167700B245CF /* XHLaunchAdConst.m in Sources */,
+				C5D1BE3F258B1F5A00784D2F /* UIViewController+EmptyData.m in Sources */,
 				C52E0DA12561128100B245CF /* CADisplayLink_TimerManager.m in Sources */,
 				C52E0D992561128100B245CF /* MJRefreshComponent+Lottie.m in Sources */,
 				C5BC5B50256157020071CEEE /* MKCommentModel.m in Sources */,
@@ -2693,6 +2720,7 @@
 				C52E0E752561129D00B245CF /* UIImage+Overlay.m in Sources */,
 				C52E0C6C256110C200B245CF /* NotificationManager.m in Sources */,
 				C52E0EAA2561129D00B245CF /* ViewForTableViewFooter.m in Sources */,
+				C5D1BE46258B1F6400784D2F /* UIView+EmptyData.m in Sources */,
 				C52E0E772561129D00B245CF /* UILabel+Extra.m in Sources */,
 				C52E0CB5256111D300B245CF /* JobsCommentAppDelegate+PopupView.m in Sources */,
 				C5D600FE258630CC00029AFF /* UIViewController+BaseVC.m in Sources */,
