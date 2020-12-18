@@ -410,8 +410,12 @@ shouldSelectViewController:(UIViewController *)viewController {
         @weakify(self)
         self.view.vc = weak_self;
         [self.view addSubview:_suspendBtn];
-        _suspendBtn.frame = CGRectMake(80, 100, 50, 50);
-        [UIView cornerCutToCircleWithView:_suspendBtn AndCornerRadius:25];
+        _suspendBtn.frame = CGRectMake(80,
+                                       100,
+                                       50,
+                                       50);
+        [UIView cornerCutToCircleWithView:_suspendBtn
+                          andCornerRadius:25];
         [[_suspendBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             @strongify(self)
             [self->_suspendBtn startRotateAnimation];

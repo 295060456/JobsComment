@@ -46,7 +46,7 @@
     [super layoutSubviews];
     self.imageView.size = JobsCommentConfig.sharedInstance.headerImageViewSize;//subTitleOffset
     [UIView cornerCutToCircleWithView:self.imageView
-                      AndCornerRadius:self.imageView.mj_h / 2];
+                      andCornerRadius:self.imageView.mj_h / 2];
     self.textLabel.font = JobsCommentConfig.sharedInstance.titleFont;
     self.detailTextLabel.font = JobsCommentConfig.sharedInstance.subTitleFont;
     self.textLabel.textColor = JobsCommentConfig.sharedInstance.titleCor;
