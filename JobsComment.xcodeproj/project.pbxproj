@@ -187,6 +187,8 @@
 		C595D1BC2587141B002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1B42587141B002A4531 /* SuspendView.m */; };
 		C595D1BD2587141B002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1B82587141B002A4531 /* SuspendLab.m */; };
 		C595D1BE2587141B002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1BA2587141B002A4531 /* SuspendBtn.m */; };
+		C59A3B53258DD1AB005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3B51258DD1AB005F6260 /* UserDefaultModel.m */; };
+		C59A3B54258DD1AB005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3B52258DD1AB005F6260 /* UserDefaultManager.m */; };
 		C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3D256156200071CEEE /* InfoTBVCell.m */; };
 		C5BC5B42256156200071CEEE /* LoadMoreTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */; };
 		C5BC5B48256156310071CEEE /* JobsCommentPopUpViewForTVH.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B47256156310071CEEE /* JobsCommentPopUpViewForTVH.m */; };
@@ -586,6 +588,10 @@
 		C595D1B82587141B002A4531 /* SuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendLab.m; sourceTree = "<group>"; };
 		C595D1BA2587141B002A4531 /* SuspendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendBtn.m; sourceTree = "<group>"; };
 		C595D1BB2587141B002A4531 /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
+		C59A3B4F258DD1AB005F6260 /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
+		C59A3B50258DD1AB005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
+		C59A3B51258DD1AB005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
+		C59A3B52258DD1AB005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
 		C5BC5B3D256156200071CEEE /* InfoTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTBVCell.m; sourceTree = "<group>"; };
 		C5BC5B3E256156200071CEEE /* LoadMoreTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTBVCell.h; sourceTree = "<group>"; };
 		C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTBVCell.m; sourceTree = "<group>"; };
@@ -843,6 +849,7 @@
 				C5424689256154FE002D16AD /* LYEmptyView */,
 				C52E0D362561128100B245CF /* Suspend */,
 				C52E0D542561128100B245CF /* TimerManager */,
+				C59A3B4E258DD1AB005F6260 /* UserDefaultManager */,
 			);
 			path = "🔨Manual_Add_ThirdParty ";
 			sourceTree = "<group>";
@@ -2136,6 +2143,17 @@
 			path = SuspendBtn;
 			sourceTree = "<group>";
 		};
+		C59A3B4E258DD1AB005F6260 /* UserDefaultManager */ = {
+			isa = PBXGroup;
+			children = (
+				C59A3B4F258DD1AB005F6260 /* UserDefaultManager.h */,
+				C59A3B50258DD1AB005F6260 /* UserDefaultModel.h */,
+				C59A3B51258DD1AB005F6260 /* UserDefaultModel.m */,
+				C59A3B52258DD1AB005F6260 /* UserDefaultManager.m */,
+			);
+			path = UserDefaultManager;
+			sourceTree = "<group>";
+		};
 		C5BC5B3C256156200071CEEE /* TBVCell（二级标题） */ = {
 			isa = PBXGroup;
 			children = (
@@ -2701,10 +2719,12 @@
 				C5D774ED257F59AB0087FC92 /* CJTextField.m in Sources */,
 				C5D0B74525878C90002CA224 /* NSObject+Sound.m in Sources */,
 				C52E0EB12561129D00B245CF /* NSObject+Random.m in Sources */,
+				C59A3B53258DD1AB005F6260 /* UserDefaultModel.m in Sources */,
 				C595D1BC2587141B002A4531 /* SuspendView.m in Sources */,
 				C52E0EB32561129D00B245CF /* NSObject+SPAlertController.m in Sources */,
 				C5BC5B56256157980071CEEE /* BaseModel.m in Sources */,
 				C52E15C62561167700B245CF /* WMZBannerFadeLayout.m in Sources */,
+				C59A3B54258DD1AB005F6260 /* UserDefaultManager.m in Sources */,
 				C52E0D8A2561128100B245CF /* CustomTabBar.m in Sources */,
 				C595D1BE2587141B002A4531 /* SuspendBtn.m in Sources */,
 				C52E0E8E2561129D00B245CF /* NavigationBar.m in Sources */,
