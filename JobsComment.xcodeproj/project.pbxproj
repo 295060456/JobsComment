@@ -169,6 +169,8 @@
 		C52E1E7925611C0A00B245CF /* iph_X.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C52E1E7625611C0A00B245CF /* iph_X.mp4 */; };
 		C52E1E7A25611C0A00B245CF /* 启动页0922一版横版.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C52E1E7725611C0A00B245CF /* 启动页0922一版横版.jpg */; };
 		C52E1E7B25611C0A00B245CF /* 启动页SLOGAN.png in Resources */ = {isa = PBXBuildFile; fileRef = C52E1E7825611C0A00B245CF /* 启动页SLOGAN.png */; };
+		C53D383D2598C7A000B48431 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D383A2598C7A000B48431 /* XLBubbleTransition.m */; };
+		C53D383E2598C7A000B48431 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D383B2598C7A000B48431 /* UIViewController+XLBubbleTransition.m */; };
 		C542449D256126AD002D16AD /* PopUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C542449C256126AD002D16AD /* PopUpVC.m */; };
 		C542467C25614C97002D16AD /* UIWindow+Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = C542467B25614C97002D16AD /* UIWindow+Touch.m */; };
 		C542468225614E2D002D16AD /* JobsCommentCoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468125614E2D002D16AD /* JobsCommentCoreVC.m */; };
@@ -549,6 +551,11 @@
 		C52E1E7625611C0A00B245CF /* iph_X.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iph_X.mp4; sourceTree = "<group>"; };
 		C52E1E7725611C0A00B245CF /* 启动页0922一版横版.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "启动页0922一版横版.jpg"; sourceTree = "<group>"; };
 		C52E1E7825611C0A00B245CF /* 启动页SLOGAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页SLOGAN.png"; sourceTree = "<group>"; };
+		C53D38382598C7A000B48431 /* XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
+		C53D38392598C7A000B48431 /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
+		C53D383A2598C7A000B48431 /* XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
+		C53D383B2598C7A000B48431 /* UIViewController+XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XLBubbleTransition.m"; sourceTree = "<group>"; };
+		C53D383C2598C7A000B48431 /* 使用方法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "使用方法.md"; sourceTree = "<group>"; };
 		C542449B256126AD002D16AD /* PopUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpVC.h; sourceTree = "<group>"; };
 		C542449C256126AD002D16AD /* PopUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpVC.m; sourceTree = "<group>"; };
 		C542467A25614C97002D16AD /* UIWindow+Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Touch.h"; sourceTree = "<group>"; };
@@ -1687,6 +1694,18 @@
 			path = "启动资源";
 			sourceTree = "<group>";
 		};
+		C53D38372598C7A000B48431 /* UIViewController+XLBubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C53D383C2598C7A000B48431 /* 使用方法.md */,
+				C53D38392598C7A000B48431 /* UIViewController+XLBubbleTransition.h */,
+				C53D383B2598C7A000B48431 /* UIViewController+XLBubbleTransition.m */,
+				C53D38382598C7A000B48431 /* XLBubbleTransition.h */,
+				C53D383A2598C7A000B48431 /* XLBubbleTransition.m */,
+			);
+			path = "UIViewController+XLBubbleTransition";
+			sourceTree = "<group>";
+		};
 		C542445A2561257F002D16AD /* JobsCommentCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -1835,6 +1854,7 @@
 		C54FE2AE2576720B00937C11 /* UIViewController+Category */ = {
 			isa = PBXGroup;
 			children = (
+				C53D38372598C7A000B48431 /* UIViewController+XLBubbleTransition */,
 				C52E0DFC2561129D00B245CF /* UIViewController+JXCategory */,
 				C5D78880257F79B60087FC92 /* UIViewController+Others */,
 				C52E0E0A2561129D00B245CF /* UIViewController+TZImagePickerController */,
@@ -2783,11 +2803,13 @@
 				C5BC5B48256156310071CEEE /* JobsCommentPopUpViewForTVH.m in Sources */,
 				C52E0D882561128100B245CF /* UITabBar+TLAnimation.m in Sources */,
 				C52E15D52561167700B245CF /* XHLaunchAdConfiguration.m in Sources */,
+				C53D383D2598C7A000B48431 /* XLBubbleTransition.m in Sources */,
 				C52E0E942561129D00B245CF /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
 				C52E0D7F2561128100B245CF /* TabbarVC.m in Sources */,
 				C5BC5B42256156200071CEEE /* LoadMoreTBVCell.m in Sources */,
 				C52E0E922561129D00B245CF /* UIViewController+JPImageresizerView.m in Sources */,
 				C52E0E9C2561129D00B245CF /* UIViewController+TZImagePickerController.m in Sources */,
+				C53D383E2598C7A000B48431 /* UIViewController+XLBubbleTransition.m in Sources */,
 				C52E15D62561167700B245CF /* XHLaunchAdCache.m in Sources */,
 				C52E0EAB2561129D00B245CF /* LMHWaterFallLayout.m in Sources */,
 				C52E0D672561128100B245CF /* TabBarItem.m in Sources */,
