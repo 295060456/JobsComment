@@ -75,6 +75,12 @@
 #import "UIControl+XY.h"
 /// UIImage
 #import "LoadingImage.h"
+#import "UIImage+Extras.h"
+#import "UIImage+Overlay.h"
+#import "UIImage+ScreenShot.h"
+#import "UIImage+SYS.h"
+#import "UIImage+Tailor.h"
+#import "UIImage+YBGIF.h"
 /// UIButton
 #import "UIButton+ImageTitleSpacing.h"
 
