@@ -101,7 +101,7 @@ UIViewController *childViewController_customStyle(UIViewController *viewControll
     config.lottieName = lottieName;
     config.tag = tag;
     
-    [[JobsCommentAppDelegate sharedInstance].tabbarVC.tabBarControllerConfigMutArr addObject:config];
+    [[JobsCommentAppDelegate sharedInstance].tabBarVC.tabBarControllerConfigMutArr addObject:config];
     
 //    setAnimation(viewController.tabBarItem, tag);//可选实现
     return viewController;

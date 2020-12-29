@@ -191,6 +191,8 @@
 		C595D1BE2587141B002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1BA2587141B002A4531 /* SuspendBtn.m */; };
 		C59A3B53258DD1AB005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3B51258DD1AB005F6260 /* UserDefaultModel.m */; };
 		C59A3B54258DD1AB005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3B52258DD1AB005F6260 /* UserDefaultManager.m */; };
+		C59F3894259B38D800E22F9B /* JobsBitsMonitorSuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C59F388F259B38D800E22F9B /* JobsBitsMonitorSuspendLab.m */; };
+		C59F3895259B38D800E22F9B /* JobsBitsMonitorCore.m in Sources */ = {isa = PBXBuildFile; fileRef = C59F3891259B38D800E22F9B /* JobsBitsMonitorCore.m */; };
 		C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3D256156200071CEEE /* InfoTBVCell.m */; };
 		C5BC5B42256156200071CEEE /* LoadMoreTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */; };
 		C5BC5B48256156310071CEEE /* JobsCommentPopUpViewForTVH.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC5B47256156310071CEEE /* JobsCommentPopUpViewForTVH.m */; };
@@ -599,6 +601,11 @@
 		C59A3B50258DD1AB005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
 		C59A3B51258DD1AB005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
 		C59A3B52258DD1AB005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
+		C59F388E259B38D800E22F9B /* JobsBitsMonitorSuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsBitsMonitorSuspendLab.h; sourceTree = "<group>"; };
+		C59F388F259B38D800E22F9B /* JobsBitsMonitorSuspendLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsBitsMonitorSuspendLab.m; sourceTree = "<group>"; };
+		C59F3891259B38D800E22F9B /* JobsBitsMonitorCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsBitsMonitorCore.m; sourceTree = "<group>"; };
+		C59F3892259B38D800E22F9B /* JobsBitsMonitorCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsBitsMonitorCore.h; sourceTree = "<group>"; };
+		C59F3893259B38D800E22F9B /* JobsBitsMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsBitsMonitor.h; sourceTree = "<group>"; };
 		C5BC5B3D256156200071CEEE /* InfoTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTBVCell.m; sourceTree = "<group>"; };
 		C5BC5B3E256156200071CEEE /* LoadMoreTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTBVCell.h; sourceTree = "<group>"; };
 		C5BC5B3F256156200071CEEE /* LoadMoreTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTBVCell.m; sourceTree = "<group>"; };
@@ -848,6 +855,7 @@
 		C52E0CEB2561128100B245CF /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C59F388C259B38D800E22F9B /* JobsBitsMonitor */,
 				C52E0D2B2561128100B245CF /* 分享控件 */,
 				C52E15452561162D00B245CF /* 广告或者公示弹出框 */,
 				C52E0CEC2561128100B245CF /* 深度拓展系统UITabBar全家桶 */,
@@ -2174,6 +2182,34 @@
 			path = UserDefaultManager;
 			sourceTree = "<group>";
 		};
+		C59F388C259B38D800E22F9B /* JobsBitsMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				C59F3893259B38D800E22F9B /* JobsBitsMonitor.h */,
+				C59F3890259B38D800E22F9B /* JobsBitsMonitorCore */,
+				C59F388D259B38D800E22F9B /* JobsBitsMonitorSuspendLab */,
+			);
+			path = JobsBitsMonitor;
+			sourceTree = "<group>";
+		};
+		C59F388D259B38D800E22F9B /* JobsBitsMonitorSuspendLab */ = {
+			isa = PBXGroup;
+			children = (
+				C59F388E259B38D800E22F9B /* JobsBitsMonitorSuspendLab.h */,
+				C59F388F259B38D800E22F9B /* JobsBitsMonitorSuspendLab.m */,
+			);
+			path = JobsBitsMonitorSuspendLab;
+			sourceTree = "<group>";
+		};
+		C59F3890259B38D800E22F9B /* JobsBitsMonitorCore */ = {
+			isa = PBXGroup;
+			children = (
+				C59F3892259B38D800E22F9B /* JobsBitsMonitorCore.h */,
+				C59F3891259B38D800E22F9B /* JobsBitsMonitorCore.m */,
+			);
+			path = JobsBitsMonitorCore;
+			sourceTree = "<group>";
+		};
 		C5BC5B3C256156200071CEEE /* TBVCell（二级标题） */ = {
 			isa = PBXGroup;
 			children = (
@@ -2716,6 +2752,7 @@
 				C52E15C32561167700B245CF /* WMZBannerParam.m in Sources */,
 				C52E0D872561128100B245CF /* TLTabBarAnimation.m in Sources */,
 				C52E0E7B2561129D00B245CF /* UITableViewCell+WhiteArrows.m in Sources */,
+				C59F3894259B38D800E22F9B /* JobsBitsMonitorSuspendLab.m in Sources */,
 				C595D1BD2587141B002A4531 /* SuspendLab.m in Sources */,
 				C5D774EE257F59AB0087FC92 /* UITextField+Extend.m in Sources */,
 				C52E0EB42561129D00B245CF /* NSObject+SYSAlertController.m in Sources */,
@@ -2761,6 +2798,7 @@
 				C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */,
 				C52E0D9F2561128100B245CF /* GCD_TimerManager.m in Sources */,
 				C52E15D02561167700B245CF /* XHLaunchAdConst.m in Sources */,
+				C59F3895259B38D800E22F9B /* JobsBitsMonitorCore.m in Sources */,
 				C5D1BE3F258B1F5A00784D2F /* UIViewController+EmptyData.m in Sources */,
 				C52E0DA12561128100B245CF /* CADisplayLink_TimerManager.m in Sources */,
 				C52E0D992561128100B245CF /* MJRefreshComponent+Lottie.m in Sources */,

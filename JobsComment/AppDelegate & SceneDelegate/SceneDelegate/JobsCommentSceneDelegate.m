@@ -9,6 +9,9 @@
 #import "JobsCommentAppDelegate.h"
 #import "JobsCommentAppDelegate+PopupView.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability-new"
+
 @interface JobsCommentSceneDelegate ()
 
 @end
@@ -80,8 +83,11 @@ willConnectToSession:(UISceneSession *)session
 }
 #pragma mark —— lazyLoad
 -(UIWindow *)window{
-    [_window setRootViewController:JobsCommentAppDelegate.sharedInstance.tabbarVC];
+    [_window setRootViewController:JobsCommentAppDelegate.sharedInstance.tabBarVC];
     [_window makeKeyAndVisible];
     return _window;
 }
+
 @end
+
+#pragma clang diagnostic pop
