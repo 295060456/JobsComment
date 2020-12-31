@@ -18,7 +18,7 @@
 #endif
 
 @interface JPImageresizerView () <UIScrollViewDelegate>
-@property (nonatomic, strong) NSMutableArray *allDirections;
+@property (nonatomic, strong) NSMutableArray<NSNumber *> *allDirections;
 @property (nonatomic, assign) NSInteger directionIndex;
 @property (nonatomic, strong) JPImageresizerVideoObject *videoObj;
 @property (nonatomic, strong) JPPlayerView *playerView;
@@ -26,6 +26,7 @@
 @property (nonatomic, weak) AVAssetExportSession *exporterSession;
 @property (nonatomic, strong) NSTimer *progressTimer;
 @property (nonatomic, copy) JPExportVideoProgressBlock progressBlock;
+@property (nonatomic, strong) JPImageresizerConfigure *configure;
 @end
 
 @implementation JPImageresizerView
@@ -53,6 +54,8 @@
         self.clipsToBounds = YES;
         self.autoresizingMask = UIViewAutoresizingNone;
         self.backgroundColor = UIColor.clearColor;
+        
+        self.configure = configure;
         
         _containerView = [[UIView alloc] initWithFrame:self.bounds];
         _containerView.layer.backgroundColor = configure.bgColor.CGColor;
@@ -702,8 +705,8 @@
 - (CGFloat)resizeWHScale {
     CGFloat resizeWHScale = _frameView.resizeWHScale;
     if (resizeWHScale > 0) {
-        if (_frameView.rotationDirection == JPImageresizerHorizontalLeftDirection ||
-            _frameView.rotationDirection == JPImageresizerHorizontalRightDirection) {
+        if (_frameView.direction == JPImageresizerHorizontalLeftDirection ||
+            _frameView.direction == JPImageresizerHorizontalRightDirection) {
             resizeWHScale = 1.0 / resizeWHScale;
         }
     }
@@ -725,7 +728,7 @@
 }
 
 - (void)setMaskImage:(UIImage *)maskImage {
-    [self setMaskImage:maskImage isToBeArbitrarily:(maskImage ? NO : self.isArbitrarily) animated:YES];
+    [self setMaskImage:maskImage isToBeArbitrarily:(maskImage ? NO : YES) animated:YES];
 }
 - (void)setMaskImage:(UIImage *)maskImage isToBeArbitrarily:(BOOL)isToBeArbitrarily animated:(BOOL)isAnimated {
     if (self.frameView.isPrepareToScale) {
@@ -1532,6 +1535,99 @@
 
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale {
     [self.frameView endedImageresizer];
+}
+
+#pragma mark - 获取当前的配置属性
+
+- (JPImageresizerConfigure *)saveCurrentConfigure {
+    JPImageresizerConfigure *configure = [[JPImageresizerConfigure alloc] init];
+    configure.viewFrame = self.configure.viewFrame;
+    configure.maximumZoomScale = self.configure.maximumZoomScale;
+    configure.contentInsets = self.configure.contentInsets;
+    configure.fixErrorBlock = self.configure.fixErrorBlock;
+    configure.fixStartBlock = self.configure.fixStartBlock;
+    configure.fixProgressBlock = self.configure.fixProgressBlock;
+    configure.fixCompleteBlock = self.configure.fixCompleteBlock;
+    
+    configure.image = self.image;
+    configure.imageData = self.imageData;
+    configure.videoURL = self.videoURL;
+    configure.videoAsset = self.videoAsset;
+    configure.frameType = self.frameType;
+    configure.animationCurve = self.animationCurve;
+    configure.blurEffect = self.blurEffect;
+    configure.bgColor = self.bgColor;
+    configure.maskAlpha = self.maskAlpha;
+    configure.strokeColor = self.strokeColor;
+    configure.resizeWHScale = self.resizeWHScale;
+    configure.isRoundResize = self.isRoundResize;
+    configure.maskImage = self.maskImage;
+    configure.isArbitrarily = self.isArbitrarily;
+    configure.edgeLineIsEnabled = self.edgeLineIsEnabled;
+    configure.isClockwiseRotation = self.isClockwiseRotation;
+    configure.borderImage = self.borderImage;
+    configure.borderImageRectInset = self.borderImageRectInset;
+    configure.isShowMidDots = self.isShowMidDots;
+    configure.isBlurWhenDragging = self.isBlurWhenDragging;
+    configure.isShowGridlinesWhenIdle = self.isShowGridlinesWhenIdle;
+    configure.isShowGridlinesWhenDragging = self.isShowGridlinesWhenDragging;
+    configure.gridCount = self.gridCount;
+    configure.isLoopPlaybackGIF = self.isLoopPlaybackGIF;
+    
+    configure.history = JPCropHistoryMake(self.frame,
+                                          _contentInsets,
+                                          self.frameView.direction,
+                                          self.frameView.layer.transform,
+                                          self.containerView.layer.transform,
+                                          self.frameView.imageresizerFrame,
+                                          _verticalityMirror,
+                                          _horizontalMirror,
+                                          self.scrollView.contentInset,
+                                          self.scrollView.contentOffset,
+                                          self.scrollView.minimumZoomScale,
+                                          self.scrollView.zoomScale);
+    return configure;
+}
+
+#pragma mark - override method
+
+- (void)didMoveToSuperview {
+    [super didMoveToSuperview];
+    if (self.superview) {
+        JPCropHistory history = self.configure.history;
+        // 没有保存过，则按以前的方式初始化
+        if (JPCropHistoryIsNull(history)) {
+            [self.frameView updateImageOriginFrameWithDuration:-1.0];
+        } else {
+            JPImageresizerRotationDirection direction = history.direction;
+            for (NSInteger i = 0; i < self.allDirections.count; i++) {
+                JPImageresizerRotationDirection kDirection = [self.allDirections[i] integerValue];
+                if (kDirection == direction) {
+                    self.directionIndex = i;
+                    break;
+                }
+            }
+            _verticalityMirror = history.isVerMirror;
+            _horizontalMirror = history.isHorMirror;
+            
+            [CATransaction begin];
+            [CATransaction setDisableActions:YES];
+            self.containerView.layer.transform = history.containerViewTransform;
+            self.scrollView.layer.transform = history.contentViewTransform;
+            self.frameView.layer.transform = history.contentViewTransform;
+            [CATransaction commit];
+            
+            self.scrollView.minimumZoomScale = history.scrollViewMinimumZoomScale;
+            self.scrollView.zoomScale = history.scrollViewCurrentZoomScale;
+            self.scrollView.contentInset = history.scrollViewContentInsets;
+            self.scrollView.contentOffset = history.scrollViewContentOffset;
+            
+            [self.frameView recoveryToSavedHistoryWithDirection:direction
+                                              imageresizerFrame:history.imageresizerFrame
+                                              isToBeArbitrarily:self.configure.isArbitrarily];
+        }
+        if (self.configure.isCleanHistoryAfterInitial) [self.configure cleanHistory];
+    }
 }
 
 @end

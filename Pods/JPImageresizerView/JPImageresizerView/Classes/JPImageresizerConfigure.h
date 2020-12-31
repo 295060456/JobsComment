@@ -33,6 +33,7 @@
     - maskImage = nil;
     - isArbitrarilyMask = NO;
     - isLoopPlaybackGIF = NO;
+    - isCleanHistoryAfterInitial = YES;
  */
 
 /**
@@ -218,6 +219,18 @@
 /** 是否重复循环GIF播放（NO则有拖动条控制） */
 @property (nonatomic, assign) BOOL isLoopPlaybackGIF;
 
+/** 裁剪历史 */
+@property (nonatomic, assign) JPCropHistory history;
+
+/** 是否初始化后清除历史（默认为yes） */
+@property (nonatomic, assign) BOOL isCleanHistoryAfterInitial;
+
+/** 是否已经保存了历史 */
+@property (readonly) BOOL isSavedHistory;
+
+/** 清除历史 */
+- (void)cleanHistory;
+
 @property (readonly) JPImageresizerConfigure *(^jp_viewFrame)(CGRect viewFrame);
 @property (readonly) JPImageresizerConfigure *(^jp_frameType)(JPImageresizerFrameType frameType);
 @property (readonly) JPImageresizerConfigure *(^jp_animationCurve)(JPAnimationCurve animationCurve);
@@ -241,4 +254,5 @@
 @property (readonly) JPImageresizerConfigure *(^jp_isShowGridlinesWhenDragging)(BOOL isShowGridlinesWhenDragging);
 @property (readonly) JPImageresizerConfigure *(^jp_gridCount)(NSUInteger gridCount);
 @property (readonly) JPImageresizerConfigure *(^jp_isLoopPlaybackGIF)(BOOL isLoopPlaybackGIF);
+@property (readonly) JPImageresizerConfigure *(^jp_isCleanHistoryAfterInitial)(BOOL isCleanHistoryAfterInitial);
 @end

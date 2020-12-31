@@ -96,7 +96,7 @@
 @property (nonatomic, assign) BOOL isPrepareToScale;
 @property (nonatomic, copy) JPImageresizerIsPrepareToScaleBlock imageresizerIsPrepareToScale;
 
-@property (nonatomic, assign, readonly) JPImageresizerRotationDirection rotationDirection;
+@property (nonatomic, assign, readonly) JPImageresizerRotationDirection direction;
 
 @property (nonatomic, strong) UIImage *borderImage;
 @property (nonatomic, assign) CGPoint borderImageRectInset;
@@ -129,11 +129,12 @@
 - (void)recoveryWithDuration:(NSTimeInterval)duration;
 - (void)recoveryDone:(BOOL)isUpdateMaskImage;
 
+- (void)recoveryToSavedHistoryWithDirection:(JPImageresizerRotationDirection)direction imageresizerFrame:(CGRect)imageresizerFrame isToBeArbitrarily:(BOOL)isToBeArbitrarily;
+
 - (void)superViewUpdateFrame:(CGRect)superViewFrame contentInsets:(UIEdgeInsets)contentInsets duration:(NSTimeInterval)duration;
 
 @property (nonatomic, weak) UIView *playerView;
 @property (nonatomic, weak) JPImageresizerSlider *slider;
 
 - (JPCropConfigure)currentCropConfigure;
-
 @end

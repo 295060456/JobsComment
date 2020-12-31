@@ -149,3 +149,53 @@ CG_INLINE JPCropConfigure JPCropConfigureMake(JPImageresizerRotationDirection di
     configure.cropFrame = cropFrame;
     return configure;
 }
+
+#pragma mark - 额外用于保存的属性
+
+struct JPCropHistory {
+    CGRect viewFrame;
+    UIEdgeInsets contentInsets;
+    JPImageresizerRotationDirection direction;
+    CATransform3D contentViewTransform;
+    CATransform3D containerViewTransform;
+    CGRect imageresizerFrame;
+    BOOL isVerMirror;
+    BOOL isHorMirror;
+    UIEdgeInsets scrollViewContentInsets;
+    CGPoint scrollViewContentOffset;
+    CGFloat scrollViewMinimumZoomScale;
+    CGFloat scrollViewCurrentZoomScale;
+};
+typedef struct CG_BOXABLE JPCropHistory JPCropHistory;
+
+CG_INLINE JPCropHistory JPCropHistoryMake(CGRect viewFrame,
+                                          UIEdgeInsets contentInsets,
+                                          JPImageresizerRotationDirection direction,
+                                          CATransform3D contentViewTransform,
+                                          CATransform3D containerViewTransform,
+                                          CGRect imageresizerFrame,
+                                          BOOL isVerMirror,
+                                          BOOL isHorMirror,
+                                          UIEdgeInsets scrollViewContentInsets,
+                                          CGPoint scrollViewContentOffset,
+                                          CGFloat scrollViewMinimumZoomScale,
+                                          CGFloat scrollViewCurrentZoomScale) {
+    JPCropHistory history;
+    history.viewFrame = viewFrame;
+    history.contentInsets = contentInsets;
+    history.direction = direction;
+    history.contentViewTransform = contentViewTransform;
+    history.containerViewTransform = containerViewTransform;
+    history.imageresizerFrame = imageresizerFrame;
+    history.isVerMirror = isVerMirror;
+    history.isHorMirror = isHorMirror;
+    history.scrollViewContentInsets = scrollViewContentInsets;
+    history.scrollViewContentOffset = scrollViewContentOffset;
+    history.scrollViewMinimumZoomScale = scrollViewMinimumZoomScale;
+    history.scrollViewCurrentZoomScale = scrollViewCurrentZoomScale;
+    return history;
+}
+
+CG_INLINE BOOL JPCropHistoryIsNull(JPCropHistory history) {
+    return CGRectIsNull(history.viewFrame) || CGRectIsEmpty(history.viewFrame);
+}

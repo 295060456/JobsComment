@@ -459,6 +459,14 @@
  */
 - (void)recoveryToMaskImage:(UIImage *)maskImage isToBeArbitrarily:(BOOL)isToBeArbitrarily;
 
+#pragma mark - 获取当前裁剪状态
+/*!
+ @method
+ @brief 获取当前裁剪状态
+ @discussion 可用于保存，下次重新打开
+ */
+- (JPImageresizerConfigure *)saveCurrentConfigure;
+
 #pragma mark - 裁剪
 
 #pragma mark 裁剪图片

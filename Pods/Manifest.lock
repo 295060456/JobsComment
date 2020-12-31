@@ -26,9 +26,9 @@ PODS:
     - BRPickerView/Base
   - BRPickerView/StringPickerView (2.7.3):
     - BRPickerView/Base
-  - DoraemonKit (3.0.4):
-    - DoraemonKit/Core (= 3.0.4)
-  - DoraemonKit/Core (3.0.4):
+  - DoraemonKit (3.0.6):
+    - DoraemonKit/Core (= 3.0.6)
+  - DoraemonKit/Core (3.0.6):
     - FMDB
     - GCDWebServer
     - GCDWebServer/WebDAV
@@ -47,13 +47,13 @@ PODS:
     - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.5.4):
     - GCDWebServer/Core
-  - GKNavigationBar (1.3.0):
-    - GKNavigationBar/GestureHandle (= 1.3.0)
-    - GKNavigationBar/NavigationBar (= 1.3.0)
-  - GKNavigationBar/GestureHandle (1.3.0)
-  - GKNavigationBar/NavigationBar (1.3.0)
+  - GKNavigationBar (1.4.0):
+    - GKNavigationBar/GestureHandle (= 1.4.0)
+    - GKNavigationBar/NavigationBar (= 1.4.0)
+  - GKNavigationBar/GestureHandle (1.4.0)
+  - GKNavigationBar/NavigationBar (1.4.0)
   - IQKeyboardManager (6.5.6)
-  - JPImageresizerView (1.7.7)
+  - JPImageresizerView (1.7.8)
   - JXCategoryView (1.5.8)
   - JXPagingView/Pager (2.0.13)
   - lottie-ios (2.5.3)
@@ -64,13 +64,13 @@ PODS:
   - PPBadgeView (3.1.0)
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
-  - SDWebImage (5.9.4):
-    - SDWebImage/Core (= 5.9.4)
-  - SDWebImage/Core (5.9.4)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
   - SPAlertController (4.0.0)
   - TFPopup (1.3.0)
   - TXFileOperation (1.0)
-  - TZImagePickerController (3.5.1)
+  - TZImagePickerController (3.5.8)
   - WHToast (0.0.7)
   - YYModel (1.0.4)
 
@@ -135,15 +135,15 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   BRPickerView: 9cc11880ac79c4872d081ccb88f306224c1501d7
-  DoraemonKit: b507a1500667024070f248d648632a3f7bbb6044
+  DoraemonKit: 919709427c30af94e265532a879ac41797d296d1
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   "FLAnimatedImageView+RGWrapper": 01f3dc52abf32abf2cd854b442864d679a41465c
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
-  GKNavigationBar: 4585b27224d041df3c180031fa7a644e50a9a234
+  GKNavigationBar: fe87990bde3fb2b7ece3f81014c6d4bc654bef06
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
-  JPImageresizerView: ba2301b87ad03f7a7976deec4ccc75085d29f6c1
+  JPImageresizerView: 34f4a1f2d2196ddf148443f26dc4c4a41cca5b06
   JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
   JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
@@ -154,14 +154,14 @@ SPEC CHECKSUMS:
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
   SPAlertController: b245d7a5e17d612da051f2612aca3703f21d108f
   TFPopup: e1396132337290244668fdd8a7faf8ff461c481b
   TXFileOperation: 99bc7e3763678fdea8e8c407e2b87fb18038385f
-  TZImagePickerController: 21b5e8af2458053ec55b33044316d87c366d7707
+  TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
   WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: cb56b2f6033bfddc563ba7c2424096eca9e75b34
+PODFILE CHECKSUM: 2758dcc7cfe28f42e84181f76915ea43ad59234c
 
 COCOAPODS: 1.10.0

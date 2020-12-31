@@ -554,14 +554,14 @@
 			remoteGlobalIDString = CE2AA7204583492A1C9E0DF15FB92EFB;
 			remoteInfo = FMDB;
 		};
-		C594AA572564C4E200C52C02 /* PBXContainerItemProxy */ = {
+		C5C64D33259DF76D00FD2F99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5114B800004410 /* FMDB */;
 			proxyType = 2;
 			remoteGlobalIDString = F4F5199D28F46E6BC4EFB53237924D54;
 			remoteInfo = FMDB;
 		};
-		C594AA592564C4E200C52C02 /* PBXContainerItemProxy */ = {
+		C5C64D35259DF76D00FD2F99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5114B8000043C0 /* GCDWebServer */;
 			proxyType = 2;
@@ -1730,18 +1730,18 @@
 			path = "../Target Support Files/DoraemonKit";
 			sourceTree = "<group>";
 		};
-		C594AA512564C4E200C52C02 /* Products */ = {
+		C5C64D2F259DF76D00FD2F99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C594AA5A2564C4E200C52C02 /* GCDWebServer.framework */,
+				C5C64D36259DF76D00FD2F99 /* GCDWebServer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C594AA532564C4E200C52C02 /* Products */ = {
+		C5C64D31259DF76D00FD2F99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C594AA582564C4E200C52C02 /* FMDB.framework */,
+				C5C64D34259DF76D00FD2F99 /* FMDB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2078,11 +2078,11 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C594AA532564C4E200C52C02 /* Products */;
+					ProductGroup = C5C64D31259DF76D00FD2F99 /* Products */;
 					ProjectRef = 5114B800004410 /* FMDB */;
 				},
 				{
-					ProductGroup = C594AA512564C4E200C52C02 /* Products */;
+					ProductGroup = C5C64D2F259DF76D00FD2F99 /* Products */;
 					ProjectRef = 5114B8000043C0 /* GCDWebServer */;
 				},
 			);
@@ -2095,18 +2095,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C594AA582564C4E200C52C02 /* FMDB.framework */ = {
+		C5C64D34259DF76D00FD2F99 /* FMDB.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FMDB.framework;
-			remoteRef = C594AA572564C4E200C52C02 /* PBXContainerItemProxy */;
+			remoteRef = C5C64D33259DF76D00FD2F99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C594AA5A2564C4E200C52C02 /* GCDWebServer.framework */ = {
+		C5C64D36259DF76D00FD2F99 /* GCDWebServer.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = GCDWebServer.framework;
-			remoteRef = C594AA592564C4E200C52C02 /* PBXContainerItemProxy */;
+			remoteRef = C5C64D35259DF76D00FD2F99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -2595,6 +2595,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2629,6 +2630,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
