@@ -100,7 +100,6 @@
 		C52E0E892561129D00B245CF /* 我为什么要这么做 in Resources */ = {isa = PBXBuildFile; fileRef = C52E0DE32561129D00B245CF /* 我为什么要这么做 */; };
 		C52E0E8A2561129D00B245CF /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DE62561129D00B245CF /* CollectionView.m */; };
 		C52E0E8B2561129D00B245CF /* UICollectionView+RegisterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DE72561129D00B245CF /* UICollectionView+RegisterClass.m */; };
-		C52E0E8C2561129D00B245CF /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DEA2561129D00B245CF /* CollectionViewCell.m */; };
 		C52E0E8D2561129D00B245CF /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DEC2561129D00B245CF /* UIImageView+GIF.m */; };
 		C52E0E8E2561129D00B245CF /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DEF2561129D00B245CF /* NavigationBar.m */; };
 		C52E0E8F2561129D00B245CF /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DF22561129D00B245CF /* NSString+Extras.m */; };
@@ -178,6 +177,8 @@
 		C5460DA9258C8E890008928C /* UIView+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DA7258C8E890008928C /* UIView+AOP.m */; };
 		C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DB0258C8EA40008928C /* ZYTextField.m */; };
 		C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A3CD2589D0CA00A89501 /* UIImage+ScreenShot.m */; };
+		C5676201259F12AD006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FD259F12AC006905A9 /* CollectionViewCell.m */; };
+		C5676202259F12AD006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB85B2587986E0043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8582587986E0043C977 /* UIControl+XY.m */; };
 		C589C0932563E98B00323A2A /* JobsCommentTitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */; };
 		C590871F256166680070E150 /* CommentData.json in Resources */ = {isa = PBXBuildFile; fileRef = C590871E256166680070E150 /* CommentData.json */; };
@@ -457,8 +458,6 @@
 		C52E0DE52561129D00B245CF /* UICollectionView+RegisterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+RegisterClass.h"; sourceTree = "<group>"; };
 		C52E0DE62561129D00B245CF /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		C52E0DE72561129D00B245CF /* UICollectionView+RegisterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+RegisterClass.m"; sourceTree = "<group>"; };
-		C52E0DE92561129D00B245CF /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		C52E0DEA2561129D00B245CF /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		C52E0DEC2561129D00B245CF /* UIImageView+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GIF.m"; sourceTree = "<group>"; };
 		C52E0DED2561129D00B245CF /* UIImageView+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GIF.h"; sourceTree = "<group>"; };
 		C52E0DEF2561129D00B245CF /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
@@ -616,6 +615,10 @@
 		C558014C258A3F4A0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
 		C558E083258A10010078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
 		C558E089258A104D0078DB8F /* JobsComment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsComment-Bridging-Header.h"; sourceTree = "<group>"; };
+		C56761FD259F12AC006905A9 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ShakeAnimation.m"; sourceTree = "<group>"; };
+		C56761FF259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
+		C5676200259F12AD006905A9 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		C56BB8582587986E0043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB8592587986E0043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
 		C56BB85A2587986E0043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
@@ -1397,8 +1400,10 @@
 		C52E0DE82561129D00B245CF /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0DE92561129D00B245CF /* CollectionViewCell.h */,
-				C52E0DEA2561129D00B245CF /* CollectionViewCell.m */,
+				C5676200259F12AD006905A9 /* CollectionViewCell.h */,
+				C56761FD259F12AC006905A9 /* CollectionViewCell.m */,
+				C56761FF259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.h */,
+				C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -2953,7 +2958,6 @@
 				C52E15D42561167700B245CF /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				C52E0B8525610F5400B245CF /* main.m in Sources */,
 				C52E0D682561128100B245CF /* TabBarControllerConfig.m in Sources */,
-				C52E0E8C2561129D00B245CF /* CollectionViewCell.m in Sources */,
 				C52E15CF2561167700B245CF /* XHLaunchImageView.m in Sources */,
 				C52E0EB02561129D00B245CF /* CollectionReusableView.m in Sources */,
 				C52E0EB92561129D00B245CF /* NSObject+Shake.m in Sources */,
@@ -2977,6 +2981,7 @@
 				C5C157A825637BF900285E2E /* JobsCommentConfig.m in Sources */,
 				C52E15CB2561167700B245CF /* ZZCountingLabel.m in Sources */,
 				C52E15482561162D00B245CF /* NoticePopupView.m in Sources */,
+				C5676201259F12AD006905A9 /* CollectionViewCell.m in Sources */,
 				C52E0EAD2561129D00B245CF /* HQCollectionViewFlowLayout.m in Sources */,
 				C5C64DAD259DF77F00FD2F99 /* ECPrivacyCheckReminders.m in Sources */,
 				C52E0EAE2561129D00B245CF /* CALayer+Transition.m in Sources */,
@@ -3033,6 +3038,7 @@
 				C5D1BE46258B1F6400784D2F /* UIView+EmptyData.m in Sources */,
 				C52E0E772561129D00B245CF /* UILabel+Extra.m in Sources */,
 				C52E0CB5256111D300B245CF /* JobsCommentAppDelegate+PopupView.m in Sources */,
+				C5676202259F12AD006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
 				C5D600FE258630CC00029AFF /* UIViewController+BaseVC.m in Sources */,
 				C52269B325875836004447FB /* BWItemModel.m in Sources */,
 				C542468225614E2D002D16AD /* JobsCommentCoreVC.m in Sources */,
