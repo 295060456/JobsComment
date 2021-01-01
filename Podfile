@@ -20,7 +20,7 @@ def func
   pod 'ReactiveObjC'  # https://github.com/ReactiveCocoa/ReactiveObjC 重量级框架
   pod 'Masonry'
   pod 'AFNetworking'
-  pod 'TZImagePickerController'
+  pod 'HXPhotoPicker' # 相册选择 https://github.com/SilenceLove/HXPhotoPicker
   pod 'ReactiveObjC'
   pod 'MJRefresh'
   pod 'MJExtension'

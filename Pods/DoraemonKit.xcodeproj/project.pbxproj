@@ -554,14 +554,14 @@
 			remoteGlobalIDString = CE2AA7204583492A1C9E0DF15FB92EFB;
 			remoteInfo = FMDB;
 		};
-		C5C64D33259DF76D00FD2F99 /* PBXContainerItemProxy */ = {
+		C5B81AC0259F065B006DD592 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5114B800004410 /* FMDB */;
 			proxyType = 2;
 			remoteGlobalIDString = F4F5199D28F46E6BC4EFB53237924D54;
 			remoteInfo = FMDB;
 		};
-		C5C64D35259DF76D00FD2F99 /* PBXContainerItemProxy */ = {
+		C5B81AC2259F065B006DD592 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5114B8000043C0 /* GCDWebServer */;
 			proxyType = 2;
@@ -1730,18 +1730,18 @@
 			path = "../Target Support Files/DoraemonKit";
 			sourceTree = "<group>";
 		};
-		C5C64D2F259DF76D00FD2F99 /* Products */ = {
+		C5B81ABA259F065B006DD592 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5C64D36259DF76D00FD2F99 /* GCDWebServer.framework */,
+				C5B81AC3259F065B006DD592 /* GCDWebServer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5C64D31259DF76D00FD2F99 /* Products */ = {
+		C5B81ABC259F065B006DD592 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5C64D34259DF76D00FD2F99 /* FMDB.framework */,
+				C5B81AC1259F065B006DD592 /* FMDB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2078,11 +2078,11 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C5C64D31259DF76D00FD2F99 /* Products */;
+					ProductGroup = C5B81ABC259F065B006DD592 /* Products */;
 					ProjectRef = 5114B800004410 /* FMDB */;
 				},
 				{
-					ProductGroup = C5C64D2F259DF76D00FD2F99 /* Products */;
+					ProductGroup = C5B81ABA259F065B006DD592 /* Products */;
 					ProjectRef = 5114B8000043C0 /* GCDWebServer */;
 				},
 			);
@@ -2095,18 +2095,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C5C64D34259DF76D00FD2F99 /* FMDB.framework */ = {
+		C5B81AC1259F065B006DD592 /* FMDB.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FMDB.framework;
-			remoteRef = C5C64D33259DF76D00FD2F99 /* PBXContainerItemProxy */;
+			remoteRef = C5B81AC0259F065B006DD592 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C5C64D36259DF76D00FD2F99 /* GCDWebServer.framework */ = {
+		C5B81AC3259F065B006DD592 /* GCDWebServer.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = GCDWebServer.framework;
-			remoteRef = C5C64D35259DF76D00FD2F99 /* PBXContainerItemProxy */;
+			remoteRef = C5B81AC2259F065B006DD592 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

@@ -85,12 +85,6 @@
 #import "ReactiveObjC.h"
 #endif
 
-#if __has_include(<TZImagePickerController/TZImagePickerController.h>)
-#import <TZImagePickerController/TZImagePickerController.h>
-#else
-#import "TZImagePickerController.h"
-#endif
-
 #if __has_include(<MJExtension/MJExtension.h>)
 #import <MJExtension/MJExtension.h>
 #else
@@ -125,6 +119,12 @@
 #import <LYEmptyView/LYEmptyViewHeader.h>
 #else
 #import "LYEmptyViewHeader.h"
+#endif
+
+#if __has_include(<HXPhotoPicker/HXPhotoPicker.h>)
+#import <HXPhotoPicker/HXPhotoPicker.h>
+#else
+#import "HXPhotoPicker.h"
 #endif
 
 #if __has_include(<YYModel/YYModel.h>)

@@ -84,115 +84,115 @@
 		};
 		46EB2E000007C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000150 /* IQKeyboardManager.xcodeproj */;
+			containerPortal = 46EB2E00000150 /* HXPhotoPicker.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C26B2C9DC8F1600458BE439E52A95658;
+			remoteInfo = HXPhotoPicker;
+		};
+		46EB2E000007E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000160 /* IQKeyboardManager.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6D332532246486EC88B3F9B6BD9DC92A;
 			remoteInfo = IQKeyboardManager;
 		};
-		46EB2E000007E0 /* PBXContainerItemProxy */ = {
+		46EB2E00000800 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000160 /* JPImageresizerView.xcodeproj */;
+			containerPortal = 46EB2E00000170 /* JPImageresizerView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 541EA6DFD88E7D0A808D511FBCC4CF56;
 			remoteInfo = JPImageresizerView;
 		};
-		46EB2E00000800 /* PBXContainerItemProxy */ = {
+		46EB2E00000820 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000170 /* JXCategoryView.xcodeproj */;
+			containerPortal = 46EB2E00000180 /* JXCategoryView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 9388ECEF6E152314FEF66BF8D37FD8C8;
 			remoteInfo = JXCategoryView;
 		};
-		46EB2E00000820 /* PBXContainerItemProxy */ = {
+		46EB2E00000840 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000180 /* JXPagingView.xcodeproj */;
+			containerPortal = 46EB2E00000190 /* JXPagingView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = ED8D5C6BD4205BE452FD41A16F9FF3AC;
 			remoteInfo = JXPagingView;
 		};
-		46EB2E00000840 /* PBXContainerItemProxy */ = {
+		46EB2E00000860 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000190 /* LYEmptyView.xcodeproj */;
+			containerPortal = 46EB2E000001A0 /* LYEmptyView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A35DECC5FB605F28ED7DDF37E2E9695A;
 			remoteInfo = LYEmptyView;
 		};
-		46EB2E00000860 /* PBXContainerItemProxy */ = {
+		46EB2E00000880 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001A0 /* MJExtension.xcodeproj */;
+			containerPortal = 46EB2E000001B0 /* MJExtension.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 7DCB41C64D8AA20B24D05162BE708C8F;
 			remoteInfo = MJExtension;
 		};
-		46EB2E00000880 /* PBXContainerItemProxy */ = {
+		46EB2E000008A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001B0 /* MJRefresh.xcodeproj */;
+			containerPortal = 46EB2E000001C0 /* MJRefresh.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = E94AEF767442EDAAAAB2129CDFA2C2ED;
 			remoteInfo = MJRefresh;
 		};
-		46EB2E000008A0 /* PBXContainerItemProxy */ = {
+		46EB2E000008C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001C0 /* Masonry.xcodeproj */;
+			containerPortal = 46EB2E000001D0 /* Masonry.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = C0965FF775F51458AD4A8E41ABAB7D1E;
 			remoteInfo = Masonry;
 		};
-		46EB2E000008C0 /* PBXContainerItemProxy */ = {
+		46EB2E000008E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001D0 /* PPBadgeView.xcodeproj */;
+			containerPortal = 46EB2E000001E0 /* PPBadgeView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 53A88ADCD7680A3DE4C6CC3323050655;
 			remoteInfo = PPBadgeView;
 		};
-		46EB2E000008E0 /* PBXContainerItemProxy */ = {
+		46EB2E00000900 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001E0 /* Reachability.xcodeproj */;
+			containerPortal = 46EB2E000001F0 /* Reachability.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = DA1EBD7850A215E94DBD19A247725F9F;
 			remoteInfo = Reachability;
 		};
-		46EB2E00000900 /* PBXContainerItemProxy */ = {
+		46EB2E00000920 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001F0 /* ReactiveObjC.xcodeproj */;
+			containerPortal = 46EB2E00000200 /* ReactiveObjC.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 58630A911E82956281CDF1C822E7FC41;
 			remoteInfo = ReactiveObjC;
 		};
-		46EB2E00000920 /* PBXContainerItemProxy */ = {
+		46EB2E00000940 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000200 /* SDWebImage.xcodeproj */;
+			containerPortal = 46EB2E00000210 /* SDWebImage.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 4ECF4E662EEBE4FA58102FF984D920CC;
 			remoteInfo = SDWebImage;
 		};
-		46EB2E00000940 /* PBXContainerItemProxy */ = {
+		46EB2E00000960 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000210 /* SPAlertController.xcodeproj */;
+			containerPortal = 46EB2E00000220 /* SPAlertController.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6FD1F872160A30AEBF011B6A31A11939;
 			remoteInfo = SPAlertController;
 		};
-		46EB2E00000960 /* PBXContainerItemProxy */ = {
+		46EB2E00000980 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000220 /* TFPopup.xcodeproj */;
+			containerPortal = 46EB2E00000230 /* TFPopup.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 40F0F5F86B09335277809C000CC064B2;
 			remoteInfo = TFPopup;
 		};
-		46EB2E00000980 /* PBXContainerItemProxy */ = {
+		46EB2E000009A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000230 /* TXFileOperation.xcodeproj */;
+			containerPortal = 46EB2E00000240 /* TXFileOperation.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 2587A1F100587644279A03B90091010D;
 			remoteInfo = TXFileOperation;
-		};
-		46EB2E000009A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000240 /* TZImagePickerController.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6090C91802307673CBF0A57EF1608978;
-			remoteInfo = TZImagePickerController;
 		};
 		46EB2E000009C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -244,22 +244,22 @@
 		46EB2E00000120 /* FMDB */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FMDB; path = FMDB.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000130 /* GCDWebServer */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GCDWebServer; path = GCDWebServer.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000140 /* GKNavigationBar */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GKNavigationBar; path = GKNavigationBar.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000150 /* IQKeyboardManager */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IQKeyboardManager; path = IQKeyboardManager.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000160 /* JPImageresizerView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JPImageresizerView; path = JPImageresizerView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000170 /* JXCategoryView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXCategoryView; path = JXCategoryView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000180 /* JXPagingView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXPagingView; path = JXPagingView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000190 /* LYEmptyView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LYEmptyView; path = LYEmptyView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001A0 /* MJExtension */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJExtension; path = MJExtension.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001B0 /* MJRefresh */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJRefresh; path = MJRefresh.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001C0 /* Masonry */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry; path = Masonry.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001D0 /* PPBadgeView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PPBadgeView; path = PPBadgeView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001E0 /* Reachability */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Reachability; path = Reachability.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001F0 /* ReactiveObjC */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveObjC; path = ReactiveObjC.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000200 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage; path = SDWebImage.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000210 /* SPAlertController */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SPAlertController; path = SPAlertController.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000220 /* TFPopup */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TFPopup; path = TFPopup.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000230 /* TXFileOperation */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXFileOperation; path = TXFileOperation.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000240 /* TZImagePickerController */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TZImagePickerController; path = TZImagePickerController.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000150 /* HXPhotoPicker */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HXPhotoPicker; path = HXPhotoPicker.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000160 /* IQKeyboardManager */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IQKeyboardManager; path = IQKeyboardManager.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000170 /* JPImageresizerView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JPImageresizerView; path = JPImageresizerView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000180 /* JXCategoryView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXCategoryView; path = JXCategoryView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000190 /* JXPagingView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXPagingView; path = JXPagingView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001A0 /* LYEmptyView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LYEmptyView; path = LYEmptyView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001B0 /* MJExtension */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJExtension; path = MJExtension.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001C0 /* MJRefresh */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJRefresh; path = MJRefresh.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001D0 /* Masonry */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry; path = Masonry.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001E0 /* PPBadgeView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PPBadgeView; path = PPBadgeView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001F0 /* Reachability */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Reachability; path = Reachability.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000200 /* ReactiveObjC */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveObjC; path = ReactiveObjC.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000210 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage; path = SDWebImage.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000220 /* SPAlertController */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SPAlertController; path = SPAlertController.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000230 /* TFPopup */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TFPopup; path = TFPopup.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000240 /* TXFileOperation */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXFileOperation; path = TXFileOperation.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000250 /* WHToast */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WHToast; path = WHToast.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000260 /* YYModel */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YYModel; path = YYModel.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000270 /* lottie-ios */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "lottie-ios"; path = "lottie-ios.xcodeproj"; sourceTree = "<group>"; };
@@ -371,23 +371,23 @@
 				46EB2E00000120 /* FMDB */,
 				46EB2E00000130 /* GCDWebServer */,
 				46EB2E00000140 /* GKNavigationBar */,
-				46EB2E00000150 /* IQKeyboardManager */,
-				46EB2E00000160 /* JPImageresizerView */,
-				46EB2E00000170 /* JXCategoryView */,
-				46EB2E00000180 /* JXPagingView */,
+				46EB2E00000150 /* HXPhotoPicker */,
+				46EB2E00000160 /* IQKeyboardManager */,
+				46EB2E00000170 /* JPImageresizerView */,
+				46EB2E00000180 /* JXCategoryView */,
+				46EB2E00000190 /* JXPagingView */,
 				46EB2E00000270 /* lottie-ios */,
-				46EB2E00000190 /* LYEmptyView */,
-				46EB2E000001C0 /* Masonry */,
-				46EB2E000001A0 /* MJExtension */,
-				46EB2E000001B0 /* MJRefresh */,
-				46EB2E000001D0 /* PPBadgeView */,
-				46EB2E000001E0 /* Reachability */,
-				46EB2E000001F0 /* ReactiveObjC */,
-				46EB2E00000200 /* SDWebImage */,
-				46EB2E00000210 /* SPAlertController */,
-				46EB2E00000220 /* TFPopup */,
-				46EB2E00000230 /* TXFileOperation */,
-				46EB2E00000240 /* TZImagePickerController */,
+				46EB2E000001A0 /* LYEmptyView */,
+				46EB2E000001D0 /* Masonry */,
+				46EB2E000001B0 /* MJExtension */,
+				46EB2E000001C0 /* MJRefresh */,
+				46EB2E000001E0 /* PPBadgeView */,
+				46EB2E000001F0 /* Reachability */,
+				46EB2E00000200 /* ReactiveObjC */,
+				46EB2E00000210 /* SDWebImage */,
+				46EB2E00000220 /* SPAlertController */,
+				46EB2E00000230 /* TFPopup */,
+				46EB2E00000240 /* TXFileOperation */,
 				46EB2E00000250 /* WHToast */,
 				46EB2E00000260 /* YYModel */,
 			);
@@ -614,52 +614,52 @@
 					ProjectRef = 46EB2E00000140 /* GKNavigationBar */;
 				},
 				{
-					ProjectRef = 46EB2E00000150 /* IQKeyboardManager */;
+					ProjectRef = 46EB2E00000150 /* HXPhotoPicker */;
 				},
 				{
-					ProjectRef = 46EB2E00000160 /* JPImageresizerView */;
+					ProjectRef = 46EB2E00000160 /* IQKeyboardManager */;
 				},
 				{
-					ProjectRef = 46EB2E00000170 /* JXCategoryView */;
+					ProjectRef = 46EB2E00000170 /* JPImageresizerView */;
 				},
 				{
-					ProjectRef = 46EB2E00000180 /* JXPagingView */;
+					ProjectRef = 46EB2E00000180 /* JXCategoryView */;
 				},
 				{
-					ProjectRef = 46EB2E00000190 /* LYEmptyView */;
+					ProjectRef = 46EB2E00000190 /* JXPagingView */;
 				},
 				{
-					ProjectRef = 46EB2E000001A0 /* MJExtension */;
+					ProjectRef = 46EB2E000001A0 /* LYEmptyView */;
 				},
 				{
-					ProjectRef = 46EB2E000001B0 /* MJRefresh */;
+					ProjectRef = 46EB2E000001B0 /* MJExtension */;
 				},
 				{
-					ProjectRef = 46EB2E000001C0 /* Masonry */;
+					ProjectRef = 46EB2E000001C0 /* MJRefresh */;
 				},
 				{
-					ProjectRef = 46EB2E000001D0 /* PPBadgeView */;
+					ProjectRef = 46EB2E000001D0 /* Masonry */;
 				},
 				{
-					ProjectRef = 46EB2E000001E0 /* Reachability */;
+					ProjectRef = 46EB2E000001E0 /* PPBadgeView */;
 				},
 				{
-					ProjectRef = 46EB2E000001F0 /* ReactiveObjC */;
+					ProjectRef = 46EB2E000001F0 /* Reachability */;
 				},
 				{
-					ProjectRef = 46EB2E00000200 /* SDWebImage */;
+					ProjectRef = 46EB2E00000200 /* ReactiveObjC */;
 				},
 				{
-					ProjectRef = 46EB2E00000210 /* SPAlertController */;
+					ProjectRef = 46EB2E00000210 /* SDWebImage */;
 				},
 				{
-					ProjectRef = 46EB2E00000220 /* TFPopup */;
+					ProjectRef = 46EB2E00000220 /* SPAlertController */;
 				},
 				{
-					ProjectRef = 46EB2E00000230 /* TXFileOperation */;
+					ProjectRef = 46EB2E00000230 /* TFPopup */;
 				},
 				{
-					ProjectRef = 46EB2E00000240 /* TZImagePickerController */;
+					ProjectRef = 46EB2E00000240 /* TXFileOperation */;
 				},
 				{
 					ProjectRef = 46EB2E00000250 /* WHToast */;
@@ -779,82 +779,82 @@
 		};
 		46EB2E000007D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IQKeyboardManager;
+			name = HXPhotoPicker;
 			targetProxy = 46EB2E000007C0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000007F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JPImageresizerView;
+			name = IQKeyboardManager;
 			targetProxy = 46EB2E000007E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000810 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JXCategoryView;
+			name = JPImageresizerView;
 			targetProxy = 46EB2E00000800 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000830 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JXPagingView;
+			name = JXCategoryView;
 			targetProxy = 46EB2E00000820 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000850 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LYEmptyView;
+			name = JXPagingView;
 			targetProxy = 46EB2E00000840 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000870 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MJExtension;
+			name = LYEmptyView;
 			targetProxy = 46EB2E00000860 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000890 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MJRefresh;
+			name = MJExtension;
 			targetProxy = 46EB2E00000880 /* PBXContainerItemProxy */;
 		};
 		46EB2E000008B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Masonry;
+			name = MJRefresh;
 			targetProxy = 46EB2E000008A0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000008D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PPBadgeView;
+			name = Masonry;
 			targetProxy = 46EB2E000008C0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000008F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Reachability;
+			name = PPBadgeView;
 			targetProxy = 46EB2E000008E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000910 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ReactiveObjC;
+			name = Reachability;
 			targetProxy = 46EB2E00000900 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000930 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SDWebImage;
+			name = ReactiveObjC;
 			targetProxy = 46EB2E00000920 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000950 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SPAlertController;
+			name = SDWebImage;
 			targetProxy = 46EB2E00000940 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000970 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TFPopup;
+			name = SPAlertController;
 			targetProxy = 46EB2E00000960 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000990 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TXFileOperation;
+			name = TFPopup;
 			targetProxy = 46EB2E00000980 /* PBXContainerItemProxy */;
 		};
 		46EB2E000009B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TZImagePickerController;
+			name = TXFileOperation;
 			targetProxy = 46EB2E000009A0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000009D0 /* PBXTargetDependency */ = {

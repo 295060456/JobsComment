@@ -52,6 +52,9 @@ PODS:
     - GKNavigationBar/NavigationBar (= 1.4.0)
   - GKNavigationBar/GestureHandle (1.4.0)
   - GKNavigationBar/NavigationBar (1.4.0)
+  - HXPhotoPicker (3.1.7):
+    - HXPhotoPicker/Default (= 3.1.7)
+  - HXPhotoPicker/Default (3.1.7)
   - IQKeyboardManager (6.5.6)
   - JPImageresizerView (1.7.8)
   - JXCategoryView (1.5.8)
@@ -70,7 +73,6 @@ PODS:
   - SPAlertController (4.0.0)
   - TFPopup (1.3.0)
   - TXFileOperation (1.0)
-  - TZImagePickerController (3.5.8)
   - WHToast (0.0.7)
   - YYModel (1.0.4)
 
@@ -81,6 +83,7 @@ DEPENDENCIES:
   - FBRetainCycleDetector
   - "FLAnimatedImageView+RGWrapper"
   - GKNavigationBar
+  - HXPhotoPicker
   - IQKeyboardManager
   - JPImageresizerView
   - JXCategoryView
@@ -97,7 +100,6 @@ DEPENDENCIES:
   - SPAlertController
   - TFPopup
   - TXFileOperation
-  - TZImagePickerController
   - WHToast
   - YYModel
 
@@ -112,6 +114,7 @@ SPEC REPOS:
     - FMDB
     - GCDWebServer
     - GKNavigationBar
+    - HXPhotoPicker
     - IQKeyboardManager
     - JPImageresizerView
     - JXCategoryView
@@ -128,7 +131,6 @@ SPEC REPOS:
     - SPAlertController
     - TFPopup
     - TXFileOperation
-    - TZImagePickerController
     - WHToast
     - YYModel
 
@@ -142,6 +144,7 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   GKNavigationBar: fe87990bde3fb2b7ece3f81014c6d4bc654bef06
+  HXPhotoPicker: ffd3c644059ad098e6190617b8541825edd595a9
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JPImageresizerView: 34f4a1f2d2196ddf148443f26dc4c4a41cca5b06
   JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
@@ -158,10 +161,9 @@ SPEC CHECKSUMS:
   SPAlertController: b245d7a5e17d612da051f2612aca3703f21d108f
   TFPopup: e1396132337290244668fdd8a7faf8ff461c481b
   TXFileOperation: 99bc7e3763678fdea8e8c407e2b87fb18038385f
-  TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
   WHToast: 11a17a3f09f5f733e32bd6f3338919a448cbb719
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2758dcc7cfe28f42e84181f76915ea43ad59234c
+PODFILE CHECKSUM: f958a2b3e529982f713c331bf64c581d65755a3b
 
 COCOAPODS: 1.10.0
