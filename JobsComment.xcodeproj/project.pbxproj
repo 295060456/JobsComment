@@ -164,6 +164,7 @@
 		C52E1E7925611C0A00B245CF /* iph_X.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C52E1E7625611C0A00B245CF /* iph_X.mp4 */; };
 		C52E1E7A25611C0A00B245CF /* 启动页0922一版横版.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C52E1E7725611C0A00B245CF /* 启动页0922一版横版.jpg */; };
 		C52E1E7B25611C0A00B245CF /* 启动页SLOGAN.png in Resources */ = {isa = PBXBuildFile; fileRef = C52E1E7825611C0A00B245CF /* 启动页SLOGAN.png */; };
+		C53C9CC025A1CF7C0007F58F /* NSObject+DataSave.m in Sources */ = {isa = PBXBuildFile; fileRef = C53C9CBE25A1CF7C0007F58F /* NSObject+DataSave.m */; };
 		C53D383D2598C7A000B48431 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D383A2598C7A000B48431 /* XLBubbleTransition.m */; };
 		C53D383E2598C7A000B48431 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D383B2598C7A000B48431 /* UIViewController+XLBubbleTransition.m */; };
 		C542449D256126AD002D16AD /* PopUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C542449C256126AD002D16AD /* PopUpVC.m */; };
@@ -585,6 +586,8 @@
 		C52E1E7625611C0A00B245CF /* iph_X.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iph_X.mp4; sourceTree = "<group>"; };
 		C52E1E7725611C0A00B245CF /* 启动页0922一版横版.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "启动页0922一版横版.jpg"; sourceTree = "<group>"; };
 		C52E1E7825611C0A00B245CF /* 启动页SLOGAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页SLOGAN.png"; sourceTree = "<group>"; };
+		C53C9CBE25A1CF7C0007F58F /* NSObject+DataSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DataSave.m"; sourceTree = "<group>"; };
+		C53C9CBF25A1CF7C0007F58F /* NSObject+DataSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DataSave.h"; sourceTree = "<group>"; };
 		C53D38382598C7A000B48431 /* XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
 		C53D38392598C7A000B48431 /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
 		C53D383A2598C7A000B48431 /* XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
@@ -1599,11 +1602,12 @@
 		C52E0E4A2561129D00B245CF /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				C5267604258A496A0095A681 /* NSObject+Time */,
 				C5D6D8A025860DC500029AFF /* NSObject (Time) */,
 				C52E0E4D2561129D00B245CF /* NSObject+Alert */,
+				C53C9CBD25A1CF7C0007F58F /* NSObject+DataSave */,
 				C55564072580A4C2004DB33A /* NSObject+Others */,
 				C552A3DA2589D10600A89501 /* NSObject+RichText */,
+				C5267604258A496A0095A681 /* NSObject+Time */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1781,6 +1785,15 @@
 				C52E1E7825611C0A00B245CF /* 启动页SLOGAN.png */,
 			);
 			path = "启动资源";
+			sourceTree = "<group>";
+		};
+		C53C9CBD25A1CF7C0007F58F /* NSObject+DataSave */ = {
+			isa = PBXGroup;
+			children = (
+				C53C9CBF25A1CF7C0007F58F /* NSObject+DataSave.h */,
+				C53C9CBE25A1CF7C0007F58F /* NSObject+DataSave.m */,
+			);
+			path = "NSObject+DataSave";
 			sourceTree = "<group>";
 		};
 		C53D38372598C7A000B48431 /* UIViewController+XLBubbleTransition */ = {
@@ -3073,6 +3086,7 @@
 				C52E0E922561129D00B245CF /* UIViewController+JPImageresizerView.m in Sources */,
 				C53D383E2598C7A000B48431 /* UIViewController+XLBubbleTransition.m in Sources */,
 				C52E15D62561167700B245CF /* XHLaunchAdCache.m in Sources */,
+				C53C9CC025A1CF7C0007F58F /* NSObject+DataSave.m in Sources */,
 				C52E0EAB2561129D00B245CF /* LMHWaterFallLayout.m in Sources */,
 				C52E0D672561128100B245CF /* TabBarItem.m in Sources */,
 				C5C64DAC259DF77F00FD2F99 /* ECPrivacyCheckHealth.m in Sources */,
