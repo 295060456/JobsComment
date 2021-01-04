@@ -10,6 +10,7 @@
 		35835B64510F43E5FE00B9B7 /* Pods_JobsComment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1BD4296D7DD3F0C026DB3E /* Pods_JobsComment.framework */; };
 		42425898B5F263D733940BBB /* Pods_JobsCommentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388B16944058B2FEE8AE710F /* Pods_JobsCommentUITests.framework */; };
 		8FE8568389A5BE0BEAA9E64D /* Pods_JobsCommentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E8154988CA7A6EAE54E9EB /* Pods_JobsCommentTests.framework */; };
+		C515746625A350730074D945 /* UIView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C515746525A350730074D945 /* UIView+Gesture.m */; };
 		C52269B125875836004447FB /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52269AA25875836004447FB /* BWShareView.m */; };
 		C52269B225875836004447FB /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C52269AC25875836004447FB /* BWItemCollectionViewCell.m */; };
 		C52269B325875836004447FB /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C52269AD25875836004447FB /* BWItemModel.m */; };
@@ -296,6 +297,8 @@
 		A1E8154988CA7A6EAE54E9EB /* Pods_JobsCommentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsCommentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1BD4296D7DD3F0C026DB3E /* Pods_JobsComment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobsComment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C2B8A40B44C0B14E13A5C9 /* Pods-JobsComment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsComment.release.xcconfig"; path = "Target Support Files/Pods-JobsComment/Pods-JobsComment.release.xcconfig"; sourceTree = "<group>"; };
+		C515746425A350730074D945 /* UIView+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gesture.h"; sourceTree = "<group>"; };
+		C515746525A350730074D945 /* UIView+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gesture.m"; sourceTree = "<group>"; };
 		C517EFE1256254310032BBE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C52269AA25875836004447FB /* BWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWShareView.m; sourceTree = "<group>"; };
 		C52269AB25875836004447FB /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
@@ -801,6 +804,15 @@
 				C5BC5B47256156310071CEEE /* JobsCommentPopUpViewForTVH.m */,
 			);
 			path = "viewForHeaderInSection（一级标题）";
+			sourceTree = "<group>";
+		};
+		C515746325A350730074D945 /* UIView+Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C515746425A350730074D945 /* UIView+Gesture.h */,
+				C515746525A350730074D945 /* UIView+Gesture.m */,
+			);
+			path = "UIView+Gesture";
 			sourceTree = "<group>";
 		};
 		C5267604258A496A0095A681 /* NSObject+Time */ = {
@@ -1348,6 +1360,7 @@
 		C52E0DCB2561129C00B245CF /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C515746325A350730074D945 /* UIView+Gesture */,
 				C595BB37258640F8002A4531 /* UIView+Animation */,
 				C5460DA6258C8E890008928C /* UIView+AOP */,
 				C595BB38258640FD002A4531 /* UIView+Chain */,
@@ -3029,6 +3042,7 @@
 				C52E0EA52561129D00B245CF /* UITableView+WWFoldableTableView.m in Sources */,
 				C52E0CB6256111D300B245CF /* JobsCommentAppDelegate.m in Sources */,
 				C5C64DA1259DF77F00FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
+				C515746625A350730074D945 /* UIView+Gesture.m in Sources */,
 				C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */,
 				C5C64DA5259DF77F00FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
 				C5C64DAA259DF77F00FD2F99 /* ECPrivacyCheckPhotos.m in Sources */,
