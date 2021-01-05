@@ -179,6 +179,7 @@
 		C5460DA9258C8E890008928C /* UIView+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DA7258C8E890008928C /* UIView+AOP.m */; };
 		C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DB0258C8EA40008928C /* ZYTextField.m */; };
 		C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A3CD2589D0CA00A89501 /* UIImage+ScreenShot.m */; };
+		C565CA6F25A437CE00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */; };
 		C5676201259F12AD006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FD259F12AC006905A9 /* CollectionViewCell.m */; };
 		C5676202259F12AD006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB85B2587986E0043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8582587986E0043C977 /* UIControl+XY.m */; };
@@ -621,6 +622,9 @@
 		C558014C258A3F4A0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
 		C558E083258A10010078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
 		C558E089258A104D0078DB8F /* JobsComment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsComment-Bridging-Header.h"; sourceTree = "<group>"; };
+		C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
+		C565CA6D25A437CE00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
+		C565CA6E25A437CE00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
 		C56761FD259F12AC006905A9 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ShakeAnimation.m"; sourceTree = "<group>"; };
 		C56761FF259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
@@ -971,6 +975,7 @@
 		C52E0CEB2561128100B245CF /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C565CA6B25A437CE00848134 /* TwoVerticalArrangementLabsView */,
 				C59F388C259B38D800E22F9B /* JobsBitsMonitor */,
 				C52E0D2B2561128100B245CF /* 分享控件 */,
 				C52E15452561162D00B245CF /* 广告或者公示弹出框 */,
@@ -2187,6 +2192,16 @@
 			path = 3rd;
 			sourceTree = "<group>";
 		};
+		C565CA6B25A437CE00848134 /* TwoVerticalArrangementLabsView */ = {
+			isa = PBXGroup;
+			children = (
+				C565CA6D25A437CE00848134 /* TwoVerticalArrangementLabsView.h */,
+				C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */,
+				C565CA6E25A437CE00848134 /* TwoVerticalArrangementLabsView.png */,
+			);
+			path = TwoVerticalArrangementLabsView;
+			sourceTree = "<group>";
+		};
 		C589C0902563E95600323A2A /* 标题栏 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3083,6 +3098,7 @@
 				C52E16202561170A00B245CF /* ViewController@4.m in Sources */,
 				C52E0D662561128100B245CF /* UITabBarItem+TLAnimation.m in Sources */,
 				C52E15D32561167700B245CF /* XHLaunchAdDownloader.m in Sources */,
+				C565CA6F25A437CE00848134 /* TwoVerticalArrangementLabsView.m in Sources */,
 				C52E15D12561167700B245CF /* XHLaunchAd.m in Sources */,
 				C542468C256154FE002D16AD /* EmptyView.m in Sources */,
 				C52E0D852561128100B245CF /* TransitionController.m in Sources */,
