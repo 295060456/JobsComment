@@ -70,13 +70,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [NSObject showSYSActionSheetTitle:nil
                               message:nil
                       isSeparateStyle:YES
-                       btnTitleArr:@[@"回复",@"复制",@"举报",@"取消"]
+                          btnTitleArr:@[@"回复",@"复制",@"举报",@"取消"]
                        alertBtnAction:@[@"reply",@"copyIt",@"report",@"cancel"]
                              targetVC:self
+                               funcVC:nil
                                sender:nil
-                         alertVCBlock:^(id data) {
-        //DIY
-    }];
+                             animated:YES
+                         alertVCBlock:nil
+                      completionBlock:nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -143,11 +144,11 @@ viewForHeaderInSection:(NSInteger)section{
                             btnTitleArr:@[@"好的"]
                          alertBtnAction:@[@""]
                                targetVC:self
-                           alertVCBlock:^(id data) {
-            //DIY
-        }];
+                                 funcVC:nil
+                               animated:YES
+                           alertVCBlock:nil
+                        completionBlock:nil];
     }];
-    
     [header actionBlockjobsCommentPopUpViewForTVHBlock:^(id data) {
         @strongify(self)
     }];return header;
