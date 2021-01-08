@@ -26,6 +26,7 @@ def func
   pod 'MJExtension'
   pod 'BRPickerView'
   pod 'GKNavigationBar'
+  pod 'GKPhotoBrowser' # https://github.com/QuintGao/GKPhotoBrowser iOS仿微信、今日头条等图片浏览器 
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager' # https://github.com/pujiaxin33/JXPagingView NO_SMP
   pod 'IQKeyboardManager'
@@ -45,6 +46,7 @@ def func
   pod 'DoraemonKit' # https://github.com/didi/DoraemonKit 滴滴打车出的工具 NO_SMP
   pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
   pod 'YYModel'
+  pod 'YYImage'
   #  pod 'YYKit'
   
   end

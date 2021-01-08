@@ -7,222 +7,236 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46EB2E00000330 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000320 /* Foundation.framework */; };
-		46EB2E000003A0 /* Pods-JobsComment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000390 /* Pods-JobsComment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E000003F0 /* Pods-JobsComment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000003E0 /* Pods-JobsComment-dummy.m */; };
-		46EB2E00000490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000320 /* Foundation.framework */; };
-		46EB2E00000500 /* Pods-JobsCommentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000004F0 /* Pods-JobsCommentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00000540 /* Pods-JobsCommentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000530 /* Pods-JobsCommentTests-dummy.m */; };
-		46EB2E000005E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000320 /* Foundation.framework */; };
-		46EB2E00000650 /* Pods-JobsCommentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000640 /* Pods-JobsCommentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00000690 /* Pods-JobsCommentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000680 /* Pods-JobsCommentUITests-dummy.m */; };
+		46EB2E00000350 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000340 /* Foundation.framework */; };
+		46EB2E000003C0 /* Pods-JobsComment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000003B0 /* Pods-JobsComment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00000410 /* Pods-JobsComment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000400 /* Pods-JobsComment-dummy.m */; };
+		46EB2E000004B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000340 /* Foundation.framework */; };
+		46EB2E00000520 /* Pods-JobsCommentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000510 /* Pods-JobsCommentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00000560 /* Pods-JobsCommentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000550 /* Pods-JobsCommentTests-dummy.m */; };
+		46EB2E00000600 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000340 /* Foundation.framework */; };
+		46EB2E00000670 /* Pods-JobsCommentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000660 /* Pods-JobsCommentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E000006B0 /* Pods-JobsCommentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000006A0 /* Pods-JobsCommentUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46EB2E000006A0 /* PBXContainerItemProxy */ = {
+		46EB2E000006C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E000000C0 /* AFNetworking.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B561AD1B13C486A61C9BF66B4E6D8F89;
 			remoteInfo = AFNetworking;
 		};
-		46EB2E000006C0 /* PBXContainerItemProxy */ = {
+		46EB2E000006E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E000000D0 /* BRPickerView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A4FD0C70B8C8A2108AB9388EB7BB376E;
 			remoteInfo = BRPickerView;
 		};
-		46EB2E000006E0 /* PBXContainerItemProxy */ = {
+		46EB2E00000700 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E000000E0 /* DoraemonKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = E82C854B1BB413FAFB05F9327D57F396;
 			remoteInfo = DoraemonKit;
 		};
-		46EB2E00000700 /* PBXContainerItemProxy */ = {
+		46EB2E00000720 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E000000F0 /* FBRetainCycleDetector.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 612EA72FEDAF0D0A1BD8E7CF542171FD;
 			remoteInfo = FBRetainCycleDetector;
 		};
-		46EB2E00000720 /* PBXContainerItemProxy */ = {
+		46EB2E00000740 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000100 /* FLAnimatedImage.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 81BB6A78B39B2F11BBB4BB89AB388BB1;
 			remoteInfo = FLAnimatedImage;
 		};
-		46EB2E00000740 /* PBXContainerItemProxy */ = {
+		46EB2E00000760 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000110 /* FLAnimatedImageView+RGWrapper.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8002F95AA94349AC29A84578FD5D2A14;
 			remoteInfo = "FLAnimatedImageView+RGWrapper";
 		};
-		46EB2E00000760 /* PBXContainerItemProxy */ = {
+		46EB2E00000780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000120 /* FMDB.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = CE2AA7204583492A1C9E0DF15FB92EFB;
 			remoteInfo = FMDB;
 		};
-		46EB2E00000780 /* PBXContainerItemProxy */ = {
+		46EB2E000007A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000130 /* GCDWebServer.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = ED1C09F69EC2DFC2CBE72830F84DF159;
 			remoteInfo = GCDWebServer;
 		};
-		46EB2E000007A0 /* PBXContainerItemProxy */ = {
+		46EB2E000007C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000140 /* GKNavigationBar.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 5EC207F7E9DBDDF6C10A2C7A3545683C;
 			remoteInfo = GKNavigationBar;
 		};
-		46EB2E000007C0 /* PBXContainerItemProxy */ = {
+		46EB2E000007E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000150 /* HXPhotoPicker.xcodeproj */;
+			containerPortal = 46EB2E00000150 /* GKPhotoBrowser.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 173C9E933A74D8E07549755C70734C10;
+			remoteInfo = GKPhotoBrowser;
+		};
+		46EB2E00000800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000160 /* HXPhotoPicker.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = C26B2C9DC8F1600458BE439E52A95658;
 			remoteInfo = HXPhotoPicker;
 		};
-		46EB2E000007E0 /* PBXContainerItemProxy */ = {
+		46EB2E00000820 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000160 /* IQKeyboardManager.xcodeproj */;
+			containerPortal = 46EB2E00000170 /* IQKeyboardManager.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6D332532246486EC88B3F9B6BD9DC92A;
 			remoteInfo = IQKeyboardManager;
 		};
-		46EB2E00000800 /* PBXContainerItemProxy */ = {
+		46EB2E00000840 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000170 /* JPImageresizerView.xcodeproj */;
+			containerPortal = 46EB2E00000180 /* JPImageresizerView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 541EA6DFD88E7D0A808D511FBCC4CF56;
 			remoteInfo = JPImageresizerView;
 		};
-		46EB2E00000820 /* PBXContainerItemProxy */ = {
+		46EB2E00000860 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000180 /* JXCategoryView.xcodeproj */;
+			containerPortal = 46EB2E00000190 /* JXCategoryView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 9388ECEF6E152314FEF66BF8D37FD8C8;
 			remoteInfo = JXCategoryView;
 		};
-		46EB2E00000840 /* PBXContainerItemProxy */ = {
+		46EB2E00000880 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000190 /* JXPagingView.xcodeproj */;
+			containerPortal = 46EB2E000001A0 /* JXPagingView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = ED8D5C6BD4205BE452FD41A16F9FF3AC;
 			remoteInfo = JXPagingView;
 		};
-		46EB2E00000860 /* PBXContainerItemProxy */ = {
+		46EB2E000008A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001A0 /* LYEmptyView.xcodeproj */;
+			containerPortal = 46EB2E000001B0 /* LYEmptyView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A35DECC5FB605F28ED7DDF37E2E9695A;
 			remoteInfo = LYEmptyView;
 		};
-		46EB2E00000880 /* PBXContainerItemProxy */ = {
+		46EB2E000008C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001B0 /* MJExtension.xcodeproj */;
+			containerPortal = 46EB2E000001C0 /* MJExtension.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 7DCB41C64D8AA20B24D05162BE708C8F;
 			remoteInfo = MJExtension;
 		};
-		46EB2E000008A0 /* PBXContainerItemProxy */ = {
+		46EB2E000008E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001C0 /* MJRefresh.xcodeproj */;
+			containerPortal = 46EB2E000001D0 /* MJRefresh.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = E94AEF767442EDAAAAB2129CDFA2C2ED;
 			remoteInfo = MJRefresh;
 		};
-		46EB2E000008C0 /* PBXContainerItemProxy */ = {
+		46EB2E00000900 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001D0 /* Masonry.xcodeproj */;
+			containerPortal = 46EB2E000001E0 /* Masonry.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = C0965FF775F51458AD4A8E41ABAB7D1E;
 			remoteInfo = Masonry;
 		};
-		46EB2E000008E0 /* PBXContainerItemProxy */ = {
+		46EB2E00000920 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001E0 /* PPBadgeView.xcodeproj */;
+			containerPortal = 46EB2E000001F0 /* PPBadgeView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 53A88ADCD7680A3DE4C6CC3323050655;
 			remoteInfo = PPBadgeView;
 		};
-		46EB2E00000900 /* PBXContainerItemProxy */ = {
+		46EB2E00000940 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000001F0 /* Reachability.xcodeproj */;
+			containerPortal = 46EB2E00000200 /* Reachability.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = DA1EBD7850A215E94DBD19A247725F9F;
 			remoteInfo = Reachability;
 		};
-		46EB2E00000920 /* PBXContainerItemProxy */ = {
+		46EB2E00000960 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000200 /* ReactiveObjC.xcodeproj */;
+			containerPortal = 46EB2E00000210 /* ReactiveObjC.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 58630A911E82956281CDF1C822E7FC41;
 			remoteInfo = ReactiveObjC;
 		};
-		46EB2E00000940 /* PBXContainerItemProxy */ = {
+		46EB2E00000980 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000210 /* SDWebImage.xcodeproj */;
+			containerPortal = 46EB2E00000220 /* SDWebImage.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 4ECF4E662EEBE4FA58102FF984D920CC;
 			remoteInfo = SDWebImage;
 		};
-		46EB2E00000960 /* PBXContainerItemProxy */ = {
+		46EB2E000009A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000220 /* SPAlertController.xcodeproj */;
+			containerPortal = 46EB2E00000230 /* SPAlertController.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6FD1F872160A30AEBF011B6A31A11939;
 			remoteInfo = SPAlertController;
 		};
-		46EB2E00000980 /* PBXContainerItemProxy */ = {
+		46EB2E000009C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000230 /* TFPopup.xcodeproj */;
+			containerPortal = 46EB2E00000240 /* TFPopup.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 40F0F5F86B09335277809C000CC064B2;
 			remoteInfo = TFPopup;
 		};
-		46EB2E000009A0 /* PBXContainerItemProxy */ = {
+		46EB2E000009E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000240 /* TXFileOperation.xcodeproj */;
+			containerPortal = 46EB2E00000250 /* TXFileOperation.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 2587A1F100587644279A03B90091010D;
 			remoteInfo = TXFileOperation;
 		};
-		46EB2E000009C0 /* PBXContainerItemProxy */ = {
+		46EB2E00000A00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000250 /* WHToast.xcodeproj */;
+			containerPortal = 46EB2E00000260 /* WHToast.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 3A84FF41A6532519ABF8EDB233242716;
 			remoteInfo = WHToast;
 		};
-		46EB2E000009E0 /* PBXContainerItemProxy */ = {
+		46EB2E00000A20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000260 /* YYModel.xcodeproj */;
+			containerPortal = 46EB2E00000270 /* YYImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 79A687989E871964747CED931C10657C;
+			remoteInfo = YYImage;
+		};
+		46EB2E00000A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000280 /* YYModel.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B24F71FDC23D2B2E241DE51DECC7ED5F;
 			remoteInfo = YYModel;
 		};
-		46EB2E00000A00 /* PBXContainerItemProxy */ = {
+		46EB2E00000A60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000270 /* lottie-ios.xcodeproj */;
+			containerPortal = 46EB2E00000290 /* lottie-ios.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 2FFD4CF15B40CE17E04F3BC6AAF7035A;
 			remoteInfo = "lottie-ios";
 		};
-		46EB2E00000A20 /* PBXContainerItemProxy */ = {
+		46EB2E00000A80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AE6E8ED319CA7831C6007C079DA1C296;
 			remoteInfo = "Pods-JobsComment";
 		};
-		46EB2E00000A40 /* PBXContainerItemProxy */ = {
+		46EB2E00000AA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
@@ -244,76 +258,78 @@
 		46EB2E00000120 /* FMDB */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FMDB; path = FMDB.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000130 /* GCDWebServer */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GCDWebServer; path = GCDWebServer.xcodeproj; sourceTree = "<group>"; };
 		46EB2E00000140 /* GKNavigationBar */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GKNavigationBar; path = GKNavigationBar.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000150 /* HXPhotoPicker */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HXPhotoPicker; path = HXPhotoPicker.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000160 /* IQKeyboardManager */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IQKeyboardManager; path = IQKeyboardManager.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000170 /* JPImageresizerView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JPImageresizerView; path = JPImageresizerView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000180 /* JXCategoryView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXCategoryView; path = JXCategoryView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000190 /* JXPagingView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXPagingView; path = JXPagingView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001A0 /* LYEmptyView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LYEmptyView; path = LYEmptyView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001B0 /* MJExtension */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJExtension; path = MJExtension.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001C0 /* MJRefresh */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJRefresh; path = MJRefresh.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001D0 /* Masonry */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry; path = Masonry.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001E0 /* PPBadgeView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PPBadgeView; path = PPBadgeView.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000001F0 /* Reachability */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Reachability; path = Reachability.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000200 /* ReactiveObjC */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveObjC; path = ReactiveObjC.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000210 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage; path = SDWebImage.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000220 /* SPAlertController */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SPAlertController; path = SPAlertController.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000230 /* TFPopup */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TFPopup; path = TFPopup.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000240 /* TXFileOperation */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXFileOperation; path = TXFileOperation.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000250 /* WHToast */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WHToast; path = WHToast.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000260 /* YYModel */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YYModel; path = YYModel.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000270 /* lottie-ios */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "lottie-ios"; path = "lottie-ios.xcodeproj"; sourceTree = "<group>"; };
-		46EB2E00000320 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		46EB2E00000350 /* Pods-JobsComment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsComment.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000360 /* Pods-JobsComment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsComment.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000370 /* Pods-JobsComment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsComment-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00000380 /* Pods-JobsComment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JobsComment.modulemap"; sourceTree = "<group>"; };
-		46EB2E00000390 /* Pods-JobsComment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JobsComment-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E000003B0 /* Pods-JobsComment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JobsComment-frameworks.sh"; sourceTree = "<group>"; };
-		46EB2E000003C0 /* Pods-JobsComment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsComment-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E000003D0 /* Pods-JobsComment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JobsComment-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E000003E0 /* Pods-JobsComment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JobsComment-dummy.m"; sourceTree = "<group>"; };
-		46EB2E000004B0 /* Pods-JobsCommentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentTests.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E000004C0 /* Pods-JobsCommentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentTests.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E000004D0 /* Pods-JobsCommentTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentTests-Info.plist"; sourceTree = "<group>"; };
-		46EB2E000004E0 /* Pods-JobsCommentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JobsCommentTests.modulemap"; sourceTree = "<group>"; };
-		46EB2E000004F0 /* Pods-JobsCommentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JobsCommentTests-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00000510 /* Pods-JobsCommentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00000520 /* Pods-JobsCommentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JobsCommentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00000530 /* Pods-JobsCommentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JobsCommentTests-dummy.m"; sourceTree = "<group>"; };
-		46EB2E00000600 /* Pods-JobsCommentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentUITests.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000610 /* Pods-JobsCommentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000620 /* Pods-JobsCommentUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentUITests-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00000630 /* Pods-JobsCommentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JobsCommentUITests.modulemap"; sourceTree = "<group>"; };
-		46EB2E00000640 /* Pods-JobsCommentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JobsCommentUITests-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00000660 /* Pods-JobsCommentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00000670 /* Pods-JobsCommentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JobsCommentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00000680 /* Pods-JobsCommentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JobsCommentUITests-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00000150 /* GKPhotoBrowser */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GKPhotoBrowser; path = GKPhotoBrowser.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000160 /* HXPhotoPicker */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HXPhotoPicker; path = HXPhotoPicker.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000170 /* IQKeyboardManager */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IQKeyboardManager; path = IQKeyboardManager.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000180 /* JPImageresizerView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JPImageresizerView; path = JPImageresizerView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000190 /* JXCategoryView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXCategoryView; path = JXCategoryView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001A0 /* JXPagingView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JXPagingView; path = JXPagingView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001B0 /* LYEmptyView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LYEmptyView; path = LYEmptyView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001C0 /* MJExtension */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJExtension; path = MJExtension.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001D0 /* MJRefresh */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MJRefresh; path = MJRefresh.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001E0 /* Masonry */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry; path = Masonry.xcodeproj; sourceTree = "<group>"; };
+		46EB2E000001F0 /* PPBadgeView */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PPBadgeView; path = PPBadgeView.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000200 /* Reachability */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Reachability; path = Reachability.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000210 /* ReactiveObjC */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveObjC; path = ReactiveObjC.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000220 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage; path = SDWebImage.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000230 /* SPAlertController */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SPAlertController; path = SPAlertController.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000240 /* TFPopup */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TFPopup; path = TFPopup.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000250 /* TXFileOperation */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXFileOperation; path = TXFileOperation.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000260 /* WHToast */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WHToast; path = WHToast.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000270 /* YYImage */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YYImage; path = YYImage.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000280 /* YYModel */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YYModel; path = YYModel.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000290 /* lottie-ios */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "lottie-ios"; path = "lottie-ios.xcodeproj"; sourceTree = "<group>"; };
+		46EB2E00000340 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46EB2E00000370 /* Pods-JobsComment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsComment.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000380 /* Pods-JobsComment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsComment.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000390 /* Pods-JobsComment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsComment-Info.plist"; sourceTree = "<group>"; };
+		46EB2E000003A0 /* Pods-JobsComment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JobsComment.modulemap"; sourceTree = "<group>"; };
+		46EB2E000003B0 /* Pods-JobsComment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JobsComment-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E000003D0 /* Pods-JobsComment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JobsComment-frameworks.sh"; sourceTree = "<group>"; };
+		46EB2E000003E0 /* Pods-JobsComment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsComment-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E000003F0 /* Pods-JobsComment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JobsComment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00000400 /* Pods-JobsComment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JobsComment-dummy.m"; sourceTree = "<group>"; };
+		46EB2E000004D0 /* Pods-JobsCommentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentTests.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E000004E0 /* Pods-JobsCommentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E000004F0 /* Pods-JobsCommentTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentTests-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00000500 /* Pods-JobsCommentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JobsCommentTests.modulemap"; sourceTree = "<group>"; };
+		46EB2E00000510 /* Pods-JobsCommentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JobsCommentTests-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00000530 /* Pods-JobsCommentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00000540 /* Pods-JobsCommentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JobsCommentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00000550 /* Pods-JobsCommentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JobsCommentTests-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00000620 /* Pods-JobsCommentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000630 /* Pods-JobsCommentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JobsCommentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000640 /* Pods-JobsCommentUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentUITests-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00000650 /* Pods-JobsCommentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JobsCommentUITests.modulemap"; sourceTree = "<group>"; };
+		46EB2E00000660 /* Pods-JobsCommentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JobsCommentUITests-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00000680 /* Pods-JobsCommentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JobsCommentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00000690 /* Pods-JobsCommentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JobsCommentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E000006A0 /* Pods-JobsCommentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JobsCommentUITests-dummy.m"; sourceTree = "<group>"; };
 		98B9ED3CFB01FD65014FCE736FC5CCAC /* Pods_JobsComment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JobsComment.framework; path = "Pods-JobsComment.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46EB2E000002F0 /* Frameworks */ = {
+		46EB2E00000310 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000330 /* Foundation.framework in Frameworks */,
+				46EB2E00000350 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00000470 /* Frameworks */ = {
+		46EB2E00000490 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000490 /* Foundation.framework in Frameworks */,
+				46EB2E000004B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000005C0 /* Frameworks */ = {
+		46EB2E000005E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000005E0 /* Foundation.framework in Frameworks */,
+				46EB2E00000600 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +360,7 @@
 		46EB2E00000060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000310 /* iOS */,
+				46EB2E00000330 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -352,9 +368,9 @@
 		46EB2E00000070 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000340 /* Pods-JobsComment */,
-				46EB2E000004A0 /* Pods-JobsCommentTests */,
-				46EB2E000005F0 /* Pods-JobsCommentUITests */,
+				46EB2E00000360 /* Pods-JobsComment */,
+				46EB2E000004C0 /* Pods-JobsCommentTests */,
+				46EB2E00000610 /* Pods-JobsCommentUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -371,81 +387,83 @@
 				46EB2E00000120 /* FMDB */,
 				46EB2E00000130 /* GCDWebServer */,
 				46EB2E00000140 /* GKNavigationBar */,
-				46EB2E00000150 /* HXPhotoPicker */,
-				46EB2E00000160 /* IQKeyboardManager */,
-				46EB2E00000170 /* JPImageresizerView */,
-				46EB2E00000180 /* JXCategoryView */,
-				46EB2E00000190 /* JXPagingView */,
-				46EB2E00000270 /* lottie-ios */,
-				46EB2E000001A0 /* LYEmptyView */,
-				46EB2E000001D0 /* Masonry */,
-				46EB2E000001B0 /* MJExtension */,
-				46EB2E000001C0 /* MJRefresh */,
-				46EB2E000001E0 /* PPBadgeView */,
-				46EB2E000001F0 /* Reachability */,
-				46EB2E00000200 /* ReactiveObjC */,
-				46EB2E00000210 /* SDWebImage */,
-				46EB2E00000220 /* SPAlertController */,
-				46EB2E00000230 /* TFPopup */,
-				46EB2E00000240 /* TXFileOperation */,
-				46EB2E00000250 /* WHToast */,
-				46EB2E00000260 /* YYModel */,
+				46EB2E00000150 /* GKPhotoBrowser */,
+				46EB2E00000160 /* HXPhotoPicker */,
+				46EB2E00000170 /* IQKeyboardManager */,
+				46EB2E00000180 /* JPImageresizerView */,
+				46EB2E00000190 /* JXCategoryView */,
+				46EB2E000001A0 /* JXPagingView */,
+				46EB2E00000290 /* lottie-ios */,
+				46EB2E000001B0 /* LYEmptyView */,
+				46EB2E000001E0 /* Masonry */,
+				46EB2E000001C0 /* MJExtension */,
+				46EB2E000001D0 /* MJRefresh */,
+				46EB2E000001F0 /* PPBadgeView */,
+				46EB2E00000200 /* Reachability */,
+				46EB2E00000210 /* ReactiveObjC */,
+				46EB2E00000220 /* SDWebImage */,
+				46EB2E00000230 /* SPAlertController */,
+				46EB2E00000240 /* TFPopup */,
+				46EB2E00000250 /* TXFileOperation */,
+				46EB2E00000260 /* WHToast */,
+				46EB2E00000270 /* YYImage */,
+				46EB2E00000280 /* YYModel */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		46EB2E00000310 /* iOS */ = {
+		46EB2E00000330 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000320 /* Foundation.framework */,
+				46EB2E00000340 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46EB2E00000340 /* Pods-JobsComment */ = {
+		46EB2E00000360 /* Pods-JobsComment */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000380 /* Pods-JobsComment.modulemap */,
-				46EB2E000003D0 /* Pods-JobsComment-acknowledgements.markdown */,
-				46EB2E000003C0 /* Pods-JobsComment-acknowledgements.plist */,
-				46EB2E000003E0 /* Pods-JobsComment-dummy.m */,
-				46EB2E000003B0 /* Pods-JobsComment-frameworks.sh */,
-				46EB2E00000370 /* Pods-JobsComment-Info.plist */,
-				46EB2E00000390 /* Pods-JobsComment-umbrella.h */,
-				46EB2E00000360 /* Pods-JobsComment.debug.xcconfig */,
-				46EB2E00000350 /* Pods-JobsComment.release.xcconfig */,
+				46EB2E000003A0 /* Pods-JobsComment.modulemap */,
+				46EB2E000003F0 /* Pods-JobsComment-acknowledgements.markdown */,
+				46EB2E000003E0 /* Pods-JobsComment-acknowledgements.plist */,
+				46EB2E00000400 /* Pods-JobsComment-dummy.m */,
+				46EB2E000003D0 /* Pods-JobsComment-frameworks.sh */,
+				46EB2E00000390 /* Pods-JobsComment-Info.plist */,
+				46EB2E000003B0 /* Pods-JobsComment-umbrella.h */,
+				46EB2E00000380 /* Pods-JobsComment.debug.xcconfig */,
+				46EB2E00000370 /* Pods-JobsComment.release.xcconfig */,
 			);
 			name = "Pods-JobsComment";
 			path = "Target Support Files/Pods-JobsComment";
 			sourceTree = "<group>";
 		};
-		46EB2E000004A0 /* Pods-JobsCommentTests */ = {
+		46EB2E000004C0 /* Pods-JobsCommentTests */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000004E0 /* Pods-JobsCommentTests.modulemap */,
-				46EB2E00000520 /* Pods-JobsCommentTests-acknowledgements.markdown */,
-				46EB2E00000510 /* Pods-JobsCommentTests-acknowledgements.plist */,
-				46EB2E00000530 /* Pods-JobsCommentTests-dummy.m */,
-				46EB2E000004D0 /* Pods-JobsCommentTests-Info.plist */,
-				46EB2E000004F0 /* Pods-JobsCommentTests-umbrella.h */,
-				46EB2E000004C0 /* Pods-JobsCommentTests.debug.xcconfig */,
-				46EB2E000004B0 /* Pods-JobsCommentTests.release.xcconfig */,
+				46EB2E00000500 /* Pods-JobsCommentTests.modulemap */,
+				46EB2E00000540 /* Pods-JobsCommentTests-acknowledgements.markdown */,
+				46EB2E00000530 /* Pods-JobsCommentTests-acknowledgements.plist */,
+				46EB2E00000550 /* Pods-JobsCommentTests-dummy.m */,
+				46EB2E000004F0 /* Pods-JobsCommentTests-Info.plist */,
+				46EB2E00000510 /* Pods-JobsCommentTests-umbrella.h */,
+				46EB2E000004E0 /* Pods-JobsCommentTests.debug.xcconfig */,
+				46EB2E000004D0 /* Pods-JobsCommentTests.release.xcconfig */,
 			);
 			name = "Pods-JobsCommentTests";
 			path = "Target Support Files/Pods-JobsCommentTests";
 			sourceTree = "<group>";
 		};
-		46EB2E000005F0 /* Pods-JobsCommentUITests */ = {
+		46EB2E00000610 /* Pods-JobsCommentUITests */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000630 /* Pods-JobsCommentUITests.modulemap */,
-				46EB2E00000670 /* Pods-JobsCommentUITests-acknowledgements.markdown */,
-				46EB2E00000660 /* Pods-JobsCommentUITests-acknowledgements.plist */,
-				46EB2E00000680 /* Pods-JobsCommentUITests-dummy.m */,
-				46EB2E00000620 /* Pods-JobsCommentUITests-Info.plist */,
-				46EB2E00000640 /* Pods-JobsCommentUITests-umbrella.h */,
-				46EB2E00000610 /* Pods-JobsCommentUITests.debug.xcconfig */,
-				46EB2E00000600 /* Pods-JobsCommentUITests.release.xcconfig */,
+				46EB2E00000650 /* Pods-JobsCommentUITests.modulemap */,
+				46EB2E00000690 /* Pods-JobsCommentUITests-acknowledgements.markdown */,
+				46EB2E00000680 /* Pods-JobsCommentUITests-acknowledgements.plist */,
+				46EB2E000006A0 /* Pods-JobsCommentUITests-dummy.m */,
+				46EB2E00000640 /* Pods-JobsCommentUITests-Info.plist */,
+				46EB2E00000660 /* Pods-JobsCommentUITests-umbrella.h */,
+				46EB2E00000630 /* Pods-JobsCommentUITests.debug.xcconfig */,
+				46EB2E00000620 /* Pods-JobsCommentUITests.release.xcconfig */,
 			);
 			name = "Pods-JobsCommentUITests";
 			path = "Target Support Files/Pods-JobsCommentUITests";
@@ -454,27 +472,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46EB2E000002D0 /* Headers */ = {
+		46EB2E000002F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000003A0 /* Pods-JobsComment-umbrella.h in Headers */,
+				46EB2E000003C0 /* Pods-JobsComment-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00000450 /* Headers */ = {
+		46EB2E00000470 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000500 /* Pods-JobsCommentTests-umbrella.h in Headers */,
+				46EB2E00000520 /* Pods-JobsCommentTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000005A0 /* Headers */ = {
+		46EB2E000005C0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000650 /* Pods-JobsCommentUITests-umbrella.h in Headers */,
+				46EB2E00000670 /* Pods-JobsCommentUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,17 +501,17 @@
 /* Begin PBXNativeTarget section */
 		409D63942ACA2437A399A071FFA7FAC1 /* Pods-JobsCommentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00000410 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentTests" */;
+			buildConfigurationList = 46EB2E00000430 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentTests" */;
 			buildPhases = (
-				46EB2E00000450 /* Headers */,
-				46EB2E00000460 /* Sources */,
-				46EB2E00000470 /* Frameworks */,
-				46EB2E00000480 /* Resources */,
+				46EB2E00000470 /* Headers */,
+				46EB2E00000480 /* Sources */,
+				46EB2E00000490 /* Frameworks */,
+				46EB2E000004A0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00000A30 /* PBXTargetDependency */,
+				46EB2E00000A90 /* PBXTargetDependency */,
 			);
 			name = "Pods-JobsCommentTests";
 			productName = "Pods-JobsCommentTests";
@@ -502,17 +520,17 @@
 		};
 		9D07DE83897A40C3A7D9C1B3D0985EEC /* Pods-JobsCommentUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00000560 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentUITests" */;
+			buildConfigurationList = 46EB2E00000580 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentUITests" */;
 			buildPhases = (
-				46EB2E000005A0 /* Headers */,
-				46EB2E000005B0 /* Sources */,
-				46EB2E000005C0 /* Frameworks */,
-				46EB2E000005D0 /* Resources */,
+				46EB2E000005C0 /* Headers */,
+				46EB2E000005D0 /* Sources */,
+				46EB2E000005E0 /* Frameworks */,
+				46EB2E000005F0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00000A50 /* PBXTargetDependency */,
+				46EB2E00000AB0 /* PBXTargetDependency */,
 			);
 			name = "Pods-JobsCommentUITests";
 			productName = "Pods-JobsCommentUITests";
@@ -521,17 +539,16 @@
 		};
 		AE6E8ED319CA7831C6007C079DA1C296 /* Pods-JobsComment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00000290 /* Build configuration list for PBXNativeTarget "Pods-JobsComment" */;
+			buildConfigurationList = 46EB2E000002B0 /* Build configuration list for PBXNativeTarget "Pods-JobsComment" */;
 			buildPhases = (
-				46EB2E000002D0 /* Headers */,
-				46EB2E000002E0 /* Sources */,
-				46EB2E000002F0 /* Frameworks */,
-				46EB2E00000300 /* Resources */,
+				46EB2E000002F0 /* Headers */,
+				46EB2E00000300 /* Sources */,
+				46EB2E00000310 /* Frameworks */,
+				46EB2E00000320 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E000006B0 /* PBXTargetDependency */,
 				46EB2E000006D0 /* PBXTargetDependency */,
 				46EB2E000006F0 /* PBXTargetDependency */,
 				46EB2E00000710 /* PBXTargetDependency */,
@@ -559,6 +576,9 @@
 				46EB2E000009D0 /* PBXTargetDependency */,
 				46EB2E000009F0 /* PBXTargetDependency */,
 				46EB2E00000A10 /* PBXTargetDependency */,
+				46EB2E00000A30 /* PBXTargetDependency */,
+				46EB2E00000A50 /* PBXTargetDependency */,
+				46EB2E00000A70 /* PBXTargetDependency */,
 			);
 			name = "Pods-JobsComment";
 			productName = "Pods-JobsComment";
@@ -614,61 +634,67 @@
 					ProjectRef = 46EB2E00000140 /* GKNavigationBar */;
 				},
 				{
-					ProjectRef = 46EB2E00000150 /* HXPhotoPicker */;
+					ProjectRef = 46EB2E00000150 /* GKPhotoBrowser */;
 				},
 				{
-					ProjectRef = 46EB2E00000160 /* IQKeyboardManager */;
+					ProjectRef = 46EB2E00000160 /* HXPhotoPicker */;
 				},
 				{
-					ProjectRef = 46EB2E00000170 /* JPImageresizerView */;
+					ProjectRef = 46EB2E00000170 /* IQKeyboardManager */;
 				},
 				{
-					ProjectRef = 46EB2E00000180 /* JXCategoryView */;
+					ProjectRef = 46EB2E00000180 /* JPImageresizerView */;
 				},
 				{
-					ProjectRef = 46EB2E00000190 /* JXPagingView */;
+					ProjectRef = 46EB2E00000190 /* JXCategoryView */;
 				},
 				{
-					ProjectRef = 46EB2E000001A0 /* LYEmptyView */;
+					ProjectRef = 46EB2E000001A0 /* JXPagingView */;
 				},
 				{
-					ProjectRef = 46EB2E000001B0 /* MJExtension */;
+					ProjectRef = 46EB2E000001B0 /* LYEmptyView */;
 				},
 				{
-					ProjectRef = 46EB2E000001C0 /* MJRefresh */;
+					ProjectRef = 46EB2E000001C0 /* MJExtension */;
 				},
 				{
-					ProjectRef = 46EB2E000001D0 /* Masonry */;
+					ProjectRef = 46EB2E000001D0 /* MJRefresh */;
 				},
 				{
-					ProjectRef = 46EB2E000001E0 /* PPBadgeView */;
+					ProjectRef = 46EB2E000001E0 /* Masonry */;
 				},
 				{
-					ProjectRef = 46EB2E000001F0 /* Reachability */;
+					ProjectRef = 46EB2E000001F0 /* PPBadgeView */;
 				},
 				{
-					ProjectRef = 46EB2E00000200 /* ReactiveObjC */;
+					ProjectRef = 46EB2E00000200 /* Reachability */;
 				},
 				{
-					ProjectRef = 46EB2E00000210 /* SDWebImage */;
+					ProjectRef = 46EB2E00000210 /* ReactiveObjC */;
 				},
 				{
-					ProjectRef = 46EB2E00000220 /* SPAlertController */;
+					ProjectRef = 46EB2E00000220 /* SDWebImage */;
 				},
 				{
-					ProjectRef = 46EB2E00000230 /* TFPopup */;
+					ProjectRef = 46EB2E00000230 /* SPAlertController */;
 				},
 				{
-					ProjectRef = 46EB2E00000240 /* TXFileOperation */;
+					ProjectRef = 46EB2E00000240 /* TFPopup */;
 				},
 				{
-					ProjectRef = 46EB2E00000250 /* WHToast */;
+					ProjectRef = 46EB2E00000250 /* TXFileOperation */;
 				},
 				{
-					ProjectRef = 46EB2E00000260 /* YYModel */;
+					ProjectRef = 46EB2E00000260 /* WHToast */;
 				},
 				{
-					ProjectRef = 46EB2E00000270 /* lottie-ios */;
+					ProjectRef = 46EB2E00000270 /* YYImage */;
+				},
+				{
+					ProjectRef = 46EB2E00000280 /* YYModel */;
+				},
+				{
+					ProjectRef = 46EB2E00000290 /* lottie-ios */;
 				},
 			);
 			projectRoot = "";
@@ -681,21 +707,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		46EB2E00000300 /* Resources */ = {
+		46EB2E00000320 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00000480 /* Resources */ = {
+		46EB2E000004A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000005D0 /* Resources */ = {
+		46EB2E000005F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -705,184 +731,194 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46EB2E000002E0 /* Sources */ = {
+		46EB2E00000300 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000003F0 /* Pods-JobsComment-dummy.m in Sources */,
+				46EB2E00000410 /* Pods-JobsComment-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00000460 /* Sources */ = {
+		46EB2E00000480 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000540 /* Pods-JobsCommentTests-dummy.m in Sources */,
+				46EB2E00000560 /* Pods-JobsCommentTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000005B0 /* Sources */ = {
+		46EB2E000005D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000690 /* Pods-JobsCommentUITests-dummy.m in Sources */,
+				46EB2E000006B0 /* Pods-JobsCommentUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46EB2E000006B0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			targetProxy = 46EB2E000006A0 /* PBXContainerItemProxy */;
-		};
 		46EB2E000006D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BRPickerView;
+			name = AFNetworking;
 			targetProxy = 46EB2E000006C0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000006F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DoraemonKit;
+			name = BRPickerView;
 			targetProxy = 46EB2E000006E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000710 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FBRetainCycleDetector;
+			name = DoraemonKit;
 			targetProxy = 46EB2E00000700 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000730 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FLAnimatedImage;
+			name = FBRetainCycleDetector;
 			targetProxy = 46EB2E00000720 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000750 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "FLAnimatedImageView+RGWrapper";
+			name = FLAnimatedImage;
 			targetProxy = 46EB2E00000740 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000770 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FMDB;
+			name = "FLAnimatedImageView+RGWrapper";
 			targetProxy = 46EB2E00000760 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000790 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GCDWebServer;
+			name = FMDB;
 			targetProxy = 46EB2E00000780 /* PBXContainerItemProxy */;
 		};
 		46EB2E000007B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GKNavigationBar;
+			name = GCDWebServer;
 			targetProxy = 46EB2E000007A0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000007D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = HXPhotoPicker;
+			name = GKNavigationBar;
 			targetProxy = 46EB2E000007C0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000007F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IQKeyboardManager;
+			name = GKPhotoBrowser;
 			targetProxy = 46EB2E000007E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000810 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JPImageresizerView;
+			name = HXPhotoPicker;
 			targetProxy = 46EB2E00000800 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000830 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JXCategoryView;
+			name = IQKeyboardManager;
 			targetProxy = 46EB2E00000820 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000850 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JXPagingView;
+			name = JPImageresizerView;
 			targetProxy = 46EB2E00000840 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000870 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LYEmptyView;
+			name = JXCategoryView;
 			targetProxy = 46EB2E00000860 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000890 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MJExtension;
+			name = JXPagingView;
 			targetProxy = 46EB2E00000880 /* PBXContainerItemProxy */;
 		};
 		46EB2E000008B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MJRefresh;
+			name = LYEmptyView;
 			targetProxy = 46EB2E000008A0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000008D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Masonry;
+			name = MJExtension;
 			targetProxy = 46EB2E000008C0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000008F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PPBadgeView;
+			name = MJRefresh;
 			targetProxy = 46EB2E000008E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000910 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Reachability;
+			name = Masonry;
 			targetProxy = 46EB2E00000900 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000930 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ReactiveObjC;
+			name = PPBadgeView;
 			targetProxy = 46EB2E00000920 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000950 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SDWebImage;
+			name = Reachability;
 			targetProxy = 46EB2E00000940 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000970 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SPAlertController;
+			name = ReactiveObjC;
 			targetProxy = 46EB2E00000960 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000990 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TFPopup;
+			name = SDWebImage;
 			targetProxy = 46EB2E00000980 /* PBXContainerItemProxy */;
 		};
 		46EB2E000009B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TXFileOperation;
+			name = SPAlertController;
 			targetProxy = 46EB2E000009A0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000009D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = WHToast;
+			name = TFPopup;
 			targetProxy = 46EB2E000009C0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000009F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YYModel;
+			name = TXFileOperation;
 			targetProxy = 46EB2E000009E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000A10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "lottie-ios";
+			name = WHToast;
 			targetProxy = 46EB2E00000A00 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000A30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-JobsComment";
-			target = AE6E8ED319CA7831C6007C079DA1C296 /* Pods-JobsComment */;
+			name = YYImage;
 			targetProxy = 46EB2E00000A20 /* PBXContainerItemProxy */;
 		};
 		46EB2E00000A50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			name = YYModel;
+			targetProxy = 46EB2E00000A40 /* PBXContainerItemProxy */;
+		};
+		46EB2E00000A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "lottie-ios";
+			targetProxy = 46EB2E00000A60 /* PBXContainerItemProxy */;
+		};
+		46EB2E00000A90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
 			name = "Pods-JobsComment";
 			target = AE6E8ED319CA7831C6007C079DA1C296 /* Pods-JobsComment */;
-			targetProxy = 46EB2E00000A40 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00000A80 /* PBXContainerItemProxy */;
+		};
+		46EB2E00000AB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JobsComment";
+			target = AE6E8ED319CA7831C6007C079DA1C296 /* Pods-JobsComment */;
+			targetProxy = 46EB2E00000AA0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1015,9 +1051,9 @@
 			};
 			name = Release;
 		};
-		46EB2E000002A0 /* Release */ = {
+		46EB2E000002C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000350 /* Pods-JobsComment.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00000370 /* Pods-JobsComment.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1052,9 +1088,9 @@
 			};
 			name = Release;
 		};
-		46EB2E000002B0 /* Debug */ = {
+		46EB2E000002D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000360 /* Pods-JobsComment.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00000380 /* Pods-JobsComment.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1088,9 +1124,9 @@
 			};
 			name = Debug;
 		};
-		46EB2E00000420 /* Release */ = {
+		46EB2E00000440 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000004B0 /* Pods-JobsCommentTests.release.xcconfig */;
+			baseConfigurationReference = 46EB2E000004D0 /* Pods-JobsCommentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1125,9 +1161,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000430 /* Debug */ = {
+		46EB2E00000450 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000004C0 /* Pods-JobsCommentTests.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E000004E0 /* Pods-JobsCommentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1161,9 +1197,9 @@
 			};
 			name = Debug;
 		};
-		46EB2E00000570 /* Release */ = {
+		46EB2E00000590 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000600 /* Pods-JobsCommentUITests.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00000620 /* Pods-JobsCommentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1198,9 +1234,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000580 /* Debug */ = {
+		46EB2E000005A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000610 /* Pods-JobsCommentUITests.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00000630 /* Pods-JobsCommentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1246,29 +1282,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000290 /* Build configuration list for PBXNativeTarget "Pods-JobsComment" */ = {
+		46EB2E000002B0 /* Build configuration list for PBXNativeTarget "Pods-JobsComment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E000002B0 /* Debug */,
-				46EB2E000002A0 /* Release */,
+				46EB2E000002D0 /* Debug */,
+				46EB2E000002C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000410 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentTests" */ = {
+		46EB2E00000430 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E00000430 /* Debug */,
-				46EB2E00000420 /* Release */,
+				46EB2E00000450 /* Debug */,
+				46EB2E00000440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000560 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentUITests" */ = {
+		46EB2E00000580 /* Build configuration list for PBXNativeTarget "Pods-JobsCommentUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E00000580 /* Debug */,
-				46EB2E00000570 /* Release */,
+				46EB2E000005A0 /* Debug */,
+				46EB2E00000590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
