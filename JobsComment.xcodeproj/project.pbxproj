@@ -67,11 +67,6 @@
 		C52E0D892561128100B245CF /* UITabBar+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D272561128100B245CF /* UITabBar+Ex.m */; };
 		C52E0D8A2561128100B245CF /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D282561128100B245CF /* CustomTabBar.m */; };
 		C52E0D8F2561128100B245CF /* FileFolderHandleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D352561128100B245CF /* FileFolderHandleTool.m */; };
-		C52E0D952561128100B245CF /* 123.json in Resources */ = {isa = PBXBuildFile; fileRef = C52E0D462561128100B245CF /* 123.json */; };
-		C52E0D962561128100B245CF /* 1234.json in Resources */ = {isa = PBXBuildFile; fileRef = C52E0D472561128100B245CF /* 1234.json */; };
-		C52E0D972561128100B245CF /* 12345.json in Resources */ = {isa = PBXBuildFile; fileRef = C52E0D482561128100B245CF /* 12345.json */; };
-		C52E0D982561128100B245CF /* MJRefreshWithLottieTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D492561128100B245CF /* MJRefreshWithLottieTableViewHeader.m */; };
-		C52E0D992561128100B245CF /* MJRefreshComponent+Lottie.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D4C2561128100B245CF /* MJRefreshComponent+Lottie.m */; };
 		C52E0D9F2561128100B245CF /* GCD_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D5A2561128100B245CF /* GCD_TimerManager.m */; };
 		C52E0DA02561128100B245CF /* Nanosecond_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D5E2561128100B245CF /* Nanosecond_TimerManager.m */; };
 		C52E0DA12561128100B245CF /* CADisplayLink_TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D612561128100B245CF /* CADisplayLink_TimerManager.m */; };
@@ -172,10 +167,6 @@
 		C542467C25614C97002D16AD /* UIWindow+Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = C542467B25614C97002D16AD /* UIWindow+Touch.m */; };
 		C542468225614E2D002D16AD /* JobsCommentCoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468125614E2D002D16AD /* JobsCommentCoreVC.m */; };
 		C542468C256154FE002D16AD /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468B256154FE002D16AD /* EmptyView.m */; };
-		C544BF172583751000C6CF2A /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BF102583750F00C6CF2A /* MJRefreshConfigModel.m */; };
-		C544BF182583751000C6CF2A /* LOTAnimationMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BF122583750F00C6CF2A /* LOTAnimationMJRefreshHeader.m */; };
-		C544BF192583751000C6CF2A /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C544BF142583750F00C6CF2A /* JsonRes.bundle */; };
-		C544BF1A2583751000C6CF2A /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C544BF152583751000C6CF2A /* UIViewController+MJRefresh.m */; };
 		C5460DA9258C8E890008928C /* UIView+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DA7258C8E890008928C /* UIView+AOP.m */; };
 		C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DB0258C8EA40008928C /* ZYTextField.m */; };
 		C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A3CD2589D0CA00A89501 /* UIImage+ScreenShot.m */; };
@@ -270,6 +261,11 @@
 		C5D774F0257F59AB0087FC92 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D774E8257F59AB0087FC92 /* HQTextField.m */; };
 		C5D774F2257F59AB0087FC92 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5D774EC257F59AB0087FC92 /* ZYTextField.bundle */; };
 		C5D78567257F72E80087FC92 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D78566257F72E80087FC92 /* ZYTextField+HistoryDataList.m */; };
+		C5DF417C25A8991300E91985 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF417025A8991200E91985 /* UIViewController+MJRefresh.m */; };
+		C5DF417D25A8991300E91985 /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5DF417125A8991300E91985 /* JsonRes.bundle */; };
+		C5DF417E25A8991300E91985 /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF417525A8991300E91985 /* MJRefreshConfigModel.m */; };
+		C5DF417F25A8991300E91985 /* LOTAnimationMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF417725A8991300E91985 /* LOTAnimationMJRefreshHeader.m */; };
+		C5DF418025A8991300E91985 /* LOTAnimationMJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF417A25A8991300E91985 /* LOTAnimationMJRefreshFooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -400,13 +396,6 @@
 		C52E0D2A2561128100B245CF /* UITabBar+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Ex.h"; sourceTree = "<group>"; };
 		C52E0D342561128100B245CF /* FileFolderHandleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFolderHandleTool.h; sourceTree = "<group>"; };
 		C52E0D352561128100B245CF /* FileFolderHandleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileFolderHandleTool.m; sourceTree = "<group>"; };
-		C52E0D462561128100B245CF /* 123.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 123.json; sourceTree = "<group>"; };
-		C52E0D472561128100B245CF /* 1234.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1234.json; sourceTree = "<group>"; };
-		C52E0D482561128100B245CF /* 12345.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 12345.json; sourceTree = "<group>"; };
-		C52E0D492561128100B245CF /* MJRefreshWithLottieTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshWithLottieTableViewHeader.m; sourceTree = "<group>"; };
-		C52E0D4A2561128100B245CF /* MJRefreshComponent+Lottie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJRefreshComponent+Lottie.h"; sourceTree = "<group>"; };
-		C52E0D4B2561128100B245CF /* MJRefreshWithLottieTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshWithLottieTableViewHeader.h; sourceTree = "<group>"; };
-		C52E0D4C2561128100B245CF /* MJRefreshComponent+Lottie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJRefreshComponent+Lottie.m"; sourceTree = "<group>"; };
 		C52E0D552561128100B245CF /* TimerManager_DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager_DefineStructure.h; sourceTree = "<group>"; };
 		C52E0D5A2561128100B245CF /* GCD_TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCD_TimerManager.m; sourceTree = "<group>"; };
 		C52E0D5B2561128100B245CF /* GCD_TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD_TimerManager.h; sourceTree = "<group>"; };
@@ -605,13 +594,6 @@
 		C542468125614E2D002D16AD /* JobsCommentCoreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsCommentCoreVC.m; sourceTree = "<group>"; };
 		C542468A256154FE002D16AD /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
 		C542468B256154FE002D16AD /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
-		C544BF0F2583750F00C6CF2A /* MJRefreshConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConfigModel.h; sourceTree = "<group>"; };
-		C544BF102583750F00C6CF2A /* MJRefreshConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConfigModel.m; sourceTree = "<group>"; };
-		C544BF122583750F00C6CF2A /* LOTAnimationMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshHeader.m; sourceTree = "<group>"; };
-		C544BF132583750F00C6CF2A /* LOTAnimationMJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshHeader.h; sourceTree = "<group>"; };
-		C544BF142583750F00C6CF2A /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
-		C544BF152583751000C6CF2A /* UIViewController+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJRefresh.m"; sourceTree = "<group>"; };
-		C544BF162583751000C6CF2A /* UIViewController+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJRefresh.h"; sourceTree = "<group>"; };
 		C5460DA7258C8E890008928C /* UIView+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AOP.m"; sourceTree = "<group>"; };
 		C5460DA8258C8E890008928C /* UIView+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AOP.h"; sourceTree = "<group>"; };
 		C5460DB0258C8EA40008928C /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
@@ -770,6 +752,15 @@
 		C5D774EC257F59AB0087FC92 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		C5D77D3A257F5F020087FC92 /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		C5D78566257F72E80087FC92 /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
+		C5DF417025A8991200E91985 /* UIViewController+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJRefresh.m"; sourceTree = "<group>"; };
+		C5DF417125A8991300E91985 /* JsonRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JsonRes.bundle; sourceTree = "<group>"; };
+		C5DF417225A8991300E91985 /* UIViewController+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJRefresh.h"; sourceTree = "<group>"; };
+		C5DF417425A8991300E91985 /* MJRefreshConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConfigModel.h; sourceTree = "<group>"; };
+		C5DF417525A8991300E91985 /* MJRefreshConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConfigModel.m; sourceTree = "<group>"; };
+		C5DF417725A8991300E91985 /* LOTAnimationMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshHeader.m; sourceTree = "<group>"; };
+		C5DF417825A8991300E91985 /* LOTAnimationMJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshHeader.h; sourceTree = "<group>"; };
+		C5DF417A25A8991300E91985 /* LOTAnimationMJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshFooter.m; sourceTree = "<group>"; };
+		C5DF417B25A8991300E91985 /* LOTAnimationMJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshFooter.h; sourceTree = "<group>"; };
 		CCC482BB970BB8DAA4B28AD0 /* Pods-JobsCommentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobsCommentTests.debug.xcconfig"; path = "Target Support Files/Pods-JobsCommentTests/Pods-JobsCommentTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1176,28 +1167,6 @@
 				C56BB8582587986E0043C977 /* UIControl+XY.m */,
 			);
 			path = "UIControl+XY";
-			sourceTree = "<group>";
-		};
-		C52E0D442561128100B245CF /* MJRefresh + Lottie */ = {
-			isa = PBXGroup;
-			children = (
-				C52E0D452561128100B245CF /* Lottie资源文件 */,
-				C52E0D492561128100B245CF /* MJRefreshWithLottieTableViewHeader.m */,
-				C52E0D4A2561128100B245CF /* MJRefreshComponent+Lottie.h */,
-				C52E0D4B2561128100B245CF /* MJRefreshWithLottieTableViewHeader.h */,
-				C52E0D4C2561128100B245CF /* MJRefreshComponent+Lottie.m */,
-			);
-			path = "MJRefresh + Lottie";
-			sourceTree = "<group>";
-		};
-		C52E0D452561128100B245CF /* Lottie资源文件 */ = {
-			isa = PBXGroup;
-			children = (
-				C52E0D462561128100B245CF /* 123.json */,
-				C52E0D472561128100B245CF /* 1234.json */,
-				C52E0D482561128100B245CF /* 12345.json */,
-			);
-			path = "Lottie资源文件";
 			sourceTree = "<group>";
 		};
 		C52E0D4D2561128100B245CF /* SoundBtn */ = {
@@ -1916,11 +1885,12 @@
 		C544BAB12583718000C6CF2A /* UIViewController+MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0D442561128100B245CF /* MJRefresh + Lottie */,
-				C544BF0E2583750F00C6CF2A /* ConfigModel */,
-				C544BF112583750F00C6CF2A /* LOTAnimationMJRefreshHeader */,
-				C544BF162583751000C6CF2A /* UIViewController+MJRefresh.h */,
-				C544BF152583751000C6CF2A /* UIViewController+MJRefresh.m */,
+				C5DF417325A8991300E91985 /* ConfigModel */,
+				C5DF417125A8991300E91985 /* JsonRes.bundle */,
+				C5DF417925A8991300E91985 /* LOTAnimationMJRefreshFooter */,
+				C5DF417625A8991300E91985 /* LOTAnimationMJRefreshHeader */,
+				C5DF417225A8991300E91985 /* UIViewController+MJRefresh.h */,
+				C5DF417025A8991200E91985 /* UIViewController+MJRefresh.m */,
 			);
 			path = "UIViewController+MJRefresh";
 			sourceTree = "<group>";
@@ -1941,25 +1911,6 @@
 				C52E0E012561129D00B245CF /* UIViewController+Shake.m */,
 			);
 			path = "UIViewController+Shake";
-			sourceTree = "<group>";
-		};
-		C544BF0E2583750F00C6CF2A /* ConfigModel */ = {
-			isa = PBXGroup;
-			children = (
-				C544BF0F2583750F00C6CF2A /* MJRefreshConfigModel.h */,
-				C544BF102583750F00C6CF2A /* MJRefreshConfigModel.m */,
-			);
-			path = ConfigModel;
-			sourceTree = "<group>";
-		};
-		C544BF112583750F00C6CF2A /* LOTAnimationMJRefreshHeader */ = {
-			isa = PBXGroup;
-			children = (
-				C544BF142583750F00C6CF2A /* JsonRes.bundle */,
-				C544BF132583750F00C6CF2A /* LOTAnimationMJRefreshHeader.h */,
-				C544BF122583750F00C6CF2A /* LOTAnimationMJRefreshHeader.m */,
-			);
-			path = LOTAnimationMJRefreshHeader;
 			sourceTree = "<group>";
 		};
 		C5460DA6258C8E890008928C /* UIView+AOP */ = {
@@ -2674,6 +2625,33 @@
 			path = "UIViewController+Others";
 			sourceTree = "<group>";
 		};
+		C5DF417325A8991300E91985 /* ConfigModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF417425A8991300E91985 /* MJRefreshConfigModel.h */,
+				C5DF417525A8991300E91985 /* MJRefreshConfigModel.m */,
+			);
+			path = ConfigModel;
+			sourceTree = "<group>";
+		};
+		C5DF417625A8991300E91985 /* LOTAnimationMJRefreshHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF417825A8991300E91985 /* LOTAnimationMJRefreshHeader.h */,
+				C5DF417725A8991300E91985 /* LOTAnimationMJRefreshHeader.m */,
+			);
+			path = LOTAnimationMJRefreshHeader;
+			sourceTree = "<group>";
+		};
+		C5DF417925A8991300E91985 /* LOTAnimationMJRefreshFooter */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF417B25A8991300E91985 /* LOTAnimationMJRefreshFooter.h */,
+				C5DF417A25A8991300E91985 /* LOTAnimationMJRefreshFooter.m */,
+			);
+			path = LOTAnimationMJRefreshFooter;
+			sourceTree = "<group>";
+		};
 		EB47A1B9BA8F5B8CDDB6674F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2817,7 +2795,6 @@
 				C5C64DCB259DF77F00FD2F99 /* 定位服务@3x.png in Resources */,
 				C5C64DBF259DF77F00FD2F99 /* 语音识别@3x.png in Resources */,
 				C52E1E7925611C0A00B245CF /* iph_X.mp4 in Resources */,
-				C52E0D952561128100B245CF /* 123.json in Resources */,
 				C52E0D752561128100B245CF /* 社区.json in Resources */,
 				C5C1575A256378A500285E2E /* 热度.gif in Resources */,
 				C52E0D7A2561128100B245CF /* huiyuan.json in Resources */,
@@ -2837,7 +2814,6 @@
 				C5C64DB4259DF77F00FD2F99 /* 提醒事项@3x.png in Resources */,
 				C52E0D6F2561128100B245CF /* dingdan.json in Resources */,
 				C5BC5BA2256160670071CEEE /* RBCLikeButton.bundle in Resources */,
-				C544BF192583751000C6CF2A /* JsonRes.bundle in Resources */,
 				C5C64DB1259DF77F00FD2F99 /* 媒体与AppleMusic@3x.png in Resources */,
 				C52E0B7F25610F5400B245CF /* Assets.xcassets in Resources */,
 				C5C64DB8259DF77F00FD2F99 /* 麦克风@3x.png in Resources */,
@@ -2860,6 +2836,7 @@
 				C52E0D862561128100B245CF /* 参考demo in Resources */,
 				C52E0E892561129D00B245CF /* 我为什么要这么做 in Resources */,
 				C52E0D702561128100B245CF /* green_lottie_tab_home.json in Resources */,
+				C5DF417D25A8991300E91985 /* JsonRes.bundle in Resources */,
 				C52E15CA2561167700B245CF /* ZZCircleProgress.bundle in Resources */,
 				C5C64DC7259DF77F00FD2F99 /* 照片@3x.png in Resources */,
 				C5C64DAF259DF77F00FD2F99 /* 媒体与AppleMusic@2x.png in Resources */,
@@ -2879,10 +2856,8 @@
 				C5C64DB2259DF77F00FD2F99 /* 运动与健身@3x.png in Resources */,
 				C5C64DC1259DF77F00FD2F99 /* 通讯录@3x.png in Resources */,
 				C52E0D772561128100B245CF /* 上传与拍照.json in Resources */,
-				C52E0D962561128100B245CF /* 1234.json in Resources */,
 				C5C64DC5259DF77F00FD2F99 /* 相机@2x.png in Resources */,
 				C52E0D832561128100B245CF /* 功能性动效：手势横向滚动子VC联动Tabbar切换 in Resources */,
-				C52E0D972561128100B245CF /* 12345.json in Resources */,
 				C5C64DB7259DF77F00FD2F99 /* 02.PNG in Resources */,
 				C52E1E7B25611C0A00B245CF /* 启动页SLOGAN.png in Resources */,
 				C5C64DB6259DF77F00FD2F99 /* 麦克风@2x.png in Resources */,
@@ -3027,7 +3002,6 @@
 				C52E0EAE2561129D00B245CF /* CALayer+Transition.m in Sources */,
 				C52E0E992561129D00B245CF /* UIViewController+BackBtn.m in Sources */,
 				C52E0D822561128100B245CF /* JobsPullListAutoSizeView.m in Sources */,
-				C544BF1A2583751000C6CF2A /* UIViewController+MJRefresh.m in Sources */,
 				C52E0E932561129D00B245CF /* UIViewController+BWShareView.m in Sources */,
 				C52E0E872561129D00B245CF /* DeleteSystemUITabBarButton.m in Sources */,
 				C52E15C52561167700B245CF /* WMZBannerControl.m in Sources */,
@@ -3043,6 +3017,7 @@
 				C59A3B54258DD1AB005F6260 /* UserDefaultManager.m in Sources */,
 				C52E0D8A2561128100B245CF /* CustomTabBar.m in Sources */,
 				C595D1BE2587141B002A4531 /* SuspendBtn.m in Sources */,
+				C5DF417F25A8991300E91985 /* LOTAnimationMJRefreshHeader.m in Sources */,
 				C52E0E8E2561129D00B245CF /* NavigationBar.m in Sources */,
 				C52E0EA02561129D00B245CF /* BaseNavigationVC.m in Sources */,
 				C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */,
@@ -3064,7 +3039,6 @@
 				C59F3895259B38D800E22F9B /* JobsBitsMonitorCore.m in Sources */,
 				C5D1BE3F258B1F5A00784D2F /* UIViewController+EmptyData.m in Sources */,
 				C52E0DA12561128100B245CF /* CADisplayLink_TimerManager.m in Sources */,
-				C52E0D992561128100B245CF /* MJRefreshComponent+Lottie.m in Sources */,
 				C5BC5B50256157020071CEEE /* MKCommentModel.m in Sources */,
 				C542449D256126AD002D16AD /* PopUpVC.m in Sources */,
 				C52E0E7E2561129D00B245CF /* UIColor+Hex.m in Sources */,
@@ -3075,6 +3049,7 @@
 				C52E0E752561129D00B245CF /* UIImage+Overlay.m in Sources */,
 				C52E0C6C256110C200B245CF /* NotificationManager.m in Sources */,
 				C52E0EAA2561129D00B245CF /* ViewForTableViewFooter.m in Sources */,
+				C5DF418025A8991300E91985 /* LOTAnimationMJRefreshFooter.m in Sources */,
 				C5D1BE46258B1F6400784D2F /* UIView+EmptyData.m in Sources */,
 				C52E0E772561129D00B245CF /* UILabel+Extra.m in Sources */,
 				C52E0CB5256111D300B245CF /* JobsCommentAppDelegate+PopupView.m in Sources */,
@@ -3085,6 +3060,7 @@
 				C52E0EAC2561129D00B245CF /* KFZShopCatoryFlowLayput.m in Sources */,
 				C52E0EA82561129D00B245CF /* NSArray+Extend.m in Sources */,
 				C52E0D8F2561128100B245CF /* FileFolderHandleTool.m in Sources */,
+				C5DF417E25A8991300E91985 /* MJRefreshConfigModel.m in Sources */,
 				C5D774EF257F59AB0087FC92 /* JobsMagicTextField.m in Sources */,
 				C5C64DA2259DF77F00FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */,
 				C52E0E832561129D00B245CF /* UIView+Extras.m in Sources */,
@@ -3120,9 +3096,7 @@
 				C52E0D672561128100B245CF /* TabBarItem.m in Sources */,
 				C5C64DAC259DF77F00FD2F99 /* ECPrivacyCheckHealth.m in Sources */,
 				C52E0E8A2561129D00B245CF /* CollectionView.m in Sources */,
-				C544BF182583751000C6CF2A /* LOTAnimationMJRefreshHeader.m in Sources */,
 				C52E1613256116FB00B245CF /* ViewController@3.m in Sources */,
-				C544BF172583751000C6CF2A /* MJRefreshConfigModel.m in Sources */,
 				C5C64DA8259DF77F00FD2F99 /* ECPrivacyCheckMotionAndFitness.m in Sources */,
 				C52269B125875836004447FB /* BWShareView.m in Sources */,
 				C52E15CD2561167700B245CF /* XHLaunchAdView.m in Sources */,
@@ -3133,6 +3107,7 @@
 				C52E0D842561128100B245CF /* TransitionAnimation.m in Sources */,
 				C52E15D22561167700B245CF /* XHLaunchAdController.m in Sources */,
 				C52E0E862561129D00B245CF /* UIFont+Extras.m in Sources */,
+				C5DF417C25A8991300E91985 /* UIViewController+MJRefresh.m in Sources */,
 				C52E0E7F2561129D00B245CF /* UIView+Chain.m in Sources */,
 				C52F987B25A6D98C00924990 /* NSObject+SPAlertController.m in Sources */,
 				C5D78567257F72E80087FC92 /* ZYTextField+HistoryDataList.m in Sources */,
@@ -3143,7 +3118,6 @@
 				C52E0EB22561129D00B245CF /* NSObject+AFNReachability.m in Sources */,
 				C52E0EB72561129D00B245CF /* NSObject+Measure.m in Sources */,
 				C5BC5BA3256160670071CEEE /* RBCLikeButton.m in Sources */,
-				C52E0D982561128100B245CF /* MJRefreshWithLottieTableViewHeader.m in Sources */,
 				C5267607258A496A0095A681 /* NSObject+Time.m in Sources */,
 				C52E0EA12561129D00B245CF /* TableViewAnimationKit.m in Sources */,
 				C52E0E952561129D00B245CF /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
