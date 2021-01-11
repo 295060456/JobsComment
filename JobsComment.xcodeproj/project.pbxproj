@@ -254,6 +254,7 @@
 		C5C64DCA259DF77F00FD2F99 /* 文件和文件夹@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64D95259DF77E00FD2F99 /* 文件和文件夹@3x.png */; };
 		C5C64DCB259DF77F00FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C64D96259DF77E00FD2F99 /* 定位服务@3x.png */; };
 		C5C64DCC259DF77F00FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C64D99259DF77E00FD2F99 /* ECPrivacyCheckGatherTool.m */; };
+		C5CF134F25AC7D1700381935 /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CF134C25AC7D1700381935 /* LYLUnicode.m */; };
 		C5D0B74525878C90002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B74325878C90002CA224 /* NSObject+Sound.m */; };
 		C5D0B75025878CB6002CA224 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B74D25878CB6002CA224 /* Sound.wav */; };
 		C5D0B75125878CB6002CA224 /* 带有按键音的按钮.md in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B74E25878CB6002CA224 /* 带有按键音的按钮.md */; };
@@ -752,6 +753,9 @@
 		C5C64D9C259DF77E00FD2F99 /* ECPrivacyCheckTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckTools.h; sourceTree = "<group>"; };
 		C5C64D9E259DF77E00FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C64D9F259DF77E00FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
+		C5CF134C25AC7D1700381935 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
+		C5CF134D25AC7D1700381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解决打印日志对于Unicode编码不能正常显示中文的问题"; sourceTree = "<group>"; };
+		C5CF134E25AC7D1700381935 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
 		C5D0B74325878C90002CA224 /* NSObject+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sound.m"; sourceTree = "<group>"; };
 		C5D0B74425878C90002CA224 /* NSObject+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sound.h"; sourceTree = "<group>"; };
 		C5D0B74C25878CB6002CA224 /* SoundBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBtn.h; sourceTree = "<group>"; };
@@ -997,6 +1001,7 @@
 		C52E0CEB2561128100B245CF /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5CF134B25AC7D1700381935 /* LYLUnicode */,
 				C5A436CA25AAF76F000F0CD2 /* 手势滑动返回 */,
 				C565CA6B25A437CE00848134 /* TwoVerticalArrangementLabsView */,
 				C59F388C259B38D800E22F9B /* JobsBitsMonitor */,
@@ -2552,6 +2557,16 @@
 			path = ReadMe;
 			sourceTree = "<group>";
 		};
+		C5CF134B25AC7D1700381935 /* LYLUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF134D25AC7D1700381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */,
+				C5CF134E25AC7D1700381935 /* LYLUnicode.h */,
+				C5CF134C25AC7D1700381935 /* LYLUnicode.m */,
+			);
+			path = LYLUnicode;
+			sourceTree = "<group>";
+		};
 		C5D1B949258B0C0A00784D2F /* UIViewController+EmptyData */ = {
 			isa = PBXGroup;
 			children = (
@@ -3190,6 +3205,7 @@
 				C52E1606256116E500B245CF /* ViewController@2.m in Sources */,
 				C52E0E972561129D00B245CF /* UIViewController+BRPickerView.m in Sources */,
 				C5BC5B48256156310071CEEE /* JobsCommentPopUpViewForTVH.m in Sources */,
+				C5CF134F25AC7D1700381935 /* LYLUnicode.m in Sources */,
 				C5A441FD25ABFB9E000F0CD2 /* JXCategoryTimelineCell.m in Sources */,
 				C52E0D882561128100B245CF /* UITabBar+TLAnimation.m in Sources */,
 				C52E15D52561167700B245CF /* XHLaunchAdConfiguration.m in Sources */,
