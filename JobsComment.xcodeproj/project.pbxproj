@@ -54,7 +54,6 @@
 		C52E0D7C2561128100B245CF /* green_lottie_tab_discover.json in Resources */ = {isa = PBXBuildFile; fileRef = C52E0D0B2561128100B245CF /* green_lottie_tab_discover.json */; };
 		C52E0D7D2561128100B245CF /* record_change.json in Resources */ = {isa = PBXBuildFile; fileRef = C52E0D0C2561128100B245CF /* record_change.json */; };
 		C52E0D7E2561128100B245CF /* tab_message_animate.json in Resources */ = {isa = PBXBuildFile; fileRef = C52E0D0D2561128100B245CF /* tab_message_animate.json */; };
-		C52E0D7F2561128100B245CF /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D102561128100B245CF /* TabbarVC.m */; };
 		C52E0D802561128100B245CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C52E0D142561128100B245CF /* README.md */; };
 		C52E0D812561128100B245CF /* JobsPullListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D162561128100B245CF /* JobsPullListTBVCell.m */; };
 		C52E0D822561128100B245CF /* JobsPullListAutoSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0D182561128100B245CF /* JobsPullListAutoSizeView.m */; };
@@ -170,6 +169,7 @@
 		C5460DA9258C8E890008928C /* UIView+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DA7258C8E890008928C /* UIView+AOP.m */; };
 		C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DB0258C8EA40008928C /* ZYTextField.m */; };
 		C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A3CD2589D0CA00A89501 /* UIImage+ScreenShot.m */; };
+		C55BF39B25AC8E4100A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF39A25AC8E4100A8347F /* TabbarVC.m */; };
 		C565CA6F25A437CE00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */; };
 		C5676201259F12AD006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FD259F12AC006905A9 /* CollectionViewCell.m */; };
 		C5676202259F12AD006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
@@ -383,8 +383,6 @@
 		C52E0D0B2561128100B245CF /* green_lottie_tab_discover.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = green_lottie_tab_discover.json; sourceTree = "<group>"; };
 		C52E0D0C2561128100B245CF /* record_change.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = record_change.json; sourceTree = "<group>"; };
 		C52E0D0D2561128100B245CF /* tab_message_animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tab_message_animate.json; sourceTree = "<group>"; };
-		C52E0D0F2561128100B245CF /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
-		C52E0D102561128100B245CF /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
 		C52E0D132561128100B245CF /* JobsPullListAutoSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsPullListAutoSizeView.h; sourceTree = "<group>"; };
 		C52E0D142561128100B245CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C52E0D162561128100B245CF /* JobsPullListTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsPullListTBVCell.m; sourceTree = "<group>"; };
@@ -615,6 +613,9 @@
 		C558014C258A3F4A0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
 		C558E083258A10010078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
 		C558E089258A104D0078DB8F /* JobsComment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsComment-Bridging-Header.h"; sourceTree = "<group>"; };
+		C55BF39925AC8E4100A8347F /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
+		C55BF39A25AC8E4100A8347F /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
+		C55BF39F25AC8E8200A8347F /* TabBarControllerConstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConstruction.h; sourceTree = "<group>"; };
 		C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CA6D25A437CE00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CA6E25A437CE00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
@@ -1047,6 +1048,7 @@
 			children = (
 				C52E0CF42561128100B245CF /* TabBarControllerConfig.h */,
 				C52E0CF52561128100B245CF /* TabBarControllerConfig.m */,
+				C55BF39F25AC8E8200A8347F /* TabBarControllerConstruction.h */,
 			);
 			path = "全局配置文件";
 			sourceTree = "<group>";
@@ -1091,8 +1093,8 @@
 		C52E0D0E2561128100B245CF /* UITabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0D0F2561128100B245CF /* TabbarVC.h */,
-				C52E0D102561128100B245CF /* TabbarVC.m */,
+				C55BF39925AC8E4100A8347F /* TabbarVC.h */,
+				C55BF39A25AC8E4100A8347F /* TabbarVC.m */,
 			);
 			path = UITabBarController;
 			sourceTree = "<group>";
@@ -3128,6 +3130,7 @@
 				C5D774ED257F59AB0087FC92 /* CJTextField.m in Sources */,
 				C5A441F725ABFB9E000F0CD2 /* WHToast+DDToast.m in Sources */,
 				C5D0B74525878C90002CA224 /* NSObject+Sound.m in Sources */,
+				C55BF39B25AC8E4100A8347F /* TabbarVC.m in Sources */,
 				C5C64DA3259DF77F00FD2F99 /* ECPrivacyCheckCamera.m in Sources */,
 				C52E0EB12561129D00B245CF /* NSObject+Random.m in Sources */,
 				C5A436D025AAF76F000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
@@ -3211,7 +3214,6 @@
 				C52E15D52561167700B245CF /* XHLaunchAdConfiguration.m in Sources */,
 				C53D383D2598C7A000B48431 /* XLBubbleTransition.m in Sources */,
 				C52E0E942561129D00B245CF /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
-				C52E0D7F2561128100B245CF /* TabbarVC.m in Sources */,
 				C5BC5B42256156200071CEEE /* LoadMoreTBVCell.m in Sources */,
 				C52E0E922561129D00B245CF /* UIViewController+JPImageresizerView.m in Sources */,
 				C53D383E2598C7A000B48431 /* UIViewController+XLBubbleTransition.m in Sources */,
