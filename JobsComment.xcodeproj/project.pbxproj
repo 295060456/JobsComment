@@ -170,6 +170,7 @@
 		C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DB0258C8EA40008928C /* ZYTextField.m */; };
 		C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A3CD2589D0CA00A89501 /* UIImage+ScreenShot.m */; };
 		C55BF39B25AC8E4100A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF39A25AC8E4100A8347F /* TabbarVC.m */; };
+		C55FE83925B4249900D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */; };
 		C565CA6F25A437CE00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */; };
 		C5676201259F12AD006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FD259F12AC006905A9 /* CollectionViewCell.m */; };
 		C5676202259F12AD006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
@@ -616,6 +617,8 @@
 		C55BF39925AC8E4100A8347F /* TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarVC.h; sourceTree = "<group>"; };
 		C55BF39A25AC8E4100A8347F /* TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarVC.m; sourceTree = "<group>"; };
 		C55BF39F25AC8E8200A8347F /* TabBarControllerConstruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConstruction.h; sourceTree = "<group>"; };
+		C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
+		C55FE83825B4249900D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CA6D25A437CE00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CA6E25A437CE00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
@@ -1373,15 +1376,16 @@
 		C52E0DCB2561129C00B245CF /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C515746325A350730074D945 /* UIView+Gesture */,
 				C595BB37258640F8002A4531 /* UIView+Animation */,
 				C5460DA6258C8E890008928C /* UIView+AOP */,
 				C595BB38258640FD002A4531 /* UIView+Chain */,
 				C5D1BE43258B1F6400784D2F /* UIView+EmptyData */,
 				C595BB3925864103002A4531 /* UIView+Extras */,
+				C515746325A350730074D945 /* UIView+Gesture */,
 				C595BB3A2586410B002A4531 /* UIView+Gradient */,
 				C5529E682589CDE900A89501 /* UIView+JHGestureBlock */,
 				C595BB3B25864111002A4531 /* UIView+Measure */,
+				C55FE83625B4249900D8C30D /* UIView+MJRefresh */,
 				C595BB3C2586411D002A4531 /* UIView+SuspendView */,
 			);
 			path = UIView;
@@ -2183,6 +2187,15 @@
 				C52E0CEB2561128100B245CF /* 🔨Manual_Add_ThirdParty  */,
 			);
 			path = 3rd;
+			sourceTree = "<group>";
+		};
+		C55FE83625B4249900D8C30D /* UIView+MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C55FE83825B4249900D8C30D /* UIView+MJRefresh.h */,
+				C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */,
+			);
+			path = "UIView+MJRefresh";
 			sourceTree = "<group>";
 		};
 		C565CA6B25A437CE00848134 /* TwoVerticalArrangementLabsView */ = {
@@ -3267,6 +3280,7 @@
 				C5D774F0257F59AB0087FC92 /* HQTextField.m in Sources */,
 				C52E0E852561129D00B245CF /* UIView+Gradient.m in Sources */,
 				C52E0E8D2561129D00B245CF /* UIImageView+GIF.m in Sources */,
+				C55FE83925B4249900D8C30D /* UIView+MJRefresh.m in Sources */,
 				C52E15CE2561167700B245CF /* XHLaunchAdButton.m in Sources */,
 				C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */,
 				C52E0EA72561129D00B245CF /* NSArray+Extension.m in Sources */,
