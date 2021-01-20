@@ -172,10 +172,11 @@
 		C55BF39B25AC8E4100A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF39A25AC8E4100A8347F /* TabbarVC.m */; };
 		C55FE83925B4249900D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */; };
 		C565CA6F25A437CE00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */; };
-		C5676201259F12AD006905A9 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FD259F12AC006905A9 /* CollectionViewCell.m */; };
+		C5676201259F12AD006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FD259F12AC006905A9 /* BaseCollectionViewCell.m */; };
 		C5676202259F12AD006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB85B2587986E0043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8582587986E0043C977 /* UIControl+XY.m */; };
 		C589C0932563E98B00323A2A /* JobsCommentTitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */; };
+		C58D92E125B80C1900414ACB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */; };
 		C590871F256166680070E150 /* CommentData.json in Resources */ = {isa = PBXBuildFile; fileRef = C590871E256166680070E150 /* CommentData.json */; };
 		C5908B3325616BBA0070E150 /* JobsCommentCoreVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */; };
 		C595D1BC2587141B002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1B42587141B002A4531 /* SuspendView.m */; };
@@ -622,15 +623,17 @@
 		C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
 		C565CA6D25A437CE00848134 /* TwoVerticalArrangementLabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVerticalArrangementLabsView.h; sourceTree = "<group>"; };
 		C565CA6E25A437CE00848134 /* TwoVerticalArrangementLabsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoVerticalArrangementLabsView.png; sourceTree = "<group>"; };
-		C56761FD259F12AC006905A9 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		C56761FD259F12AC006905A9 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
 		C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ShakeAnimation.m"; sourceTree = "<group>"; };
 		C56761FF259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ShakeAnimation.h"; sourceTree = "<group>"; };
-		C5676200259F12AD006905A9 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		C5676200259F12AD006905A9 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		C56BB8582587986E0043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB8592587986E0043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
 		C56BB85A2587986E0043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C589C0912563E98B00323A2A /* JobsCommentTitleHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsCommentTitleHeaderView.h; sourceTree = "<group>"; };
 		C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsCommentTitleHeaderView.m; sourceTree = "<group>"; };
+		C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		C58D92E025B80C1900414ACB /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		C590871E256166680070E150 /* CommentData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CommentData.json; sourceTree = "<group>"; };
 		C5908B3125616BBA0070E150 /* JobsCommentCoreVC+VM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsCommentCoreVC+VM.h"; sourceTree = "<group>"; };
 		C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JobsCommentCoreVC+VM.m"; sourceTree = "<group>"; };
@@ -1318,6 +1321,7 @@
 		C52E0DBA2561129C00B245CF /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C58D92DE25B80C1900414ACB /* BaseTableViewCell */,
 				C52E0DBB2561129C00B245CF /* 重设边距 */,
 				C52E0DBE2561129C00B245CF /* 自定义右侧小箭头图标 */,
 			);
@@ -1433,8 +1437,8 @@
 		C52E0DE82561129D00B245CF /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C5676200259F12AD006905A9 /* CollectionViewCell.h */,
-				C56761FD259F12AC006905A9 /* CollectionViewCell.m */,
+				C5676200259F12AD006905A9 /* BaseCollectionViewCell.h */,
+				C56761FD259F12AC006905A9 /* BaseCollectionViewCell.m */,
 				C56761FF259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.h */,
 				C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */,
 			);
@@ -2215,6 +2219,15 @@
 				C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */,
 			);
 			path = "标题栏";
+			sourceTree = "<group>";
+		};
+		C58D92DE25B80C1900414ACB /* BaseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */,
+				C58D92E025B80C1900414ACB /* BaseTableViewCell.h */,
+			);
+			path = BaseTableViewCell;
 			sourceTree = "<group>";
 		};
 		C595BB37258640F8002A4531 /* UIView+Animation */ = {
@@ -3128,7 +3141,7 @@
 				C5C157A825637BF900285E2E /* JobsCommentConfig.m in Sources */,
 				C52E15CB2561167700B245CF /* ZZCountingLabel.m in Sources */,
 				C52E15482561162D00B245CF /* NoticePopupView.m in Sources */,
-				C5676201259F12AD006905A9 /* CollectionViewCell.m in Sources */,
+				C5676201259F12AD006905A9 /* BaseCollectionViewCell.m in Sources */,
 				C52E0EAD2561129D00B245CF /* HQCollectionViewFlowLayout.m in Sources */,
 				C5C64DAD259DF77F00FD2F99 /* ECPrivacyCheckReminders.m in Sources */,
 				C52E0EAE2561129D00B245CF /* CALayer+Transition.m in Sources */,
@@ -3281,6 +3294,7 @@
 				C52E0E852561129D00B245CF /* UIView+Gradient.m in Sources */,
 				C52E0E8D2561129D00B245CF /* UIImageView+GIF.m in Sources */,
 				C55FE83925B4249900D8C30D /* UIView+MJRefresh.m in Sources */,
+				C58D92E125B80C1900414ACB /* BaseTableViewCell.m in Sources */,
 				C52E15CE2561167700B245CF /* XHLaunchAdButton.m in Sources */,
 				C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */,
 				C52E0EA72561129D00B245CF /* NSArray+Extension.m in Sources */,
