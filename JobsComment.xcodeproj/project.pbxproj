@@ -121,7 +121,7 @@
 		C52E0EAD2561129D00B245CF /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E402561129D00B245CF /* HQCollectionViewFlowLayout.m */; };
 		C52E0EAE2561129D00B245CF /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E432561129D00B245CF /* CALayer+Transition.m */; };
 		C52E0EAF2561129D00B245CF /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E442561129D00B245CF /* CALayer+Anim.m */; };
-		C52E0EB02561129D00B245CF /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E492561129D00B245CF /* CollectionReusableView.m */; };
+		C52E0EB02561129D00B245CF /* BaseCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E492561129D00B245CF /* BaseCollectionReusableView.m */; };
 		C52E0EB12561129D00B245CF /* NSObject+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E4B2561129D00B245CF /* NSObject+Random.m */; };
 		C52E0EB22561129D00B245CF /* NSObject+AFNReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E4C2561129D00B245CF /* NSObject+AFNReachability.m */; };
 		C52E0EB62561129D00B245CF /* NSObject+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0E562561129D00B245CF /* NSObject+OpenURL.m */; };
@@ -517,8 +517,8 @@
 		C52E0E442561129D00B245CF /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
 		C52E0E452561129D00B245CF /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
 		C52E0E462561129D00B245CF /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
-		C52E0E482561129D00B245CF /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
-		C52E0E492561129D00B245CF /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
+		C52E0E482561129D00B245CF /* BaseCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionReusableView.h; sourceTree = "<group>"; };
+		C52E0E492561129D00B245CF /* BaseCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionReusableView.m; sourceTree = "<group>"; };
 		C52E0E4B2561129D00B245CF /* NSObject+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Random.m"; sourceTree = "<group>"; };
 		C52E0E4C2561129D00B245CF /* NSObject+AFNReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AFNReachability.m"; sourceTree = "<group>"; };
 		C52E0E522561129D00B245CF /* NSObject+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Shake.h"; sourceTree = "<group>"; };
@@ -1627,8 +1627,8 @@
 		C52E0E472561129D00B245CF /* UICollectionReusableView 用作基类 */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0E482561129D00B245CF /* CollectionReusableView.h */,
-				C52E0E492561129D00B245CF /* CollectionReusableView.m */,
+				C52E0E482561129D00B245CF /* BaseCollectionReusableView.h */,
+				C52E0E492561129D00B245CF /* BaseCollectionReusableView.m */,
 			);
 			path = "UICollectionReusableView 用作基类";
 			sourceTree = "<group>";
@@ -3119,7 +3119,7 @@
 				C52E0B8525610F5400B245CF /* main.m in Sources */,
 				C52E0D682561128100B245CF /* TabBarControllerConfig.m in Sources */,
 				C52E15CF2561167700B245CF /* XHLaunchImageView.m in Sources */,
-				C52E0EB02561129D00B245CF /* CollectionReusableView.m in Sources */,
+				C52E0EB02561129D00B245CF /* BaseCollectionReusableView.m in Sources */,
 				C5A436D225AAF76F000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C52E0EB92561129D00B245CF /* NSObject+Shake.m in Sources */,
 				C52E0EA42561129D00B245CF /* BaseTableViewer.m in Sources */,
