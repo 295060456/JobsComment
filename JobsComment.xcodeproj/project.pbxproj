@@ -175,6 +175,7 @@
 		C5676201259F12AD006905A9 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FD259F12AC006905A9 /* BaseCollectionViewCell.m */; };
 		C5676202259F12AD006905A9 /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C56761FE259F12AC006905A9 /* UICollectionViewCell+ShakeAnimation.m */; };
 		C56BB85B2587986E0043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BB8582587986E0043C977 /* UIControl+XY.m */; };
+		C57294AA25BB0A1400726419 /* UIView+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C57294A825BB0A1400726419 /* UIView+BackgroundImage.m */; };
 		C589C0932563E98B00323A2A /* JobsCommentTitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */; };
 		C58D92E125B80C1900414ACB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */; };
 		C590871F256166680070E150 /* CommentData.json in Resources */ = {isa = PBXBuildFile; fileRef = C590871E256166680070E150 /* CommentData.json */; };
@@ -630,6 +631,8 @@
 		C56BB8582587986E0043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BB8592587986E0043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
 		C56BB85A2587986E0043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
+		C57294A825BB0A1400726419 /* UIView+BackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BackgroundImage.m"; sourceTree = "<group>"; };
+		C57294A925BB0A1400726419 /* UIView+BackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BackgroundImage.h"; sourceTree = "<group>"; };
 		C589C0912563E98B00323A2A /* JobsCommentTitleHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsCommentTitleHeaderView.h; sourceTree = "<group>"; };
 		C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsCommentTitleHeaderView.m; sourceTree = "<group>"; };
 		C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
@@ -1380,6 +1383,7 @@
 		C52E0DCB2561129C00B245CF /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C57294A725BB0A1400726419 /* UIView+BackgroundImage */,
 				C595BB37258640F8002A4531 /* UIView+Animation */,
 				C5460DA6258C8E890008928C /* UIView+AOP */,
 				C595BB38258640FD002A4531 /* UIView+Chain */,
@@ -2210,6 +2214,15 @@
 				C565CA6E25A437CE00848134 /* TwoVerticalArrangementLabsView.png */,
 			);
 			path = TwoVerticalArrangementLabsView;
+			sourceTree = "<group>";
+		};
+		C57294A725BB0A1400726419 /* UIView+BackgroundImage */ = {
+			isa = PBXGroup;
+			children = (
+				C57294A825BB0A1400726419 /* UIView+BackgroundImage.m */,
+				C57294A925BB0A1400726419 /* UIView+BackgroundImage.h */,
+			);
+			path = "UIView+BackgroundImage";
 			sourceTree = "<group>";
 		};
 		C589C0902563E95600323A2A /* 标题栏 */ = {
@@ -3268,6 +3281,7 @@
 				C5D60110258630EF00029AFF /* UIViewController+NavigationBar.m in Sources */,
 				C52E0E8B2561129D00B245CF /* UICollectionView+RegisterClass.m in Sources */,
 				C52E162A2561171E00B245CF /* ViewController@5.m in Sources */,
+				C57294AA25BB0A1400726419 /* UIView+BackgroundImage.m in Sources */,
 				C52E0CB7256111D300B245CF /* JobsCommentAppDelegate+XHLaunchAdDelegate.m in Sources */,
 				C52E0EB22561129D00B245CF /* NSObject+AFNReachability.m in Sources */,
 				C52E0EB72561129D00B245CF /* NSObject+Measure.m in Sources */,
