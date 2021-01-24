@@ -73,7 +73,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                           btnTitleArr:@[@"回复",@"复制",@"举报",@"取消"]
                        alertBtnAction:@[@"reply",@"copyIt",@"report",@"cancel"]
                              targetVC:self
-                               funcVC:nil
+                               funcInWhere:nil
                                sender:nil
                              animated:YES
                          alertVCBlock:nil
@@ -144,7 +144,7 @@ viewForHeaderInSection:(NSInteger)section{
                             btnTitleArr:@[@"好的"]
                          alertBtnAction:@[@""]
                                targetVC:self
-                                 funcVC:nil
+                                 funcInWhere:nil
                                animated:YES
                            alertVCBlock:nil
                         completionBlock:nil];
