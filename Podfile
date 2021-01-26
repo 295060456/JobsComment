@@ -47,6 +47,7 @@ def func
   pod 'FBRetainCycleDetector' # https://github.com/facebook/FBRetainCycleDetector
   pod 'YYModel'
   pod 'YYImage'
+  pod 'TABAnimated' # https://github.com/tigerAndBull/TABAnimated
   #  pod 'YYKit'
   
   end
