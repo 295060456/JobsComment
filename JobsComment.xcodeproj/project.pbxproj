@@ -166,6 +166,12 @@
 		C542468C256154FE002D16AD /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C542468B256154FE002D16AD /* EmptyView.m */; };
 		C5460DA9258C8E890008928C /* UIView+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DA7258C8E890008928C /* UIView+AOP.m */; };
 		C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5460DB0258C8EA40008928C /* ZYTextField.m */; };
+		C5512EC825C68111007BCA82 /* URLManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5512EC425C68111007BCA82 /* URLManagerModel.m */; };
+		C5512EC925C68111007BCA82 /* NSObject+URLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5512EC525C68111007BCA82 /* NSObject+URLManager.m */; };
+		C5512ED825C68162007BCA82 /* ZWPullMenuConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C5512ED125C68162007BCA82 /* ZWPullMenuConfig.m */; };
+		C5512ED925C68162007BCA82 /* ZWPullMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5512ED225C68162007BCA82 /* ZWPullMenuModel.m */; };
+		C5512EDA25C68162007BCA82 /* ZWPullMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5512ED625C68162007BCA82 /* ZWPullMenuView.m */; };
+		C5512EDB25C68162007BCA82 /* ZWPullMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5512ED725C68162007BCA82 /* ZWPullMenuCell.m */; };
 		C552A3CF2589D0CA00A89501 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = C552A3CD2589D0CA00A89501 /* UIImage+ScreenShot.m */; };
 		C55BF39B25AC8E4100A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF39A25AC8E4100A8347F /* TabbarVC.m */; };
 		C55FE83925B4249900D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */; };
@@ -607,6 +613,18 @@
 		C5460DB0258C8EA40008928C /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
 		C5460DB1258C8EA40008928C /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
 		C54C884925C553530054F53F /* MacroDef_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_App.h; sourceTree = "<group>"; };
+		C5512EC425C68111007BCA82 /* URLManagerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLManagerModel.m; sourceTree = "<group>"; };
+		C5512EC525C68111007BCA82 /* NSObject+URLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+URLManager.m"; sourceTree = "<group>"; };
+		C5512EC625C68111007BCA82 /* URLManagerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLManagerModel.h; sourceTree = "<group>"; };
+		C5512EC725C68111007BCA82 /* NSObject+URLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+URLManager.h"; sourceTree = "<group>"; };
+		C5512ECF25C68162007BCA82 /* ZWPullMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuModel.h; sourceTree = "<group>"; };
+		C5512ED025C68162007BCA82 /* ZWPullMenuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuConfig.h; sourceTree = "<group>"; };
+		C5512ED125C68162007BCA82 /* ZWPullMenuConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPullMenuConfig.m; sourceTree = "<group>"; };
+		C5512ED225C68162007BCA82 /* ZWPullMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPullMenuModel.m; sourceTree = "<group>"; };
+		C5512ED425C68162007BCA82 /* ZWPullMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuView.h; sourceTree = "<group>"; };
+		C5512ED525C68162007BCA82 /* ZWPullMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPullMenuCell.h; sourceTree = "<group>"; };
+		C5512ED625C68162007BCA82 /* ZWPullMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPullMenuView.m; sourceTree = "<group>"; };
+		C5512ED725C68162007BCA82 /* ZWPullMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPullMenuCell.m; sourceTree = "<group>"; };
 		C552A3CD2589D0CA00A89501 /* UIImage+ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScreenShot.m"; sourceTree = "<group>"; };
 		C552A3CE2589D0CA00A89501 /* UIImage+ScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScreenShot.h"; sourceTree = "<group>"; };
 		C552A4C52589D18600A89501 /* 专治UITableView相应链断裂.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "专治UITableView相应链断裂.md"; sourceTree = "<group>"; };
@@ -1678,6 +1696,7 @@
 		C52E0EC4256112A600B245CF /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C5512E7425C680F1007BCA82 /* Common */,
 				C542445A2561257F002D16AD /* JobsCommentCore */,
 				C52E15F9256116BC00B245CF /* ViewController@1 */,
 				C52E1603256116D400B245CF /* ViewController@2 */,
@@ -1700,6 +1719,7 @@
 		C52E15912561167700B245CF /* PodsManual */ = {
 			isa = PBXGroup;
 			children = (
+				C5512ECD25C68162007BCA82 /* ZWPullMenuView */,
 				C5A441F425ABFB9D000F0CD2 /* GKPhotoBrowser+SaveBtn */,
 				C5A441E425ABFB9D000F0CD2 /* JXCategoryView */,
 				C5A441E125ABFB9D000F0CD2 /* WHToast */,
@@ -1995,6 +2015,56 @@
 				C5D60105258630DA00029AFF /* BaseViewController.m */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		C5512E7425C680F1007BCA82 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C5512EC325C68111007BCA82 /* URL_Manager */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C5512EC325C68111007BCA82 /* URL_Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C5512EC425C68111007BCA82 /* URLManagerModel.m */,
+				C5512EC525C68111007BCA82 /* NSObject+URLManager.m */,
+				C5512EC625C68111007BCA82 /* URLManagerModel.h */,
+				C5512EC725C68111007BCA82 /* NSObject+URLManager.h */,
+			);
+			path = URL_Manager;
+			sourceTree = "<group>";
+		};
+		C5512ECD25C68162007BCA82 /* ZWPullMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				C5512ECE25C68162007BCA82 /* Config */,
+				C5512ED325C68162007BCA82 /* View */,
+			);
+			path = ZWPullMenuView;
+			sourceTree = "<group>";
+		};
+		C5512ECE25C68162007BCA82 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C5512ED025C68162007BCA82 /* ZWPullMenuConfig.h */,
+				C5512ED125C68162007BCA82 /* ZWPullMenuConfig.m */,
+				C5512ECF25C68162007BCA82 /* ZWPullMenuModel.h */,
+				C5512ED225C68162007BCA82 /* ZWPullMenuModel.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C5512ED325C68162007BCA82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5512ED525C68162007BCA82 /* ZWPullMenuCell.h */,
+				C5512ED725C68162007BCA82 /* ZWPullMenuCell.m */,
+				C5512ED425C68162007BCA82 /* ZWPullMenuView.h */,
+				C5512ED625C68162007BCA82 /* ZWPullMenuView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C5529E682589CDE900A89501 /* UIView+JHGestureBlock */ = {
@@ -3133,6 +3203,7 @@
 				C5A441FE25ABFB9E000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
 				C52E0B8525610F5400B245CF /* main.m in Sources */,
 				C52E0D682561128100B245CF /* TabBarControllerConfig.m in Sources */,
+				C5512ED925C68162007BCA82 /* ZWPullMenuModel.m in Sources */,
 				C52E15CF2561167700B245CF /* XHLaunchImageView.m in Sources */,
 				C52E0EB02561129D00B245CF /* BaseCollectionReusableView.m in Sources */,
 				C5A436D225AAF76F000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -3188,6 +3259,7 @@
 				C52E0EA02561129D00B245CF /* BaseNavigationVC.m in Sources */,
 				C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */,
 				C52E0E762561129D00B245CF /* NSObject+RichText.m in Sources */,
+				C5512EC825C68111007BCA82 /* URLManagerModel.m in Sources */,
 				C52E15C42561167700B245CF /* WMZBannerView.m in Sources */,
 				C5A96BE325BD33F6000077BC /* NSObject+SPAlertController.m in Sources */,
 				C52E0E732561129D00B245CF /* UIImage+Extras.m in Sources */,
@@ -3232,6 +3304,7 @@
 				C5D774EF257F59AB0087FC92 /* JobsMagicTextField.m in Sources */,
 				C5C64DA2259DF77F00FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */,
 				C52E0E832561129D00B245CF /* UIView+Extras.m in Sources */,
+				C5512EDA25C68162007BCA82 /* ZWPullMenuView.m in Sources */,
 				C52E0EB62561129D00B245CF /* NSObject+OpenURL.m in Sources */,
 				C5D0B75225878CB6002CA224 /* SoundBtn.m in Sources */,
 				C52E0E812561129D00B245CF /* UIView+Animation.m in Sources */,
@@ -3259,6 +3332,8 @@
 				C52E0E922561129D00B245CF /* UIViewController+JPImageresizerView.m in Sources */,
 				C53D383E2598C7A000B48431 /* UIViewController+XLBubbleTransition.m in Sources */,
 				C52E15D62561167700B245CF /* XHLaunchAdCache.m in Sources */,
+				C5512EC925C68111007BCA82 /* NSObject+URLManager.m in Sources */,
+				C5512EDB25C68162007BCA82 /* ZWPullMenuCell.m in Sources */,
 				C5A441F925ABFB9E000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
 				C53C9CC025A1CF7C0007F58F /* NSObject+DataSave.m in Sources */,
 				C52E0EAB2561129D00B245CF /* LMHWaterFallLayout.m in Sources */,
@@ -3277,6 +3352,7 @@
 				C52E0D842561128100B245CF /* TransitionAnimation.m in Sources */,
 				C52E15D22561167700B245CF /* XHLaunchAdController.m in Sources */,
 				C52E0E862561129D00B245CF /* UIFont+Extras.m in Sources */,
+				C5512ED825C68162007BCA82 /* ZWPullMenuConfig.m in Sources */,
 				C5DF417C25A8991300E91985 /* UIViewController+MJRefresh.m in Sources */,
 				C52E0E7F2561129D00B245CF /* UIView+Chain.m in Sources */,
 				C5D78567257F72E80087FC92 /* ZYTextField+HistoryDataList.m in Sources */,

@@ -22,6 +22,9 @@
 #import "JobsCommentAppDelegate.h"
 #import "JobsCommentSceneDelegate.h"
 
+#import "URLManagerModel.h"
+#import "NSObject+URLManager.h"
+
 #import "PopUpVC.h"
 
 #endif /* Other_h */
