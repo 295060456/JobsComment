@@ -36,6 +36,7 @@
 #import "UIView+EmptyData.h"
 #import "UIView+Gesture.h"
 #import "UIView+MJRefresh.h"
+#import "UIView+ViewController.h"
 /// UIViewController
 #import "UIViewController+BaseVC.h"
 #import "UIViewController+BackBtn.h"
@@ -90,5 +91,9 @@
 #import "TXFileOperation.h"
 #import "FileFolderHandleTool.h"
 #import "EmptyView.h"
+
+#import "SuspendBtn.h"
+#import "SuspendLab.h"
+#import "SuspendView.h"
 
 #endif /* Manual_Add_ThirdParty_h */
