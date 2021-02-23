@@ -94,7 +94,6 @@
 		C52E0E892561129D00B245CF /* 我为什么要这么做 in Resources */ = {isa = PBXBuildFile; fileRef = C52E0DE32561129D00B245CF /* 我为什么要这么做 */; };
 		C52E0E8A2561129D00B245CF /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DE62561129D00B245CF /* BaseCollectionView.m */; };
 		C52E0E8B2561129D00B245CF /* UICollectionView+RegisterClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DE72561129D00B245CF /* UICollectionView+RegisterClass.m */; };
-		C52E0E8D2561129D00B245CF /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DEC2561129D00B245CF /* UIImageView+GIF.m */; };
 		C52E0E8E2561129D00B245CF /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DEF2561129D00B245CF /* NavigationBar.m */; };
 		C52E0E8F2561129D00B245CF /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DF22561129D00B245CF /* NSString+Extras.m */; };
 		C52E0E922561129D00B245CF /* UIViewController+JPImageresizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52E0DF92561129D00B245CF /* UIViewController+JPImageresizerView.m */; };
@@ -183,6 +182,8 @@
 		C56D876025C822D7001960CD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D875B25C822D6001960CD /* UIColor+Hex.m */; };
 		C56D876125C822D7001960CD /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C56D875E25C822D6001960CD /* UIColor+Gradient.m */; };
 		C57294AA25BB0A1400726419 /* UIView+BackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C57294A825BB0A1400726419 /* UIView+BackgroundImage.m */; };
+		C583B74425E4B2B00054FD6E /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C583B73F25E4B2B00054FD6E /* UIImageView+GIF.m */; };
+		C583B74525E4B2B00054FD6E /* BaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C583B74225E4B2B00054FD6E /* BaseImageView.m */; };
 		C589C0932563E98B00323A2A /* JobsCommentTitleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */; };
 		C58D92E125B80C1900414ACB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */; };
 		C590871F256166680070E150 /* CommentData.json in Resources */ = {isa = PBXBuildFile; fileRef = C590871E256166680070E150 /* CommentData.json */; };
@@ -471,8 +472,6 @@
 		C52E0DE52561129D00B245CF /* UICollectionView+RegisterClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+RegisterClass.h"; sourceTree = "<group>"; };
 		C52E0DE62561129D00B245CF /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
 		C52E0DE72561129D00B245CF /* UICollectionView+RegisterClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+RegisterClass.m"; sourceTree = "<group>"; };
-		C52E0DEC2561129D00B245CF /* UIImageView+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GIF.m"; sourceTree = "<group>"; };
-		C52E0DED2561129D00B245CF /* UIImageView+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GIF.h"; sourceTree = "<group>"; };
 		C52E0DEF2561129D00B245CF /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
 		C52E0DF02561129D00B245CF /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
 		C52E0DF22561129D00B245CF /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
@@ -657,6 +656,10 @@
 		C56D875F25C822D6001960CD /* UIColor+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Gradient.h"; sourceTree = "<group>"; };
 		C57294A825BB0A1400726419 /* UIView+BackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BackgroundImage.m"; sourceTree = "<group>"; };
 		C57294A925BB0A1400726419 /* UIView+BackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BackgroundImage.h"; sourceTree = "<group>"; };
+		C583B73F25E4B2B00054FD6E /* UIImageView+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GIF.m"; sourceTree = "<group>"; };
+		C583B74025E4B2B00054FD6E /* UIImageView+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GIF.h"; sourceTree = "<group>"; };
+		C583B74225E4B2B00054FD6E /* BaseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseImageView.m; sourceTree = "<group>"; };
+		C583B74325E4B2B00054FD6E /* BaseImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseImageView.h; sourceTree = "<group>"; };
 		C589C0912563E98B00323A2A /* JobsCommentTitleHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsCommentTitleHeaderView.h; sourceTree = "<group>"; };
 		C589C0922563E98B00323A2A /* JobsCommentTitleHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobsCommentTitleHeaderView.m; sourceTree = "<group>"; };
 		C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
@@ -1489,8 +1492,8 @@
 		C52E0DEB2561129D00B245CF /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
-				C52E0DED2561129D00B245CF /* UIImageView+GIF.h */,
-				C52E0DEC2561129D00B245CF /* UIImageView+GIF.m */,
+				C583B74125E4B2B00054FD6E /* BaseImageView */,
+				C583B73E25E4B2B00054FD6E /* UIImageView+Category */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -2368,6 +2371,24 @@
 				C57294A925BB0A1400726419 /* UIView+BackgroundImage.h */,
 			);
 			path = "UIView+BackgroundImage";
+			sourceTree = "<group>";
+		};
+		C583B73E25E4B2B00054FD6E /* UIImageView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C583B73F25E4B2B00054FD6E /* UIImageView+GIF.m */,
+				C583B74025E4B2B00054FD6E /* UIImageView+GIF.h */,
+			);
+			path = "UIImageView+Category";
+			sourceTree = "<group>";
+		};
+		C583B74125E4B2B00054FD6E /* BaseImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C583B74225E4B2B00054FD6E /* BaseImageView.m */,
+				C583B74325E4B2B00054FD6E /* BaseImageView.h */,
+			);
+			path = BaseImageView;
 			sourceTree = "<group>";
 		};
 		C589C0902563E95600323A2A /* 标题栏 */ = {
@@ -3359,6 +3380,7 @@
 				C52E0C6C256110C200B245CF /* NotificationManager.m in Sources */,
 				C52E0EAA2561129D00B245CF /* ViewForTableViewFooter.m in Sources */,
 				C5DF418025A8991300E91985 /* LOTAnimationMJRefreshFooter.m in Sources */,
+				C583B74425E4B2B00054FD6E /* UIImageView+GIF.m in Sources */,
 				C5D1BE46258B1F6400784D2F /* UIView+EmptyData.m in Sources */,
 				C52E0E772561129D00B245CF /* UILabel+Extra.m in Sources */,
 				C52E0CB5256111D300B245CF /* JobsCommentAppDelegate+PopupView.m in Sources */,
@@ -3440,6 +3462,7 @@
 				C5267607258A496A0095A681 /* NSObject+Time.m in Sources */,
 				C52E0EA12561129D00B245CF /* TableViewAnimationKit.m in Sources */,
 				C52E0E952561129D00B245CF /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
+				C583B74525E4B2B00054FD6E /* BaseImageView.m in Sources */,
 				C52E0EB82561129D00B245CF /* NSObject+Extras.m in Sources */,
 				C52E0D812561128100B245CF /* JobsPullListTBVCell.m in Sources */,
 				C52E0EA92561129D00B245CF /* ViewForTableViewHeader.m in Sources */,
@@ -3457,7 +3480,6 @@
 				C52E0EAF2561129D00B245CF /* CALayer+Anim.m in Sources */,
 				C5D774F0257F59AB0087FC92 /* HQTextField.m in Sources */,
 				C52E0E852561129D00B245CF /* UIView+Gradient.m in Sources */,
-				C52E0E8D2561129D00B245CF /* UIImageView+GIF.m in Sources */,
 				C55FE83925B4249900D8C30D /* UIView+MJRefresh.m in Sources */,
 				C58D92E125B80C1900414ACB /* BaseTableViewCell.m in Sources */,
 				C52E15CE2561167700B245CF /* XHLaunchAdButton.m in Sources */,
