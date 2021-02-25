@@ -188,6 +188,7 @@
 		C58D92E125B80C1900414ACB /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D92DF25B80C1900414ACB /* BaseTableViewCell.m */; };
 		C590871F256166680070E150 /* CommentData.json in Resources */ = {isa = PBXBuildFile; fileRef = C590871E256166680070E150 /* CommentData.json */; };
 		C5908B3325616BBA0070E150 /* JobsCommentCoreVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */; };
+		C594311925E7AA19003BCA91 /* UITextView+IndicateWordLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = C594311625E7AA19003BCA91 /* UITextView+IndicateWordLimit.m */; };
 		C595D1BC2587141B002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1B42587141B002A4531 /* SuspendView.m */; };
 		C595D1BD2587141B002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1B82587141B002A4531 /* SuspendLab.m */; };
 		C595D1BE2587141B002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D1BA2587141B002A4531 /* SuspendBtn.m */; };
@@ -667,6 +668,9 @@
 		C590871E256166680070E150 /* CommentData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CommentData.json; sourceTree = "<group>"; };
 		C5908B3125616BBA0070E150 /* JobsCommentCoreVC+VM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JobsCommentCoreVC+VM.h"; sourceTree = "<group>"; };
 		C5908B3225616BBA0070E150 /* JobsCommentCoreVC+VM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JobsCommentCoreVC+VM.m"; sourceTree = "<group>"; };
+		C594311625E7AA19003BCA91 /* UITextView+IndicateWordLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+IndicateWordLimit.m"; sourceTree = "<group>"; };
+		C594311725E7AA19003BCA91 /* UITextView+IndicateWordLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+IndicateWordLimit.h"; sourceTree = "<group>"; };
+		C594311825E7AA19003BCA91 /* UITextView+IndicateWordLimit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UITextView+IndicateWordLimit.png"; sourceTree = "<group>"; };
 		C595D1B42587141B002A4531 /* SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendView.m; sourceTree = "<group>"; };
 		C595D1B52587141B002A4531 /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
 		C595D1B72587141B002A4531 /* SuspendLab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendLab.h; sourceTree = "<group>"; };
@@ -1343,6 +1347,7 @@
 				C52E0DBA2561129C00B245CF /* UITableViewCell */,
 				C52E0E312561129D00B245CF /* UITableViewHeaderFooterView */,
 				C52E0E602561129D00B245CF /* UITextField */,
+				C594311525E7AA19003BCA91 /* UITextView+IndicateWordLimit */,
 				C52E0DCB2561129C00B245CF /* UIView */,
 				C52E0DF82561129D00B245CF /* UIViewController */,
 			);
@@ -2409,6 +2414,16 @@
 			path = BaseTableViewCell;
 			sourceTree = "<group>";
 		};
+		C594311525E7AA19003BCA91 /* UITextView+IndicateWordLimit */ = {
+			isa = PBXGroup;
+			children = (
+				C594311725E7AA19003BCA91 /* UITextView+IndicateWordLimit.h */,
+				C594311625E7AA19003BCA91 /* UITextView+IndicateWordLimit.m */,
+				C594311825E7AA19003BCA91 /* UITextView+IndicateWordLimit.png */,
+			);
+			path = "UITextView+IndicateWordLimit";
+			sourceTree = "<group>";
+		};
 		C595BB37258640F8002A4531 /* UIView+Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -3349,6 +3364,7 @@
 				C5DF417F25A8991300E91985 /* LOTAnimationMJRefreshHeader.m in Sources */,
 				C52E0E8E2561129D00B245CF /* NavigationBar.m in Sources */,
 				C52E0EA02561129D00B245CF /* BaseNavigationVC.m in Sources */,
+				C594311925E7AA19003BCA91 /* UITextView+IndicateWordLimit.m in Sources */,
 				C5460DB2258C8EA40008928C /* ZYTextField.m in Sources */,
 				C52E0E762561129D00B245CF /* NSObject+RichText.m in Sources */,
 				C5512EC825C68111007BCA82 /* URLManagerModel.m in Sources */,
