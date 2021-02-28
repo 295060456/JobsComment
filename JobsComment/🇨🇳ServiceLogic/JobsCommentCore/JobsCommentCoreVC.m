@@ -136,7 +136,7 @@ viewForHeaderInSection:(NSInteger)section{
     JobsCommentPopUpViewForTVH *header = [[JobsCommentPopUpViewForTVH alloc] initWithReuseIdentifier:NSStringFromClass(JobsCommentPopUpViewForTVH.class) withData:firstCommentModel];
     @weakify(self)
     // 一级标题点击事件
-    [header actionBlockViewForTableViewHeader:^(id data) {
+    [header actionBlockTableViewHeaderView:^(id data) {
         @strongify(self)
         [NSObject showSYSAlertViewTitle:@"牛逼"
                                 message:@"哈哈哈"

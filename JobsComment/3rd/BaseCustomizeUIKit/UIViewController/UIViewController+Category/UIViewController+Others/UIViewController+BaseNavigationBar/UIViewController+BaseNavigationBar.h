@@ -1,5 +1,5 @@
 //
-//  UIViewController+NavigationBar.h
+//  UIViewController+BaseNavigationBar.h
 //  UBallLive
 //
 //  Created by Jobs on 2020/10/21.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 // 自定义 NavigationBar
-@interface UIViewController (NavigationBar)
+@interface UIViewController (BaseNavigationBar)
 
 @property(nonatomic,strong)BaseNavigationBar *navigationBar;
 @property(nonatomic,strong)UIBarButtonItem *leftBarButtonItem_back;

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Jobs. All rights reserved.
 //
 
-#import "ViewForTableViewHeader.h"
+#import "TableViewHeaderView.h"
 #import "RBCLikeButton.h"
 #import "MKCommentModel.h"
 #import "UIImage+YBGIF.h"
@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JobsCommentPopUpViewForTVH : ViewForTableViewHeader
+@interface JobsCommentPopUpViewForTVH : TableViewHeaderView
 
 @property(nonatomic,assign)long indexSection;
 
