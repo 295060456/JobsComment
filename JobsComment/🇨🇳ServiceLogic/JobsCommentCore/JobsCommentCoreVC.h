@@ -13,7 +13,6 @@
 #import "InfoTBVCell.h"//显示具体的有用讯息
 #import "LoadMoreTBVCell.h"//加载更多
 #import "LOTAnimationMJRefreshHeader.h"
-#import "MKCommentModel.h"
 #import "JobsCommentConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN

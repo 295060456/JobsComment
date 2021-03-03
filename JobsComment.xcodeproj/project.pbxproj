@@ -330,6 +330,7 @@
 		C52269AE25875836004447FB /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
 		C52269AF25875836004447FB /* BWItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemModel.h; sourceTree = "<group>"; };
 		C52269B025875836004447FB /* 分享控件的用法.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "分享控件的用法.md"; sourceTree = "<group>"; };
+		C5264DA425EF5E8B00C8AB2B /* JobsCommentModelHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsCommentModelHeader.h; sourceTree = "<group>"; };
 		C5267605258A496A0095A681 /* NSObject+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Time.h"; sourceTree = "<group>"; };
 		C5267606258A496A0095A681 /* NSObject+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Time.m"; sourceTree = "<group>"; };
 		C52E0B6C25610F5300B245CF /* JobsComment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobsComment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1896,7 +1897,7 @@
 			isa = PBXGroup;
 			children = (
 				C5C157AC25637BFE00285E2E /* 公共配置文件 */,
-				C5BC5B4D256156D40071CEEE /* 数据模型层 */,
+				C5BC5B4D256156D40071CEEE /* 🇨🇳数据模型层(此文件夹存放全局的所有Model) */,
 				C542449A256126AD002D16AD /* 弹窗小控件（高仿今日头条App评论弹窗框架） */,
 				C5BC5B4C256156340071CEEE /* View */,
 				C542468025614E2D002D16AD /* JobsCommentCoreVC.h */,
@@ -2723,14 +2724,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C5BC5B4D256156D40071CEEE /* 数据模型层 */ = {
+		C5BC5B4D256156D40071CEEE /* 🇨🇳数据模型层(此文件夹存放全局的所有Model) */ = {
 			isa = PBXGroup;
 			children = (
-				C5124E3B25C9124600D8BA61 /* MKCommentModel */,
+				C5264DA425EF5E8B00C8AB2B /* JobsCommentModelHeader.h */,
 				C5124E3A25C9124000D8BA61 /* BaseModel */,
+				C5124E3B25C9124600D8BA61 /* MKCommentModel */,
 				C590871E256166680070E150 /* CommentData.json */,
 			);
-			path = "数据模型层";
+			path = "🇨🇳数据模型层(此文件夹存放全局的所有Model)";
 			sourceTree = "<group>";
 		};
 		C5BC5B9E256160670071CEEE /* 高仿抖音点赞动画 */ = {

@@ -8,7 +8,6 @@
 
 #import "TableViewHeaderView.h"
 #import "RBCLikeButton.h"
-#import "MKCommentModel.h"
 #import "UIImage+YBGIF.h"
 #import "JobsCommentConfig.h"
 

@@ -6,8 +6,6 @@
 //
 
 #import "JobsCommentCoreVC.h"
-#import "BaseModel.h"
-#import "MKCommentModel.h"
 
 #if __has_include(<MJExtension/MJExtension.h>)
 #import <MJExtension/MJExtension.h>
