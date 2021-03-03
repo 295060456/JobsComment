@@ -101,6 +101,7 @@
 #import "TXFileOperation.h"
 #import "FileFolderHandleTool.h"
 #import "EmptyView.h"
+#import "DDCacheTool.h"
 
 #import "SuspendBtn.h"
 #import "SuspendLab.h"
