@@ -67,17 +67,17 @@ heightForFooterInSection:(NSInteger)section{
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // 二级标题点击事件
-    [NSObject showSYSActionSheetTitle:nil
-                              message:nil
-                      isSeparateStyle:YES
-                          btnTitleArr:@[@"回复",@"复制",@"举报",@"取消"]
-                       alertBtnAction:@[@"reply",@"copyIt",@"report",@"cancel"]
-                             targetVC:self
-                               funcInWhere:nil
-                               sender:nil
-                             animated:YES
-                         alertVCBlock:nil
-                      completionBlock:nil];
+    SYSAlertControllerConfig *config = SYSAlertControllerConfig.new;
+    config.isSeparateStyle = YES;
+    config.btnTitleArr = @[@"回复",@"复制",@"举报",@"取消"];
+    config.alertBtnActionArr = @[@"reply",@"copyIt",@"report",@"cancel"];
+    config.targetVC = self;
+    config.funcInWhere = self;
+    config.animated = YES;
+    
+    [NSObject showSYSActionSheetConfig:config
+                          alertVCBlock:nil
+                       completionBlock:nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -138,16 +138,19 @@ viewForHeaderInSection:(NSInteger)section{
     // 一级标题点击事件
     [header actionBlockTableViewHeaderView:^(id data) {
         @strongify(self)
-        [NSObject showSYSAlertViewTitle:@"牛逼"
-                                message:@"哈哈哈"
-                        isSeparateStyle:NO
-                            btnTitleArr:@[@"好的"]
-                         alertBtnAction:@[@""]
-                               targetVC:self
-                                 funcInWhere:nil
-                               animated:YES
-                           alertVCBlock:nil
-                        completionBlock:nil];
+        SYSAlertControllerConfig *config = SYSAlertControllerConfig.new;
+        config.title = @"牛逼";
+        config.message = @"哈哈哈";
+        config.isSeparateStyle = NO;
+        config.btnTitleArr = @[@"好的"];
+        config.alertBtnActionArr = @[@""];
+        config.targetVC = self;
+        config.funcInWhere = self;
+        config.animated = YES;
+        
+        [NSObject showSYSAlertViewConfig:config
+                            alertVCBlock:nil
+                         completionBlock:nil];
     }];
     [header actionBlockjobsCommentPopUpViewForTVHBlock:^(id data) {
         @strongify(self)

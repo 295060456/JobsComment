@@ -1704,10 +1704,8 @@
 		C52E0E4D2561129D00B245CF /* NSObject+Alert */ = {
 			isa = PBXGroup;
 			children = (
-				C5A96BDF25BD33F6000077BC /* NSObject+SPAlertController.h */,
-				C5A96BE025BD33F6000077BC /* NSObject+SPAlertController.m */,
-				C5A96BE125BD33F6000077BC /* NSObject+SYSAlertController.h */,
-				C5A96BDE25BD33F6000077BC /* NSObject+SYSAlertController.m */,
+				C5C08A2425F6359F0078DBE5 /* NSObject+SPAlertController */,
+				C5C08A2525F635A60078DBE5 /* NSObject+SYSAlertController */,
 			);
 			path = "NSObject+Alert";
 			sourceTree = "<group>";
@@ -2778,6 +2776,24 @@
 				C5BC5BA1256160670071CEEE /* RBCLikeButton.m */,
 			);
 			path = "高仿抖音点赞动画";
+			sourceTree = "<group>";
+		};
+		C5C08A2425F6359F0078DBE5 /* NSObject+SPAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C5A96BDF25BD33F6000077BC /* NSObject+SPAlertController.h */,
+				C5A96BE025BD33F6000077BC /* NSObject+SPAlertController.m */,
+			);
+			path = "NSObject+SPAlertController";
+			sourceTree = "<group>";
+		};
+		C5C08A2525F635A60078DBE5 /* NSObject+SYSAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C5A96BE125BD33F6000077BC /* NSObject+SYSAlertController.h */,
+				C5A96BDE25BD33F6000077BC /* NSObject+SYSAlertController.m */,
+			);
+			path = "NSObject+SYSAlertController";
 			sourceTree = "<group>";
 		};
 		C5C157512563789800285E2E /* Gif */ = {
