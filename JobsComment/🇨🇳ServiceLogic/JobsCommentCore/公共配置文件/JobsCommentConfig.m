@@ -45,7 +45,7 @@ static JobsCommentConfig *static_jobsCommentConfig = nil;
 }
 
 -(UIColor *)titleCor{
-    return COLOR_RGB(131, 145, 175, 1);
+    return COLOR_RGBA(131, 145, 175, 1);
 }
 
 -(UIColor *)subTitleCor{
