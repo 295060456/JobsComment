@@ -176,6 +176,7 @@
 		C55BF39B25AC8E4100A8347F /* TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C55BF39A25AC8E4100A8347F /* TabbarVC.m */; };
 		C55E0A5F25F9C9C600716A9B /* UICollectionViewCell+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0A5E25F9C9C600716A9B /* UICollectionViewCell+Default.m */; };
 		C55FE83925B4249900D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */; };
+		C5618F7E26008E7C00D4546E /* UITextView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C5618F7D26008E7C00D4546E /* UITextView+Extend.m */; };
 		C562DACC25C7C34D004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DACB25C7C34D004D1AEA /* UIView+ViewController.m */; };
 		C565CA6F25A437CE00848134 /* TwoVerticalArrangementLabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */; };
 		C5672FB225D77900008ABAF9 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5672FB025D77900008ABAF9 /* BaseView.m */; };
@@ -650,6 +651,8 @@
 		C55E27DC25FB26D600716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
 		C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FE83825B4249900D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
+		C5618F7C26008E7C00D4546E /* UITextView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extend.h"; sourceTree = "<group>"; };
+		C5618F7D26008E7C00D4546E /* UITextView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extend.m"; sourceTree = "<group>"; };
 		C562DACA25C7C34D004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		C562DACB25C7C34D004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		C565CA6C25A437CE00848134 /* TwoVerticalArrangementLabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVerticalArrangementLabsView.m; sourceTree = "<group>"; };
@@ -1967,7 +1970,7 @@
 		C542D17725EB760900D776D8 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				C594311525E7AA19003BCA91 /* UITextView+IndicateWordLimit */,
+				C5618F7A26008E7100D4546E /* UITextView+Category */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -2482,6 +2485,24 @@
 				C55FE83725B4249900D8C30D /* UIView+MJRefresh.m */,
 			);
 			path = "UIView+MJRefresh";
+			sourceTree = "<group>";
+		};
+		C5618F7A26008E7100D4546E /* UITextView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5618F7B26008E7C00D4546E /* UITextView+Extend */,
+				C594311525E7AA19003BCA91 /* UITextView+IndicateWordLimit */,
+			);
+			path = "UITextView+Category";
+			sourceTree = "<group>";
+		};
+		C5618F7B26008E7C00D4546E /* UITextView+Extend */ = {
+			isa = PBXGroup;
+			children = (
+				C5618F7C26008E7C00D4546E /* UITextView+Extend.h */,
+				C5618F7D26008E7C00D4546E /* UITextView+Extend.m */,
+			);
+			path = "UITextView+Extend";
 			sourceTree = "<group>";
 		};
 		C562DAC625C7C348004D1AEA /* UIView+ViewController */ = {
@@ -3591,6 +3612,7 @@
 				C5C64DA1259DF77F00FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
 				C515746625A350730074D945 /* UIView+Gesture.m in Sources */,
 				C5BC5B41256156200071CEEE /* InfoTBVCell.m in Sources */,
+				C5618F7E26008E7C00D4546E /* UITextView+Extend.m in Sources */,
 				C5C64DA5259DF77F00FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
 				C5C64DAA259DF77F00FD2F99 /* ECPrivacyCheckPhotos.m in Sources */,
 				C52E0D9F2561128100B245CF /* GCD_TimerManager.m in Sources */,
